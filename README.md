@@ -4,7 +4,7 @@ Step-by-Step
 ![hackbio image](https://media-exp1.licdn.com/dms/image/C561BAQHKcVQGbcedOA/company-background_10000/0/1598491473588?e=2159024400&v=beta&t=rxECjvQ_YSc28Dn0n9YOtDoFFmvXjatRiqc__C2mpU0)
 
 # [HackBio internship 2021](https://thehackbio.com/):  Genomics-One-B
-![hackbio ads](https://files.slack.com/files-tmb/T025KDN24L8-F02BU09HMJM-c6501388ff/project_design__genomics_1b__720.png)
+![hackbio ads](https://files.slack.com/files-pri/T025KDN24L8-F02BU09HMJM/project_design__genomics_1b_.png)
 
 [HackBio](https://thehackbio.com/) is a virtually regimented research internship that is practice oriented and focused on equipping African scientists with advanced bioinformatics and computational biology skills. By the end of internship, successful interns should have:
 - Honed their skills in a specific bioinformatics method
