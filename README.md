@@ -8,7 +8,7 @@ Step-by-Step
 - Have at least a peer-reviewed article to show for the internship experience
 
 # [HackBio internship 2021](https://thehackbio.com/):  Genomics-One-B
-![hackbio ads](https://files.slack.com/files-pri/T025KDN24L8-F02BU09HMJM/project_design__genomics_1b_.png)
+![hackbio ads](https://hackbiointernship2021.slack.com/files/U029MH1GQBX/F02BU09HMJM/project_design__genomics_1b_.png)
 
 
 
@@ -26,3 +26,5 @@ Step 4: Post-processing mapped reads:
              4.4 Filtering reads 
 Step 5: Calling non-diploid variants using FreeBayes
 Step 6: Filtering variants using VCFfilter
+Step 7: Visualization using IGV
+Step 8: Compare frequencies
