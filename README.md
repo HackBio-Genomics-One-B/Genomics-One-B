@@ -15,15 +15,15 @@ Step-by-Step
 
 
 
-Step 1: Importing data (From Galaxy Library)
-Step 2: Checking data quality using FastQC
-Step 3: Mapping reads to a reference using BWA-MEM
-Step 4: Post-processing mapped reads:
-             4.1 Merge datasets using SAMFiles
-             4.2 Remove duplicates using MarkDuplicates
-             4.3 Left aligning indels using BAM left align
-             4.4 Filtering reads 
-Step 5: Calling non-diploid variants using FreeBayes
-Step 6: Filtering variants using VCFfilter
-Step 7: Visualization using IGV
-Step 8: Compare frequencies
+1. Importing data (From Galaxy Library)
+2. Checking data quality using FastQC
+3. Mapping reads to a reference using BWA-MEM
+4. Post-processing mapped reads:
+      - Merge datasets using SAMFiles
+      - Remove duplicates using MarkDuplicates
+      - Left aligning indels using BAM left align
+      - Filtering reads 
+5. Calling non-diploid variants using FreeBayes
+6. Filtering variants using VCFfilter
+7. Visualization using IGV
+8. Compare frequencies
