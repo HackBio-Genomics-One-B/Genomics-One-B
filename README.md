@@ -8,9 +8,7 @@ Step-by-Step
 - Have at least a peer-reviewed article to show for the internship experience
 
 #  WORKFLOW
-![hackbio ads](https://files.slack.com/file-pri/T025KDN24L8-F02BU09HMJM/project_design__genomics_1b_.png)
-
-![](https://files.slack.com/files-pri/T025KDN24L8-F02BU09HMJM/project_design__genomics_1b_.png0)
+![hackbio ads](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/main/PROJECT%20DESIGN%20(GENOMICS%201B).png?raw=true)
 
 
 
