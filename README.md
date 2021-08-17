@@ -1,4 +1,4 @@
-# Genomics-One-B
+# [HackBio internship 2021](https://thehackbio.com/): Genomics-One-B
 Step-by-Step 
 
 ![hackbio image](https://media-exp1.licdn.com/dms/image/C561BAQHKcVQGbcedOA/company-background_10000/0/1598491473588?e=2159024400&v=beta&t=rxECjvQ_YSc28Dn0n9YOtDoFFmvXjatRiqc__C2mpU0)
@@ -7,15 +7,14 @@ Step-by-Step
 - Honed their skills in a specific bioinformatics method
 - Have at least a peer-reviewed article to show for the internship experience
 
-# [HackBio internship 2021](https://thehackbio.com/):  Genomics-One-B
-![hackbio ads](https://hackbiointernship2021.slack.com/files/U029MH1GQBX/F02BU09HMJM/project_design__genomics_1b_.png)
+#  WORKFLOW
+![hackbio ads](https://files.slack.com/files-pri/T025KDN24L8-F02BU09HMJM/project_design__genomics_1b_.png)
 
 
 
 
 
 
-Process for Option 3:
 Step 1: Importing data (From Galaxy Library)
 Step 2: Checking data quality using FastQC
 Step 3: Mapping reads to a reference using BWA-MEM
