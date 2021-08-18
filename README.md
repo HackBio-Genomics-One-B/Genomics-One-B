@@ -198,8 +198,43 @@ GGG--CACACAGGG            Alt: G
 The last of these is left-aligned. In this case gaps (represented by dashes) are moved as far left as possible. For a formal definition of left-alignment and variant normalization, see Tan et al. 2015.
 
 > **Hands-on: Left-align indels**
-> Use [BamLeftAlign](toolshed.g2.bx.psu.edu/repos/devteam/freebayes/bamleftalign/1.3.1) to perform left > alignment with the following parameters:
-> - “Choose the source for the reference genome”: Locally cached
-> - “Select alignment file in BAM format”: select the BAM dataset produced by **MarkDuplicates**
-> - “Using reference genome”: hg38
-> - “Maximum number of iterations’: 5
+> 1. Use [BamLeftAlign](toolshed.g2.bx.psu.edu/repos/devteam/freebayes/bamleftalign/1.3.1) to perform left > alignment with the following parameters:
+>     - “Choose the source for the reference genome”: Locally cached
+>     - “Select alignment file in BAM format”: select the BAM dataset produced by **MarkDuplicates**
+>     - “Using reference genome”: hg38
+>     - “Maximum number of iterations’: 5
+
+Filtering reads
+Remember that we are trying to call variants in mitochondrial genome. Let focus only on the reads derived from mitochondria genome by filtering everything else out.
+
+>**Hands-on: Filter BAM data**
+> 1. Use [Filter BAM datasets on a variety of attributes]( toolshed.g2.bx.psu.edu/repos/devteam/bamtools_filter/bamFilter/2.4.1) with the following parameters:
+>     - param-file“BAM dataset(s) to filter”: select the BAM dataset produced by BamLeftAligntool
+>     - In “Condition”:
+>           - In “1: Condition”:
+>                 - In “Filter”:
+>                       - In “1: Filter”:
+>                             - “Select BAM property to filter on”: mapQuality
+>                             - “Filter on read mapping quality (phred scale)”: >=20
+>                       - In “2: Filter”:
+>                             - “Select BAM property to filter on”: isPaired
+>                             - “Selected mapped reads”: Yes
+>                       - Click on “Insert Filter”
+>                       - In “3: Filter”:
+>                             - “Select BAM property to filter on”: isProperPair
+>                             - “Select reads with mapped mate”: Yes
+>                       - Click on “Insert Filter”
+>                       - In “4: Filter”:
+>                             - “Select BAM property to filter on”: reference
+>                             - “Select reads with mapped mate”: chrM
+
+
+
+
+> **Filtering reads**
+> Further explanation of the filters used:
+
+>     - mapQuality is set to ≥20. Mapping quality reflects the probability that the read is placed incorrectly using phred scale. Thus 20 is 1/100 or 1% chance that the read is incorrectly mapped. By setting this parameter to ≥20, we will keep all reads that have 1% or less probability of being mapped incorrectly.
+>     - isPaired will eliminate singleton (unpaired) reads.
+>     - isProperPair will only keep reads that map to the same chromosome and are properly placed.
+>     - reference is set to the mitochondrial chromosome, chrM.
