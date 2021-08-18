@@ -96,6 +96,6 @@ For this tutorial we have prepared a subset of data previously by our group (Reb
 Before proceeding with the analysis, we need to find out how good the data actually is. For this will use FastQC.
 
 ### Hands-on: Assess quality of data
-1. Run FastQC Tool: toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1 on each of the four FASTQ datasets with the following parameters:
+1. Run [FastQC Tool:](toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1) on each of the four FASTQ datasets with the following parameters:
 param-files 
       - “Short read data from your current history”: all 4 FASTQ datasets selected with Multiple datasets
