@@ -27,3 +27,25 @@ Step-by-Step
 6. Filtering variants using VCFfilter
 7. Visualization using IGV
 8. Compare frequencies
+
+
+
+# Calling variants in non-diploid systems
+#### _By: AvatarAnton Nekrutenko AvatarAlex Ostrovsky_
+
+## Questions
+How does frequency of mitochondrial polymorphisms change from mother to child?
+
+## Objectives
+Using Galaxy’s main site we will see how to call variants in bacteria, viruses, and organelles.
+
+## Requirements
+1. Introduction to Galaxy Analyses
+-- Sequence analysis
+-- Quality Control: slides slides - tutorial hands-on
+--- Mapping: slides slides - tutorial hands-on
+ Time estimation: 1 hour 30 minutes
+ Supporting Materials
+    
+ Last modification: Jun 17, 2021
+ License: Tutorial Content is licensed under Creative Commons Attribution 4.0 International License The GTN Framework is MIT
