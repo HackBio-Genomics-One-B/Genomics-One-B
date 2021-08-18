@@ -158,8 +158,10 @@ Duplicates can be identified based on their outer alignment coordinates or using
       
 MarkDuplicates produces a BAM dataset with duplicates removed and also a metrics file. Let’s take a look at the metrics data:
 
-`raw_child-ds-	55	27551	849	55	50	1658	1	0.06103	219750
-raw_mother-ds-	95	54973	1951	95	89	4712	2	0.08645	302188`
+```
+raw_child-ds-	55	27551	849	55	50	1658	1	0.06103	219750
+raw_mother-ds-	95	54973	1951	95	89	4712	2	0.08645	302188
+```
 
 Column headers are:
 
