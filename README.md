@@ -41,11 +41,7 @@ Using Galaxy’s main site we will see how to call variants in bacteria, viruses
 
 ## Requirements
 1. Introduction to Galaxy Analyses
--- Sequence analysis
--- Quality Control: slides slides - tutorial hands-on
---- Mapping: slides slides - tutorial hands-on
- Time estimation: 1 hour 30 minutes
- Supporting Materials
-    
- Last modification: Jun 17, 2021
- License: Tutorial Content is licensed under Creative Commons Attribution 4.0 International License The GTN Framework is MIT
+2. Sequence analysis
+      - Quality Control
+      - Mapping
+
