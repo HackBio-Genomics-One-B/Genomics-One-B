@@ -120,7 +120,7 @@ Once the FastQC jobs runs, you will be able to look at the HTML reports generate
 Our reads are long (250 bp) so we will use BWA-MEM (Li 2013) to align them against the reference genome as it has good mapping performance for longer reads (100bp and up).
 
 ### nHands-on: Map reads
-Use [Map with BWA-MEM Tool:](toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1) to map the reads to the reference genome with the following parameters:
+Use [Map with BWA-MEM](toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1) to map the reads to the reference genome with the following parameters:
 - “Will you select a reference genome from your history or use a built-in index?”: Use a built-in genome index
       - “Using reference genome”: Human: hg38 (or a similarly named option)
 - “Single or Paired-end reads”: Paired
@@ -140,7 +140,7 @@ By selecting datasets 1 and 3 as **Select the first set of reads** and datasets 
 Because we have set read groups, we can now merge the two BAM dataset into one. This is because read groups label each read as belonging to either mother or child.
 
 ### Hands-on: Merge multiple datasets into one
-1. Use MergeSAMFiles Tool: toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MergeSamFiles/2.18.2.1to merge the BAM datasets with the following parameters:
+1. Use [MergeSAMFiles](toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MergeSamFiles/2.18.2.1) to merge the BAM datasets with the following parameters:
       - “Select SAM/BAM dataset or dataset collection”: select both BAM datasets produced by **BWA-MEM**
       - “Select validation stringency”: Lenient
 ### Removing duplicates
@@ -157,3 +157,19 @@ Duplicates can be identified based on their outer alignment coordinates or using
       - “Select validation stringency”: Lenient
       
 MarkDuplicates produces a BAM dataset with duplicates removed and also a metrics file. Let’s take a look at the metrics data:
+
+`raw_child-ds-	55	27551	849	55	50	1658	1	0.06103	219750
+raw_mother-ds-	95	54973	1951	95	89	4712	2	0.08645	302188`
+
+Column headers are:
+
+- LIBRARY (read group in our case)
+- UNPAIRED_READS_EXAMINED
+- READ_PAIRS_EXAMINED-
+- SECONDARY_OR_SUPPLEMENTARY_RDS
+- UNMAPPED_READS
+- UNPAIRED_READ_DUPLICATES
+- READ_PAIR_DUPLICATES
+- READ_PAIR_OPTICAL_DUPLICATES
+- PERCENT_DUPLICATION
+- ESTIMATED_LIBRARY_SIZE
