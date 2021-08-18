@@ -211,22 +211,22 @@ Remember that we are trying to call variants in mitochondrial genome. Let focus 
 > 1. Use [Filter BAM datasets on a variety of attributes]( toolshed.g2.bx.psu.edu/repos/devteam/bamtools_filter/bamFilter/2.4.1) with the following parameters:
 >     - param-file“BAM dataset(s) to filter”: select the BAM dataset produced by BamLeftAligntool
 >     - In “Condition”:
->           - In “1: Condition”:
->                 - In “Filter”:
->                       - In “1: Filter”:
->                             - “Select BAM property to filter on”: mapQuality
->                             - “Filter on read mapping quality (phred scale)”: >=20
->                       - In “2: Filter”:
->                             - “Select BAM property to filter on”: isPaired
->                             - “Selected mapped reads”: Yes
->                       - Click on “Insert Filter”
->                       - In “3: Filter”:
->                             - “Select BAM property to filter on”: isProperPair
->                             - “Select reads with mapped mate”: Yes
->                       - Click on “Insert Filter”
->                       - In “4: Filter”:
->                             - “Select BAM property to filter on”: reference
->                             - “Select reads with mapped mate”: chrM
+>       - In “1: Condition”:
+>         - In “Filter”:
+>           - In “1: Filter”:
+>             - “Select BAM property to filter on”: mapQuality
+>             - “Filter on read mapping quality (phred scale)”: >=20
+>           - In “2: Filter”:
+>             - “Select BAM property to filter on”: isPaired
+>             - “Selected mapped reads”: Yes
+>           - Click on “Insert Filter”
+>           - In “3: Filter”:
+>             - “Select BAM property to filter on”: isProperPair
+>             - “Select reads with mapped mate”: Yes
+>           - Click on “Insert Filter”
+>             - In “4: Filter”:
+>               - “Select BAM property to filter on”: reference
+>               - “Select reads with mapped mate”: chrM
 
 
 
