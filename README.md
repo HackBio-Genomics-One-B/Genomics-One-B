@@ -1,20 +1,4 @@
 # [HackBio internship 2021](https://thehackbio.com/): Genomics-One-B
-Step-by-Step 
-
-
-Task distribution:
-
-|STEP|TASK|COLLABORATORS' SLACK USERNAME |PROFILE PICTURE|
-|----|--------------|--------------------|---------------|
-|1|Importing data (From Galaxy Library) |@Solomon @Temmykeji|******|
-|2|Checking data quality using FastQC|@Solomon @Temmykeji|******|
-|3|Mapping reads to a reference using BWA-MEM|@Rajeshcha44 @Nitigya-M|******|
-|4|Post-processing mapped reads - Merge datasets using SAMFiles - Remove duplicates using MarkDuplicates - Left aligning indels using BAM left align - Filtering reads|@abdnahid_ @Mike @Karteek|******|
-       
-Step 5: Calling non-diploid variants using FreeBayes: @Priyacomp @MANGAIYARKARASI @pragna_lakshmi
-Step 6: Filtering variants using VCFfilter: @Naomi @Galaxy @Aarathi04
-Step 7: Visualization using IGV: @Gautami @Shreyashi @ZubairAlam
-Step 8: Compare frequencies: @omimiIII @Temmykeji @pragna_lakshmi @Gautami
 
 ![hackbio image](https://media-exp1.licdn.com/dms/image/C561BAQHKcVQGbcedOA/company-background_10000/0/1598491473588?e=2159024400&v=beta&t=rxECjvQ_YSc28Dn0n9YOtDoFFmvXjatRiqc__C2mpU0)
 
@@ -25,18 +9,20 @@ Step 8: Compare frequencies: @omimiIII @Temmykeji @pragna_lakshmi @Gautami
 # PROJECT WORKFLOW & DESIGN
 ![hackbio ads](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/main/PROJECT%20DESIGN%20(GENOMICS%201B).png?raw=true)
 
-1. Importing data (From Galaxy Library)
-2. Checking data quality using FastQC
-3. Mapping reads to a reference using BWA-MEM
-4. Post-processing mapped reads:
-      - Merge datasets using SAMFiles
-      - Remove duplicates using MarkDuplicates
-      - Left aligning indels using BAM left align
-      - Filtering reads 
-5. Calling non-diploid variants using FreeBayes
-6. Filtering variants using VCFfilter
-7. Visualization using IGV
-8. Compare frequencies
+## Step-by-Step 
+
+### Task distribution:
+
+|STEP|TASK|COLLABORATORS' SLACK USERNAME |PROFILE PICTURE|
+|----|--------------|--------------------|---------------|
+|1|Importing data (From Galaxy Library) |@Solomon @Temmykeji|******|
+|2|Checking data quality using FastQC|@Solomon @Temmykeji|******|
+|3|Mapping reads to a reference using BWA-MEM|@Rajeshcha44 @Nitigya-M|******|
+|4|**Post-processing mapped reads** -_ Merge datasets using SAMFiles - Remove duplicates using MarkDuplicates - Left aligning indels using BAM left align - Filtering reads_|@abdnahid_ @Mike @Karteek|******|      
+|5|Calling non-diploid variants using FreeBayes|@Priyacomp @MANGAIYARKARASI @pragna_lakshmi|******|
+|6|Filtering variants using VCFfilte|@Naomi @Galaxy @Aarathi04|******|
+|7|Visualization using IGV|@Gautami @Shreyashi @ZubairAlam|******|
+|8|Compare frequencies|@omimiIII @Temmykeji @pragna_lakshmi @Gautami|******|
 
 
 
