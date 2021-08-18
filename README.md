@@ -5,15 +5,12 @@ Step-by-Step
 Task distribution:
 
 |STEP|TASK|COLLABORATORS' SLACK USERNAME |PROFILE PICTURE|
-|*******|***********|****************|****************|
+|----|--------------|--------------------|---------------|
 |1|Importing data (From Galaxy Library) |@Solomon @Temmykeji|******|
 |2|Checking data quality using FastQC|@Solomon @Temmykeji|******|
 |3|Mapping reads to a reference using BWA-MEM|@Rajeshcha44 @Nitigya-M|******|
-|4|Post-processing mapped reads|@abdnahid_ @Mike @Karteek|******|
-            |- Merge datasets using SAMFiles|
-            |- Remove duplicates using MarkDuplicates|
-            |- Left aligning indels using BAM left align|
-           |- Filtering reads|
+|4|Post-processing mapped reads - Merge datasets using SAMFiles - Remove duplicates using MarkDuplicates - Left aligning indels using BAM left align - Filtering reads|@abdnahid_ @Mike @Karteek|******|
+       
 Step 5: Calling non-diploid variants using FreeBayes: @Priyacomp @MANGAIYARKARASI @pragna_lakshmi
 Step 6: Filtering variants using VCFfilter: @Naomi @Galaxy @Aarathi04
 Step 7: Visualization using IGV: @Gautami @Shreyashi @ZubairAlam
