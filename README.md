@@ -175,3 +175,32 @@ Column headers are:
 - READ_PAIR_OPTICAL_DUPLICATES
 - PERCENT_DUPLICATION
 - ESTIMATED_LIBRARY_SIZE
+
+
+### Left-aligning indels
+Left aligning of indels (a variant of re-aligning) is extremely important for obtaining accurate variant calls. For illustrating how left-aligning works, we expanded on an example provided by Tan et al. 2015. Suppose you have a reference sequence and a sequencing read:
+```
+Reference GGGCACACACAGGG
+Read      GGGCACACAGGG
+``` 
+If you look carefully you will see that the read is simply missing a CA repeat. But it is not apparent to a mapper, so some of possible alignments and corresponding variant calls include:
+```
+Alignment                 Variant Call
+
+GGGCACACACAGGG            Ref: CAC
+GGGCAC--ACAGGG            Alt: C
+
+GGGCACACACAGGG            Ref: ACA
+GGGCA--CACAGGG            Alt: A
+
+GGGCACACACAGGG            Ref: GCA
+GGG--CACACAGGG            Alt: G
+```
+The last of these is left-aligned. In this case gaps (represented by dashes) are moved as far left as possible. For a formal definition of left-alignment and variant normalization, see Tan et al. 2015.
+
+> Hands-on: Left-align indels
+> Use [BamLeftAlign](toolshed.g2.bx.psu.edu/repos/devteam/freebayes/bamleftalign/1.3.1) to perform left > alignment with the following parameters:
+> - “Choose the source for the reference genome”: Locally cached
+> - “Select alignment file in BAM format”: select the BAM dataset produced by **MarkDuplicates**
+> - “Using reference genome”: hg38
+> - “Maximum number of iterations’: 5
