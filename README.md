@@ -10,11 +10,6 @@ Step-by-Step
 #  WORKFLOW
 ![hackbio ads](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/main/PROJECT%20DESIGN%20(GENOMICS%201B).png?raw=true)
 
-
-
-
-
-
 1. Importing data (From Galaxy Library)
 2. Checking data quality using FastQC
 3. Mapping reads to a reference using BWA-MEM
@@ -57,3 +52,50 @@ There are two ways one can call variants:
 
 
 ![](https://training.galaxyproject.org/training-material/topics/variant-analysis/images/ref_vs_assembly.jpg)
+**Figure 1:** This figure from Olson et al. 2015 contrasts the two approaches.
+
+In this tutorial we will take the first path, in which we map reads against an existing assembly. Later in the course, after we learn about assembly approaches, we will try the second approach as well.
+
+The goal of this example is to detect heteroplasmies - variants within mitochondrial DNA. Mitochondria are transmitted maternally, and heteroplasmy frequencies may change dramatically and unpredictably during the transmission due to a germ-line bottleneck (Cree et al. 2008). As we mentioned above, the procedure for finding variants in bacterial or viral genomes will be essentially the same.
+
+Datasets representing a child and a mother are available in Zenodo. These datasets were obtained by paired-end Illumina sequencing of human genomic DNA enriched for mitochondria. The enrichment was performed using long-range PCR with two primer pairs that amplify the entire mitochondrial genome. Samples will therefore still contain a lot of DNA from the nuclear genome, which, in this case, is a contaminant.
+
+### Agenda
+In this tutorial, we will cover:
+
+1. Importing data
+      - Checking data quality
+2. Mapping reads to a reference
+3. Postprocessing mapped reads
+      - Merging BAM datasets
+      - Removing duplicates
+      - Left-aligning indels
+      - Filtering reads
+4. Calling non-diploid variants
+      - Filtering variants
+5. Examining the results
+      - Visualising with VCF.IOBIO
+      - Visualising with IGV
+      - Comparing frequencies
+6. Conclusion
+
+## Importing data
+For this tutorial we have prepared a subset of data previously by our group (Rebolledo-Jaramillo et al. 2014). Let’s import these data into Galaxy. They are available from this Galaxy Library or via Zenodo
+
+### Hands-on: Get the data
+1. Create a new history for this tutorial and give it a meaningful name
+2. Import files from Zenodo:
+[](https://zenodo.org/record/1251112/files/raw_child-ds-1.fq)
+[](https://zenodo.org/record/1251112/files/raw_child-ds-2.fq)
+[](https://zenodo.org/record/1251112/files/raw_mother-ds-1.fq)
+[](https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq)
+
+3. Check that all newly created datasets in your history are assigned datatype fastqsanger, and fix any missing or wrong datatype assignment
+
+## Checking data quality
+Before proceeding with the analysis, we need to find out how good the data actually is. For this will use FastQC.
+
+### Hands-on: Assess quality of data
+1. Run FastQC Tool: toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1 on each of the four FASTQ datasets with the following parameters:
+param-files 
+      - “Short read data from your current history”: all 4 FASTQ datasets selected with Multiple datasets
