@@ -18,7 +18,7 @@
 |1|Importing data (From Galaxy Library) |@Solomon @Temmykeji|******|
 |2|Checking data quality using FastQC|@Solomon @Temmykeji|******|
 |3|Mapping reads to a reference using BWA-MEM|@Rajeshcha44 @Nitigya-M|******|
-|4|**Post-processing mapped reads** -_ Merge datasets using SAMFiles - Remove duplicates using MarkDuplicates - Left aligning indels using BAM left align - Filtering reads_|@abdnahid_ @Mike @Karteek|******|      
+|4|**Post-processing mapped reads** _*Merge datasets using SAMFiles_ _*Remove duplicates using MarkDuplicates_  _*Left aligning indels using BAM left align_ _*Filtering reads_|@abdnahid_ @Mike @Karteek|******|      
 |5|Calling non-diploid variants using FreeBayes|@Priyacomp @MANGAIYARKARASI @pragna_lakshmi|******|
 |6|Filtering variants using VCFfilte|@Naomi @Galaxy @Aarathi04|******|
 |7|Visualization using IGV|@Gautami @Shreyashi @ZubairAlam|******|
@@ -107,4 +107,53 @@ Once the FastQC jobs runs, you will be able to look at the HTML reports generate
 ![](https://drive.google.com/drive/folders/1oeJ6eVhpZ_Dj-hbW3l2F1kdL69TrlP-f)
 
 
-**Figure 2: **FastQC plot for one of the mitochondrial datasets shows that qualities are acceptable for 250 bp reads (mostly in the green, which is at or above [Phred score](https://en.wikipedia.org/wiki/Phred_quality_score) of 30).
+
+
+
+
+
+**Figure 2:** FastQC plot for one of the mitochondrial datasets shows that qualities are acceptable for 250 bp reads (mostly in the green, which is at or above [Phred score](https://en.wikipedia.org/wiki/Phred_quality_score) of 30).
+
+
+
+## Mapping reads to a reference
+Our reads are long (250 bp) so we will use BWA-MEM (Li 2013) to align them against the reference genome as it has good mapping performance for longer reads (100bp and up).
+
+### nHands-on: Map reads
+Use [Map with BWA-MEM Tool:](toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1) to map the reads to the reference genome with the following parameters:
+- “Will you select a reference genome from your history or use a built-in index?”: Use a built-in genome index
+      - “Using reference genome”: Human: hg38 (or a similarly named option)
+- “Single or Paired-end reads”: Paired
+      - “Select first set of reads”: select both -1 datasets selected with **Multiple datasets**
+      - “Select second set of reads”: select both -2 datasets selected with **Multiple datasets**
+- “Set read groups information?”: Set read groups (SAM/BAM specification)
+      - “Auto-assign”: Yes
+      - “Auto-assign”: Yes
+      - “Platform/technology used to produce the reads (PL)”: ILLUMINA
+      - “Auto-assign”: Yes
+      - 
+### More about selecting datasets
+By selecting datasets 1 and 3 as **Select the first set of reads** and datasets 2 and 4 as **Select the second set of reads**, Galaxy will automatically launch two BWA-MEM jobs using datasets 1,2 and 3,4 generating two resulting BAM files. By setting **Set read groups information** to Set read groups (SAM/BAM specifications) and clicking **Auto-assign** we will ensure that the reads in the resulting BAM dataset are properly set.
+
+## Postprocessing mapped reads
+### Merging BAM datasets
+Because we have set read groups, we can now merge the two BAM dataset into one. This is because read groups label each read as belonging to either mother or child.
+
+### Hands-on: Merge multiple datasets into one
+1. Use MergeSAMFiles Tool: toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MergeSamFiles/2.18.2.1to merge the BAM datasets with the following parameters:
+      - “Select SAM/BAM dataset or dataset collection”: select both BAM datasets produced by **BWA-MEM**
+      - “Select validation stringency”: Lenient
+### Removing duplicates
+Preparation of sequencing libraries (at least at the time of writing) for technologies such as Illumina (used in this example) involves PCR amplification. It is required to generate sufficient number of sequencing templates so that a reliable detection can be performed by base callers. PCR has its own biases which are especially profound in cases of multi-template PCR used for construction of sequencing libraries (Kanagawa 2003).
+
+Duplicates can be identified based on their outer alignment coordinates or using sequence-based clustering. One of the common ways for identification of duplicate reads is the MarkDuplicates utility from Picard package which is designed to identify both PCR and optical duplicates.
+
+### More about MarkDuplicates
+### Hands-on: De-duplicate mapped data
+1. Use [MarkDuplicates](toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.18.2.2)to de-duplicate the merged BAM datasets with the following parameters:
+      - “Select SAM/BAM dataset or dataset collection”: select the merged BAM dataset produced by **MergeSAMFiles**
+      - “The scoring strategy for choosing the non-duplicate among candidates”: SUM_OF_BASE_QUALITIES
+      - “The maximum offset between two duplicate clusters in order to consider them optical duplicates”: 100
+      - “Select validation stringency”: Lenient
+      
+MarkDuplicates produces a BAM dataset with duplicates removed and also a metrics file. Let’s take a look at the metrics data:
