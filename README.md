@@ -42,21 +42,21 @@ This step aligns the reads from **Step 1** to the reference genome **hg38**
 
 ## ➡️ 4.1: Merging BAM datasets
 
-### Tool:<br/>
+### 🛠️ Tool:<br/>
 ``Picard's MergeSAMFiles``<br/>
-### Purpose:<br/>
+### 🎯 Purpose:<br/>
 To merge the BAM datasets received from **Step 3**<br/>
-### Parameters:<br/>
+### 💡 Parameters:<br/>
 *“Select SAM/BAM dataset or dataset collection”:* `Both BAM datasets produced by BWA-MEM tool`<br/>
 *“Select validation stringency”:* `Lenient`<br/>  
 
 ## ➡️ Step 4.2: Removing duplicates
 
-### Tool:<br/>
+### 🛠️ Tool:<br/>
 ``Picard's MarkDuplicates``<br/>
-### Purpose:<br/>
+### 🎯 Purpose:<br/>
 To de-duplicate the merged BAM from **Step 4.1**<br/>
-### Parameters:<br/>
+### 💡 Parameters:<br/>
 *“Select SAM/BAM dataset or dataset collection”:* ``The merged BAM dataset produced by MergeSAMFiles tool``<br/>
 *“The scoring strategy for choosing the non-duplicate among candidates”:* ``SUM_OF_BASE_QUALITIES``<br/>
 *“The maximum offset between two duplicate clusters in order to consider them optical duplicates”:* ``100``<br/>
@@ -68,11 +68,11 @@ To de-duplicate the merged BAM from **Step 4.1**<br/>
 Click on the ``Pencil`` icon of the BAM dataset produced in Step 4.3 to edit ``attributes`` <br/>
 Select `hg38` under the `Database/Build` option and save
 
-### Tool:<br/>
+### 🛠️ Tool:<br/>
 ``BamLeftAlign``<br/>
-### Purpose:<br/>
+### 🎯 Purpose:<br/>
 To perform left alignment on the de-duplicated BAM from **Step 4.2**<br/>
-### Parameters:<br/>
+### 💡 Parameters:<br/>
 *"Choose the source for the reference genome”:* ``Locally cached``<br/>
 *“Select alignment file in BAM format”:* ``The BAM dataset produced by MarkDuplicates tool``<br/>
 *“Using reference genome”:* ``hg38``<br/>
@@ -80,11 +80,11 @@ To perform left alignment on the de-duplicated BAM from **Step 4.2**<br/>
 
 ## ➡️ Step 4.4: Filtering reads
 
-### Tool:<br/>
+### 🛠️ Tool:<br/>
 ``BAMTools Filter``<br/>
-### Purpose:<br/>
+### 🎯 Purpose:<br/>
 To filter reads from the left-aligned BAM from **Step 4.3**<br/>
-### Parameters:<br/>
+### 💡 Parameters:<br/>
 *“BAM dataset(s) to filter”:* ``Select the BAM dataset produced by BamLeftAlign tool``<br/>
 <br/>
 *Under “Condition” > “1: Condition” > “Filter”:*<br/>
