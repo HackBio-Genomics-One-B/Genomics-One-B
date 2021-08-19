@@ -26,8 +26,7 @@ https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq
 
 # 2️⃣ Step 2: Quality Checking  
 
-### 🛠️ Tool: <br/>
-``FastQC``<br/>
+### 🛠️ Tool: ``FastQC``<br/>
 ### 🎯 Parameters: <br/>
 *Short read data from your current history:* `all 4 FASTQ datasets selected with Multiple datasets`<br/>
 ### 💡 Tips: <br/>
@@ -47,16 +46,14 @@ This step aligns the reads from **Step 1** to the reference genome **hg38**
 
 ## ➡️ 4.1: Merging BAM datasets
 
-### 🛠️ Tool:<br/>
-``Picard's MergeSAMFiles``<br/>
+### 🛠️ Tool: ``Picard's MergeSAMFiles``<br/>
 ### 🎯 Parameters:<br/>
 *“Select SAM/BAM dataset or dataset collection”:* `Both BAM datasets produced by BWA-MEM tool`<br/>
 *“Select validation stringency”:* `Lenient`<br/>  
 
 ## ➡️ Step 4.2: Removing duplicates
 
-### 🛠️ Tool:<br/>
-``Picard's MarkDuplicates``<br/>
+### 🛠️ Tool: ``Picard's MarkDuplicates``<br/>
 ### 🎯 Parameters:<br/>
 *“Select SAM/BAM dataset or dataset collection”:* ``The merged BAM dataset produced by MergeSAMFiles tool``<br/>
 *“The scoring strategy for choosing the non-duplicate among candidates”:* ``SUM_OF_BASE_QUALITIES``<br/>
@@ -69,8 +66,7 @@ This step aligns the reads from **Step 1** to the reference genome **hg38**
 Click on the ``Pencil`` icon of the BAM dataset produced in **Step 4.2** to edit ``attributes`` <br/>
 Select `hg38` under the `Database/Build` option and save.
 
-### 🛠️ Tool:<br/>
-``BamLeftAlign``<br/>
+### 🛠️ Tool: ``BamLeftAlign``<br/>
 ### 🎯 Parameters:<br/>
 *"Choose the source for the reference genome”:* ``Locally cached``<br/>
 *“Select alignment file in BAM format”:* ``The BAM dataset produced by MarkDuplicates tool``<br/>
@@ -79,8 +75,7 @@ Select `hg38` under the `Database/Build` option and save.
 
 ## ➡️ Step 4.4: Filtering reads
 
-### 🛠️ Tool:<br/>
-``BAMTools Filter``<br/>
+### 🛠️ Tool: ``BAMTools Filter``<br/>
 ### 🎯 Parameters:<br/>
 *“BAM dataset(s) to filter”:* ``Select the BAM dataset produced by BamLeftAlign tool``<br/>
 <br/>
