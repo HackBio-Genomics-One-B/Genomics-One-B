@@ -66,7 +66,7 @@ To de-duplicate the merged BAM from **Step 4.1**<br/>
 
 ### ⚠️ Required step before executing Step 4.3:<br/>
 Click on the ``Pencil`` icon of the BAM dataset produced in **Step 4.2** to edit ``attributes`` <br/>
-Select `hg38` under the `Database/Build` option and save
+Select `hg38` under the `Database/Build` option and save.
 
 ### 🛠️ Tool:<br/>
 ``BamLeftAlign``<br/>
