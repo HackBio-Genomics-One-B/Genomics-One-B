@@ -19,8 +19,8 @@ Step-by-Step
 **Purpose:** To merge the BAM datasets received from **Step 3**<br/>
 <br/>
 **Parameters:**<br/>
-**“Select SAM/BAM dataset or dataset collection”:** *Both BAM datasets produced by BWA-MEM tool*<br/>
-**“Select validation stringency”:** *Lenient*<br/>
+*“Select SAM/BAM dataset or dataset collection”:* **Both BAM datasets produced by BWA-MEM tool**<br/>
+*“Select validation stringency”:* **Lenient**<br/>
 
 ## 4.2: Removing duplicates
 
@@ -28,7 +28,7 @@ Step-by-Step
 **Purpose:** To de-duplicate the merged BAM from **Step 4.1**<br/>
 <br/>
 **Parameters:**<br/>
-**“Select SAM/BAM dataset or dataset collection”:** *The merged BAM dataset produced by MergeSAMFiles tool*<br/>
-**“The scoring strategy for choosing the non-duplicate among candidates”:** *SUM_OF_BASE_QUALITIES*<br/>
-**“The maximum offset between two duplicate clusters in order to consider them optical duplicates”:** *100*<br/>
-**“Select validation stringency”:** *Lenient*<br/>
+*“Select SAM/BAM dataset or dataset collection”:* **The merged BAM dataset produced by MergeSAMFiles tool**<br/>
+*“The scoring strategy for choosing the non-duplicate among candidates”:* **SUM_OF_BASE_QUALITIES**<br/>
+*“The maximum offset between two duplicate clusters in order to consider them optical duplicates”:* **100**<br/>
+*“Select validation stringency”:* **Lenient**<br/>
