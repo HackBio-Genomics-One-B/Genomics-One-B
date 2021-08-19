@@ -33,9 +33,9 @@ This step aligns the reads from **Step 1** to the reference genome **hg38**
 **Tool:** ``BWA-mem``
 <br/>
 **Parameters:**<br/>
-*Select first set of reads:* `select both -1 datasets selected with Multiple datasets` 
-*Select second set of read:** `select both -2 datasets selected with Multiple datasets`
-*Set read groups information?:* `Set read groups (SAM/BAM specification)`
+*Select first set of reads:* `select both -1 datasets selected with Multiple datasets` <br/>
+*Select second set of read:** `select both -2 datasets selected with Multiple datasets`<br/>
+*Set read groups information?:* `Set read groups (SAM/BAM specification)`<br/>
 
 # Step 4: Postprocessing mapped reads
 
