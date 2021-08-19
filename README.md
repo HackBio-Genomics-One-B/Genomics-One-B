@@ -37,7 +37,7 @@ This step aligns the reads from **Step 1** to the reference genome **hg38**
 *Select second set of read:** `select both -2 datasets selected with Multiple datasets`<br/>
 *Set read groups information?:* `Set read groups (SAM/BAM specification)`<br/>
 
-# Step 4: Postprocessing mapped reads
+# 4️⃣ Step 4: Postprocessing mapped reads
 
 ## 4.1: Merging BAM datasets
 
@@ -49,7 +49,7 @@ To merge the BAM datasets received from **Step 3**<br/>
 ### Parameters:<br/>
 *“Select SAM/BAM dataset or dataset collection”:* `Both BAM datasets produced by BWA-MEM tool`<br/>
 *“Select validation stringency”:* `Lenient`<br/>  
-
+<br/>
 
 ## Step 4.2: Removing duplicates
 
