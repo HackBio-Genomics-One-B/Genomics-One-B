@@ -50,7 +50,7 @@ To merge the BAM datasets received from **Step 3**<br/>
 ### Parameters:<br/>
 *“Select SAM/BAM dataset or dataset collection”:* `Both BAM datasets produced by BWA-MEM tool`<br/>
 *“Select validation stringency”:* `Lenient`<br/>  
-<br/>
+
 ## ➡️ Step 4.2: Removing duplicates
 
 ### Tool:<br/>
@@ -63,7 +63,7 @@ To de-duplicate the merged BAM from **Step 4.1**<br/>
 *“The scoring strategy for choosing the non-duplicate among candidates”:* ``SUM_OF_BASE_QUALITIES``<br/>
 *“The maximum offset between two duplicate clusters in order to consider them optical duplicates”:* ``100``<br/>
 *“Select validation stringency”:* ``Lenient``<br/>
-<br/>
+
 ## ➡️ Step 4.3: Left-aligning indels
 
 ### Required step before executing Step 4.3:<br/>
@@ -80,7 +80,7 @@ To perform left alignment on the de-duplicated BAM from **Step 4.2**<br/>
 *“Select alignment file in BAM format”:* ``The BAM dataset produced by MarkDuplicates tool``<br/>
 *“Using reference genome”:* ``hg38``<br/>
 *“Maximum number of iterations’:* ``5``<br/>
-<br/>
+
 ## ➡️ Step 4.4: Filtering reads
 
 ### Tool:<br/>
