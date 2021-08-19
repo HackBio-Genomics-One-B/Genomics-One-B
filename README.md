@@ -36,7 +36,7 @@ select several files by keeping the ``Ctrl`` (or ``COMMAND``) key pressed and cl
 
 # 3️⃣ Step 3: Mapping reads to reference  
 
-### Tool: ``BWA-mem``
+### 🛠️ Tool: ``BWA-mem``
 ### 🎯 Parameters: <br/>
 *Will you select a reference genome from your history or use a built-in index?:* ``Use a built-in genome index``<br/>
 *Using reference genome:* ``Human: hg38``<br/>
