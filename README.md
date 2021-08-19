@@ -14,16 +14,16 @@
 
 ### Task distribution:
 
-|STEP|TASK|COLLABORATORS' SLACK USERNAME |PROFILE PICTURE|
-|----|--------------|--------------------|---------------|
-|1|Importing data (From Galaxy Library) |@Solomon @Temmykeji|******|
-|2|Checking data quality using FastQC|@Solomon @Temmykeji|******|
-|3|Mapping reads to a reference using BWA-MEM|@Rajeshcha44 @Nitigya-M|******|
-|4|**Post-processing mapped reads** _*Merge datasets using SAMFiles_ _*Remove duplicates using MarkDuplicates_  _*Left aligning indels using BAM left align_ _*Filtering reads_|@abdnahid_ @Mike @Karteek|******|      
-|5|Calling non-diploid variants using FreeBayes|@Priyacomp @MANGAIYARKARASI @pragna_lakshmi|******|
-|6|Filtering variants using VCFfilte|@Naomi @Galaxy @Aarathi04|******|
-|7|Visualization using IGV|@Gautami @Shreyashi @ZubairAlam|******|
-|8|Compare frequencies|@omimiIII @Temmykeji @pragna_lakshmi @Gautami|******|
+|STEP|TASK|COLLABORATORS' SLACK USERNAME |
+|----|--------------|--------------------|
+|1|Importing data (From Galaxy Library) |@Solomon @Temmykeji|
+|2|Checking data quality using FastQC|@Solomon @Temmykeji|
+|3|Mapping reads to a reference using BWA-MEM|@Rajeshcha44 @Nitigya-M|
+|4|**Post-processing mapped reads** _*Merge datasets using SAMFiles_ _*Remove duplicates using MarkDuplicates_  _*Left aligning indels using BAM left align_ _*Filtering reads_|@abdnahid_ @Mike @Karteek|     
+|5|Calling non-diploid variants using FreeBayes|@Priyacomp @MANGAIYARKARASI @pragna_lakshmi|
+|6|Filtering variants using VCFfilte|@Naomi @Galaxy @Aarathi04|
+|7|Visualization using IGV|@Gautami @Shreyashi @ZubairAlam|
+|8|Compare frequencies|@omimiIII @Temmykeji @pragna_lakshmi @Gautami|
 
 
 
@@ -98,12 +98,181 @@ You can navigate to the tool (FreeBayes) using the search button in GalaxySelect
 FilterNavigate to tool (VCFfilter) using the search button option on Galaxy webUsing the dataset obtained from step 5 Input parameters as seen in the image below and execute
 
 ## STEP 7: VISUALIZATION USING IGV
-
+````bash
+Click on processed VCF datasets, it will expand to show link. 
+Click on “display at vcf.iobio” at the bottom
+Use the reference genome, Human hg38 for comparison
+VCF datasets will be index to display them
+Repeat process for IGV by clicking on "Display with IGV"
+````
 ## STEP 8: COMPARING FREQUENCIES
 
 
+## 📌Team 🚀 Contribution
 
-1. Importing data
-For this tutorial we have prepared a subset of data previously by our group (Rebolledo-Jaramillo et al. 2014). Let’s import these data into Galaxy. They are available from this Galaxy Library or via Zenodo
+Individual committment to a group effort- that is what makes a team work, a company work, a society work, a civilization work - **Vince Lombardi**. Any contributions you make are **greatly appreciated** 👏👍
 
->
+**Contributors:**
+
+
+  
+<img src="" width="300" height="300">
+
+
+- `Temmykeji` 
+- Graphic design of workflow, Dataset and FastQC
+
+      
+
+
+
+
+
+
+  <p align="center">
+<img src="https://user-images.githubusercontent.com/77963733/128222640-e9fb13a7-178d-42f6-8282-fcb8d27454a7.jpg" width="300" height="300">
+
+
+- `Solomon` 
+- Dataset, FastQC and Github Markdown
+
+
+  <p align="center">
+<img src="" width="300" height="300">
+
+
+- `Rajeshcha44` 
+- Mapping of read using BWA-MEM
+      
+      
+  <p align="center">
+<img src="https://ca.slack-edge.com/T025KDN24L8-U029R6QRT7F-5de4310f5208-512" width="300" height="300">
+
+
+- `Nitigya-M` 
+- Mapping of read using BWA-MEM
+
+
+
+
+
+  <p align="center">
+<img src="https://ca.slack-edge.com/T025KDN24L8-U029SQ2CZHS-ba091c5c5caa-512" width="300" height="300">
+
+
+- `Abdnahid_` 
+- Post Processing mapped read (This contains four steps)
+
+      
+      
+  <p align="center">
+<img src="" width="300" height="300">
+
+
+- `Mike` 
+- Post Processing mapped read (This contains four steps)
+
+
+
+  <p align="center">
+<img src="https://ca.slack-edge.com/T025KDN24L8-U02A39GJWFK-a11377b2a1f0-512" width="300" height="300">
+
+
+- `Karteek` 
+- Post Processing mapped read (This contains four steps)
+      
+
+
+      
+  <p align="center">
+<img src="https://ca.slack-edge.com/T025KDN24L8-U02AGS5QS00-6a6af014db65-512" width="300" height="300">
+
+
+- `Priyacomp` 
+- Variant calling of dataset
+      
+      
+  <p align="center">
+<img src="https://ca.slack-edge.com/T025KDN24L8-U029NG6R8UV-bb016f49b6c9-512" width="300" height="300">
+
+
+- `MANGAIYARKARASI` 
+- Variant calling of dataset
+
+      
+  <p align="center">
+<img src="https://ca.slack-edge.com/T025KDN24L8-U029C9A9J79-f95d8e9a01dc-512" width="300" height="300">
+
+
+- `Pragna_lakshmi` 
+- Variant calling of dataset using FreeBayes and Comparing of frequencies using VCFtoTab-delimited
+        
+        
+  <p align="center">
+<img src="https://ca.slack-edge.com/T025KDN24L8-U029S3A3TMH-2f863dfd6528-512" width="300" height="300">
+
+
+- `Naomi` 
+- Mapping of read using BWA-MEM
+
+
+   <p align="center">
+<img src="" width="300" height="300">
+
+
+- `Galaxy` 
+- Filtering of variant call dataset using FreeBayes
+
+
+  <p align="center">
+<img src="" width="300" height="300">
+
+
+- `Aarathi04` 
+- Filtering of variant call dataset using VCFfilter
+
+       
+        
+        
+        
+
+    
+  <p align="center">
+<img src="https://ca.slack-edge.com/T025KDN24L8-U029WT4Q31S-723b12b5b8d5-512" width="300" height="300">
+      
+           
+- `Gautami`**(Team Leader)**
+- Visualization using IGV and VCF.IOBIO; and Comparing of frequencies using VCFtoTab-delimited
+
+
+
+  <p align="center">
+<img src="https://ca.slack-edge.com/T025KDN24L8-U02AEQNK4JC-d01d2eb3a8bf-512" width="300" height="300">
+
+
+- `ZubairAlam` 
+- Visualization using IGV and VCF.IOBIO
+
+
+  <p align="center">
+<img src="" width="300" height="300">
+
+
+- `Shreyashi` 
+- Visualization using IGV and VCF.IOBIO
+
+
+  <p align="center">
+<img src="https://ca.slack-edge.com/T025KDN24L8-U029ME14L3G-b45b38f03dfc-512" width="300" height="300">
+
+
+- `omimill` 
+- Comparing of frequencies using VCFtoTab-delimited and Github Markdown
+        
+        
+        
+        
+<p align="center">
+<img src="https://user-images.githubusercontent.com/77963733/129745575-ecdb0b4d-981f-435b-bd56-bc3ed9da4a44.png" width="500" heigth="500">
+
+
