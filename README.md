@@ -25,9 +25,12 @@ https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq
 ```
 
 # 2️⃣ Step 2: Quality Checking  
-Perform quality control of the raw reads using [FASTQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)  
-Apply **FastQC** tool on all the datasets to check data quality.  
-<br/>
+
+### 🛠️ Tool:<br/>
+``FastQC``<br/>
+### 💡 Parameters:<br/>
+*Short read data from your current history:* `all 4 FASTQ datasets selected with Multiple datasets`<br/>
+
 # 3️⃣ Step 3: Map reads to reference  
 This step aligns the reads from **Step 1** to the reference genome **hg38**    
 **Tool:** ``BWA-mem``
@@ -36,7 +39,6 @@ This step aligns the reads from **Step 1** to the reference genome **hg38**
 *Select first set of reads:* `select both -1 datasets selected with Multiple datasets` <br/>
 *Select second set of read:** `select both -2 datasets selected with Multiple datasets`<br/>
 *Set read groups information?:* `Set read groups (SAM/BAM specification)`<br/>
-
 
 # 4️⃣ Step 4: Postprocessing mapped reads
 
