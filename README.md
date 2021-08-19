@@ -29,7 +29,7 @@ https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq
 ### 🛠️ Tool: ``FastQC``<br/>
 ### 🎯 Parameters: <br/>
 *Short read data from your current history:* `all 4 FASTQ datasets selected with Multiple datasets`<br/>
-### 💡 Tips: <br/>
+### 💡 Tip: <br/>
 To select multiple datasets, <br/>
 click on the Multiple datasets icon<br/>
 select several files by keeping the ``Ctrl`` (or ``COMMAND``) key pressed and clicking on all 4 FASTQ files
