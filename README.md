@@ -41,10 +41,12 @@ This step aligns the reads from **Step 1** to the reference genome **hg38**
 
 ## 4.1: Merging BAM datasets
 
-**Tool:** ``Picard's MergeSAMFiles``<br/>
-**Purpose:** To merge the BAM datasets received from **Step 3**<br/>
+### Tool:<br/>
+``Picard's MergeSAMFiles``<br/>
+### Purpose:<br/>
+To merge the BAM datasets received from **Step 3**<br/>
 <br/>
-**Parameters:**<br/>
+### Parameters:<br/>
 *“Select SAM/BAM dataset or dataset collection”:* `Both BAM datasets produced by BWA-MEM tool`<br/>
 *“Select validation stringency”:* `Lenient`<br/>  
 
