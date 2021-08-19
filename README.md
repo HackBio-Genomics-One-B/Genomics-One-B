@@ -14,7 +14,7 @@ Step-by-Step
 This tutorial is implemented in galaxy  
 Always use the serch button to navigate the respective tools  
 
-# Step 1: Importing Data
+# 1️⃣ Step 1: Importing Data
 Import raw reads from [here](https://zenodo.org/record/1251112)
 
 ```
@@ -24,11 +24,11 @@ https://zenodo.org/record/1251112/files/raw_mother-ds-1.fq
 https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq
 ```
 
-# Step 2: Quality Checking  
+# 2️⃣ Step 2: Quality Checking  
 Perform quality control of the raw reads using [FASTQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)  
 Apply **FastQC** tool on all the datasets to check data quality.  
 
-# Step 3: Map reads to reference  
+# 3️⃣ Step 3: Map reads to reference  
 This step aligns the reads from **Step 1** to the reference genome **hg38**    
 **Tool:** ``BWA-mem``
 <br/>
@@ -107,7 +107,7 @@ Click on ``“Insert Filter”``<br/>
 *“Select reads with mapped mate”:* ``chrM``<br/>
 
 
-# Step 5: Calling non-diploid variants  
+# 5️⃣ Step 5: Calling non-diploid variants  
 **Tool:** ``FreeBayes``  
 
 
