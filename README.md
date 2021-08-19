@@ -38,8 +38,7 @@ select several files by keeping the ``Ctrl`` (or ``COMMAND``) key pressed and cl
 # 3️⃣ Step 3: Map reads to reference  
 This step aligns the reads from **Step 1** to the reference genome **hg38**    
 ### Tool: ``BWA-mem``
-<br/>
-### 🎯 Parameters:<br/>
+### 🎯 Parameters: <br/>
 *Select first set of reads:* `select both -1 datasets selected with Multiple datasets` <br/>
 *Select second set of read:** `select both -2 datasets selected with Multiple datasets`<br/>
 *Set read groups information?:* `Set read groups (SAM/BAM specification)`<br/>
