@@ -17,10 +17,12 @@ Always use the serch button to navigate the respective tools
 # Step 1: Importing Data
 Import raw reads from [here](https://zenodo.org/record/1251112)
 
-``https://zenodo.org/record/1251112/files/raw_child-ds-1.fq``  
-``https://zenodo.org/record/1251112/files/raw_child-ds-2.fq``  
-``https://zenodo.org/record/1251112/files/raw_mother-ds-1.fq``  
-``https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq``  
+```
+https://zenodo.org/record/1251112/files/raw_child-ds-1.fq
+https://zenodo.org/record/1251112/files/raw_child-ds-2.fq
+https://zenodo.org/record/1251112/files/raw_mother-ds-1.fq
+https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq
+```
 
 # Step 2: Quality Checking  
 Perform quality control of the raw reads using [FASTQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)  
