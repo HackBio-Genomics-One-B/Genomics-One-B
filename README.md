@@ -109,8 +109,21 @@ Click on ``“Insert Filter”``<br/>
 
 # 5️⃣ Step 5: Calling non-diploid variants
 
-### Tool: ``FreeBayes``<br/>
-
-
+### 🛠️ Tool: ``FreeBayes``<br/>
+### 🎯 Parameters:<br/>
+*Choose the source for the reference genome:* ``Locally cached``<br/>
+*Run in batch mode?:* ``Run individually``<br/>
+*BAM dataset:* ``select the BAM dataset produced by last Filter tool step``<br/>
+*Using reference genome:* ``hg38``<br/>
+*Limit variant calling to a set of regions?:* ``Limit to region``<br/>
+*Region Chromosome:* ``chrM``<br/>
+*Region Start:* ``1``<br/>
+*Region End:* ``16000``<br/>
+*Choose parameter selection level:* ``5: Full list of options``<br/>
+*Population model options:* ``Set population model options``<br/>
+*The expected mutation rate or pairwise nucleotide diversity among the population under analysis:* ``0.001``<br/>
+*Set ploidy for the analysis:* ``1``<br/>
+*Assume that samples result from pooled sequencing:* ``Yes``<br/>
+*Output all alleles which pass input filters, regardless of genotyping outcome or model:* ``Yes``<br/>
 
 
