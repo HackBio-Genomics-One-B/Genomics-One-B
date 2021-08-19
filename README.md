@@ -23,11 +23,11 @@ https://zenodo.org/record/1251112/files/raw_child-ds-2.fq
 https://zenodo.org/record/1251112/files/raw_mother-ds-1.fq
 https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq
 ```
-
+<br/>
 # 2️⃣ Step 2: Quality Checking  
 Perform quality control of the raw reads using [FASTQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)  
 Apply **FastQC** tool on all the datasets to check data quality.  
-
+<br/>
 # 3️⃣ Step 3: Map reads to reference  
 This step aligns the reads from **Step 1** to the reference genome **hg38**    
 **Tool:** ``BWA-mem``
@@ -36,7 +36,7 @@ This step aligns the reads from **Step 1** to the reference genome **hg38**
 *Select first set of reads:* `select both -1 datasets selected with Multiple datasets` <br/>
 *Select second set of read:** `select both -2 datasets selected with Multiple datasets`<br/>
 *Set read groups information?:* `Set read groups (SAM/BAM specification)`<br/>
-
+<br/>
 # 4️⃣ Step 4: Postprocessing mapped reads
 
 ## ➡️ 4.1: Merging BAM datasets
@@ -79,8 +79,7 @@ To perform left alignment on the de-duplicated BAM from **Step 4.2**<br/>
 *“Select alignment file in BAM format”:* ``The BAM dataset produced by MarkDuplicates tool``<br/>
 *“Using reference genome”:* ``hg38``<br/>
 *“Maximum number of iterations’:* ``5``<br/>
-
-
+<br/>
 ## ➡️ Step 4.4: Filtering reads
 
 ### Tool:<br/>
@@ -110,8 +109,7 @@ Click on ``“Insert Filter”``<br/>
 **In “4: Filter”:**<br/>
 *“Select BAM property to filter on”:* ``reference``<br/>
 *“Select reads with mapped mate”:* ``chrM``<br/>
-
-
+<br/>
 # 5️⃣ Step 5: Calling non-diploid variants  
 **Tool:** ``FreeBayes``  
 
