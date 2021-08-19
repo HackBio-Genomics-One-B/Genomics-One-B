@@ -55,8 +55,8 @@ This step aligns the reads from **Step 1** to the reference genome **hg38**
 
 ### 🛠️ Tool: ``Picard's MergeSAMFiles``<br/>
 ### 🎯 Parameters:<br/>
-*“Select SAM/BAM dataset or dataset collection”:* `Both BAM datasets produced by BWA-MEM tool`<br/>
-*“Select validation stringency”:* `Lenient`<br/>  
+*Select SAM/BAM dataset or dataset collection:* `Both BAM datasets produced by BWA-MEM tool`<br/>
+*Select validation stringency:* `Lenient`<br/>  
 
 ## ➡️ Step 4.2: Removing duplicates
 
