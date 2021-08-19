@@ -119,6 +119,7 @@ Click on ``“Insert Filter”``<br/>
 *Region Chromosome:* ``chrM``<br/>
 *Region Start:* ``1``<br/>
 *Region End:* ``16000``<br/>
+
 *Choose parameter selection level:* ``5: Full list of options``<br/>
 *Population model options:* ``Set population model options``<br/>
 *The expected mutation rate or pairwise nucleotide diversity among the population under analysis:* ``0.001``<br/>
@@ -126,4 +127,13 @@ Click on ``“Insert Filter”``<br/>
 *Assume that samples result from pooled sequencing:* ``Yes``<br/>
 *Output all alleles which pass input filters, regardless of genotyping outcome or model:* ``Yes``<br/>
 
+*Allelic scope options:* ``Set allelic scope options``<br/>
+*Ignore SNP alleles:* ``No``<br/>
+*Ignore indels alleles:* ``No``<br/>
+*Ignore multi-nucleotide polymorphisms, MNPs:* ``Yes``<br/>
+*Ignore complex events (composites of other classes):* ``Yes``<br/>
+
+*Input filters:* ``Set input filters``<br/>
+*Exclude alignments from analysis if they have a mapping quality less than:* ``20``<br/>
+*Exclude alleles from analysis if their supporting base quality less than:* ``30``<br/>
 
