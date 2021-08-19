@@ -78,28 +78,27 @@ This step aligns the reads from **Step 1** to the reference genome **hg38**
 **Purpose:** To filter reads from the left-aligned BAM from Step 4.3<br/>
 <br/>
 **Parameters:**<br/>
-<br/>
 *“BAM dataset(s) to filter”:* ``Select the BAM dataset produced by BamLeftAlign tool``<br/>
 <br/>
 *Under “Condition” > “1: Condition” > “Filter”:*<br/>
-*In “1: Filter”:*<br/>
-“Select BAM property to filter on”: ``mapQuality``<br/>
-“Filter on read mapping quality (phred scale)”: ``>=20``<br/>
+**In “1: Filter”:**<br/>
+*“Select BAM property to filter on”:* ``mapQuality``<br/>
+*“Filter on read mapping quality (phred scale)”:* ``>=20``<br/>
 Click on ``“Insert Filter”``<br/>
 <br/>
-*In “2: Filter”:*<br/>
-“Select BAM property to filter on”: ``isPaired``<br/>
-“Selected mapped reads”: ``Yes``<br/>
+**In “2: Filter”:**<br/>
+*“Select BAM property to filter on”:* ``isPaired``<br/>
+*“Selected mapped reads”:* ``Yes``<br/>
 Click on ``“Insert Filter”``<br/>
 <br/>
-*In “3: Filter”:*<br/>
-“Select BAM property to filter on”: ``isProperPair``<br/>
-“Select reads with mapped mate”: ``Yes``<br/>
+**In “3: Filter”:**<br/>
+*“Select BAM property to filter on”:* ``isProperPair``<br/>
+*“Select reads with mapped mate”:* ``Yes``<br/>
 Click on ``“Insert Filter”``<br/>
 <br/>
-*In “4: Filter”:*<br/>
-“Select BAM property to filter on”: ``reference``<br/>
-“Select reads with mapped mate”: ``chrM``<br/>
+**In “4: Filter”:**<br/>
+*“Select BAM property to filter on”:* ``reference``<br/>
+*“Select reads with mapped mate”:* ``chrM``<br/>
 
 
 # Step 5: Calling non-diploid variants  
