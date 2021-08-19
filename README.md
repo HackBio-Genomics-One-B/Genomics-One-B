@@ -37,6 +37,7 @@ This step aligns the reads from **Step 1** to the reference genome **hg38**
 *Select second set of read:** `select both -2 datasets selected with Multiple datasets`<br/>
 *Set read groups information?:* `Set read groups (SAM/BAM specification)`<br/>
 
+
 # 4️⃣ Step 4: Postprocessing mapped reads
 
 ## ➡️ 4.1: Merging BAM datasets
@@ -109,6 +110,7 @@ Click on ``“Insert Filter”``<br/>
 **In “4: Filter”:**<br/>
 *“Select BAM property to filter on”:* ``reference``<br/>
 *“Select reads with mapped mate”:* ``chrM``<br/>
+
 
 # 5️⃣ Step 5: Calling non-diploid variants  
 **Tool:** ``FreeBayes``  
