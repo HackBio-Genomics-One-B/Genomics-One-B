@@ -30,17 +30,6 @@
 # Calling variants in non-diploid systems
 #### _By: AvatarAnton Nekrutenko AvatarAlex Ostrovsky_
 
-## Questions
-How does frequency of mitochondrial polymorphisms change from mother to child?
-
-## Objectives
-Using Galaxy’s main site we will see how to call variants in bacteria, viruses, and organelles.
-
-## Requirements
-1. Introduction to Galaxy Analyses
-2. Sequence analysis
-      - Quality Control
-      - Mapping
 
 ## Introduction
 
@@ -48,22 +37,16 @@ Using Galaxy’s main site we will see how to call variants in bacteria, viruses
 In this tutorial, we will cover:
 
 1. Importing data
-      - Checking data quality
-2. Mapping reads to a reference
-3. Postprocessing mapped reads
+2. Checking data quality
+3. Mapping reads to a reference
+4. Postprocessing mapped reads
       - Merging BAM datasets
       - Removing duplicates
       - Left-aligning indels
       - Filtering reads
-4. Calling non-diploid variants
-      - Filtering variants
-5. Examining the results
+5. Calling non-diploid variants
+6. Filtering variants
+7. Examining the results
       - Visualising with VCF.IOBIO
       - Visualising with IGV
-      - Comparing frequencies
-6. Conclusion
-
-1. Importing data
-For this tutorial we have prepared a subset of data previously by our group (Rebolledo-Jaramillo et al. 2014). Let’s import these data into Galaxy. They are available from this Galaxy Library or via Zenodo
-
->
+8.Comparing frequencies
