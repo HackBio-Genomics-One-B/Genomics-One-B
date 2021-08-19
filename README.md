@@ -35,7 +35,7 @@ click on the Multiple datasets icon<br/>
 select several files by keeping the ``Ctrl`` (or ``COMMAND``) key pressed and clicking on all 4 FASTQ files
 
 # 3️⃣ Step 3: Mapping reads to reference  
-This step aligns the reads from **Step 1** to the reference genome **hg38**    
+
 ### Tool: ``BWA-mem``
 ### 🎯 Parameters: <br/>
 *Will you select a reference genome from your history or use a built-in index?:* ``Use a built-in genome index``<br/>
@@ -107,8 +107,9 @@ Click on ``“Insert Filter”``<br/>
 *Select reads with mapped mate:* ``chrM``<br/>
 
 
-# 5️⃣ Step 5: Calling non-diploid variants  
-**Tool:** ``FreeBayes``  
+# 5️⃣ Step 5: Calling non-diploid variants
+
+### Tool: ``FreeBayes``<br/>
 
 
 
