@@ -62,10 +62,10 @@ This step aligns the reads from **Step 1** to the reference genome **hg38**
 
 ### 🛠️ Tool: ``Picard's MarkDuplicates``<br/>
 ### 🎯 Parameters:<br/>
-*“Select SAM/BAM dataset or dataset collection”:* ``The merged BAM dataset produced by MergeSAMFiles tool``<br/>
-*“The scoring strategy for choosing the non-duplicate among candidates”:* ``SUM_OF_BASE_QUALITIES``<br/>
-*“The maximum offset between two duplicate clusters in order to consider them optical duplicates”:* ``100``<br/>
-*“Select validation stringency”:* ``Lenient``<br/>
+*Select SAM/BAM dataset or dataset collection:* ``The merged BAM dataset produced by MergeSAMFiles tool``<br/>
+*The scoring strategy for choosing the non-duplicate among candidates:* ``SUM_OF_BASE_QUALITIES``<br/>
+*The maximum offset between two duplicate clusters in order to consider them optical duplicates:* ``100``<br/>
+*Select validation stringency:* ``Lenient``<br/>
 
 ## ➡️ Step 4.3: Left-aligning indels
 
@@ -75,36 +75,36 @@ Select `hg38` under the `Database/Build` option and save.
 
 ### 🛠️ Tool: ``BamLeftAlign``<br/>
 ### 🎯 Parameters:<br/>
-*"Choose the source for the reference genome”:* ``Locally cached``<br/>
-*“Select alignment file in BAM format”:* ``The BAM dataset produced by MarkDuplicates tool``<br/>
-*“Using reference genome”:* ``hg38``<br/>
-*“Maximum number of iterations’:* ``5``<br/>
+*Choose the source for the reference genome:* ``Locally cached``<br/>
+*Select alignment file in BAM format:* ``The BAM dataset produced by MarkDuplicates tool``<br/>
+*Using reference genome:* ``hg38``<br/>
+*Maximum number of iterations:* ``5``<br/>
 
 ## ➡️ Step 4.4: Filtering reads
 
 ### 🛠️ Tool: ``BAMTools Filter``<br/>
 ### 🎯 Parameters:<br/>
-*“BAM dataset(s) to filter”:* ``Select the BAM dataset produced by BamLeftAlign tool``<br/>
+*BAM dataset(s) to filter:* ``Select the BAM dataset produced by BamLeftAlign tool``<br/>
 <br/>
-*Under “Condition” > “1: Condition” > “Filter”:*<br/>
+Under **Condition** > **1: Condition** > **Filter:**<br/>
 **In “1: Filter”:**<br/>
-*“Select BAM property to filter on”:* ``mapQuality``<br/>
-*“Filter on read mapping quality (phred scale)”:* ``>=20``<br/>
+*Select BAM property to filter on:* ``mapQuality``<br/>
+*Filter on read mapping quality (phred scale):* ``>=20``<br/>
 Click on ``“Insert Filter”``<br/>
 <br/>
 **In “2: Filter”:**<br/>
-*“Select BAM property to filter on”:* ``isPaired``<br/>
-*“Selected mapped reads”:* ``Yes``<br/>
+*Select BAM property to filter on:* ``isPaired``<br/>
+*Selected mapped reads:* ``Yes``<br/>
 Click on ``“Insert Filter”``<br/>
 <br/>
 **In “3: Filter”:**<br/>
-*“Select BAM property to filter on”:* ``isProperPair``<br/>
-*“Select reads with mapped mate”:* ``Yes``<br/>
+*Select BAM property to filter on:* ``isProperPair``<br/>
+*Select reads with mapped mate:* ``Yes``<br/>
 Click on ``“Insert Filter”``<br/>
 <br/>
 **In “4: Filter”:**<br/>
-*“Select BAM property to filter on”:* ``reference``<br/>
-*“Select reads with mapped mate”:* ``chrM``<br/>
+*Select BAM property to filter on:* ``reference``<br/>
+*Select reads with mapped mate:* ``chrM``<br/>
 
 
 # 5️⃣ Step 5: Calling non-diploid variants  
