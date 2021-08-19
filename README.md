@@ -2,7 +2,7 @@
 
 # Calling Variants in Non-diploid system  
 
-## Introduction  
+## Introduction
 
 ![image](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/main/PROJECT%20DESIGN%20(GENOMICS%201B).png)
 
