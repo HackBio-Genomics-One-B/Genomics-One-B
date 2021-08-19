@@ -34,13 +34,13 @@ To select multiple datasets, <br/>
 click on the Multiple datasets icon<br/>
 select several files by keeping the ``Ctrl`` (or ``COMMAND``) key pressed and clicking on all 4 FASTQ files
 
-# 3️⃣ Step 3: Map reads to reference  
+# 3️⃣ Step 3: Mapping reads to reference  
 This step aligns the reads from **Step 1** to the reference genome **hg38**    
 ### Tool: ``BWA-mem``
 ### 🎯 Parameters: <br/>
-*Select first set of reads:* `select both -1 datasets selected with Multiple datasets` <br/>
-*Select second set of read:** `select both -2 datasets selected with Multiple datasets`<br/>
-*Set read groups information?:* `Set read groups (SAM/BAM specification)`<br/>
+*"Will you select a reference genome from your history or use a built-in index?”:* ``Use a built-in genome index``<br/>
+*“Using reference genome”:* ``Human: hg38``<br/>
+
 
 # 4️⃣ Step 4: Postprocessing mapped reads
 
