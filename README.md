@@ -46,7 +46,6 @@ This step aligns the reads from **Step 1** to the reference genome **hg38**
 ``Picard's MergeSAMFiles``<br/>
 ### Purpose:<br/>
 To merge the BAM datasets received from **Step 3**<br/>
-<br/>
 ### Parameters:<br/>
 *“Select SAM/BAM dataset or dataset collection”:* `Both BAM datasets produced by BWA-MEM tool`<br/>
 *“Select validation stringency”:* `Lenient`<br/>  
@@ -57,7 +56,6 @@ To merge the BAM datasets received from **Step 3**<br/>
 ``Picard's MarkDuplicates``<br/>
 ### Purpose:<br/>
 To de-duplicate the merged BAM from **Step 4.1**<br/>
-<br/>
 ### Parameters:<br/>
 *“Select SAM/BAM dataset or dataset collection”:* ``The merged BAM dataset produced by MergeSAMFiles tool``<br/>
 *“The scoring strategy for choosing the non-duplicate among candidates”:* ``SUM_OF_BASE_QUALITIES``<br/>
@@ -74,7 +72,6 @@ Select `hg38` under the `Database/Build` option and save
 ``BamLeftAlign``<br/>
 ### Purpose:<br/>
 To perform left alignment on the de-duplicated BAM from **Step 4.2**<br/>
-<br/>
 ### Parameters:<br/>
 *"Choose the source for the reference genome”:* ``Locally cached``<br/>
 *“Select alignment file in BAM format”:* ``The BAM dataset produced by MarkDuplicates tool``<br/>
@@ -87,7 +84,6 @@ To perform left alignment on the de-duplicated BAM from **Step 4.2**<br/>
 ``BAMTools Filter``<br/>
 ### Purpose:<br/>
 To filter reads from the left-aligned BAM from **Step 4.3**<br/>
-<br/>
 ### Parameters:<br/>
 *“BAM dataset(s) to filter”:* ``Select the BAM dataset produced by BamLeftAlign tool``<br/>
 <br/>
