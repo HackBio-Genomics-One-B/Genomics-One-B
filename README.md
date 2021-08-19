@@ -33,9 +33,9 @@ This step aligns the reads from **Step 1** to the reference genome **hg38**
 **Tool:** ``BWA-mem``
 <br/>
 **Parameters:**<br/>
-**Select first set of reads:** *select both -1 datasets selected with Multiple datasets*  
-**Select second set of read:** *select both -2 datasets selected with Multiple datasets*  
-**Set read groups information?:** *Set read groups (SAM/BAM specification)*  
+*Select first set of reads:* `select both -1 datasets selected with Multiple datasets` 
+*Select second set of read:** `select both -2 datasets selected with Multiple datasets`
+*Set read groups information?:* `Set read groups (SAM/BAM specification)`
 
 # Step 4: Postprocessing mapped reads
 
@@ -45,8 +45,8 @@ This step aligns the reads from **Step 1** to the reference genome **hg38**
 **Purpose:** To merge the BAM datasets received from **Step 3**<br/>
 <br/>
 **Parameters:**<br/>
-**“Select SAM/BAM dataset or dataset collection”:** `Both BAM datasets produced by BWA-MEM tool`<br/>
-**“Select validation stringency”:** `Lenient`<br/>  
+*“Select SAM/BAM dataset or dataset collection”:* `Both BAM datasets produced by BWA-MEM tool`<br/>
+*“Select validation stringency”:* `Lenient`<br/>  
 
 # Step 5: Calling non-diploid variants  
 **Tool:** ``FreeBayes``  
