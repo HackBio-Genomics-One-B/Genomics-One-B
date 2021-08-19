@@ -50,7 +50,6 @@ To merge the BAM datasets received from **Step 3**<br/>
 *“Select SAM/BAM dataset or dataset collection”:* `Both BAM datasets produced by BWA-MEM tool`<br/>
 *“Select validation stringency”:* `Lenient`<br/>  
 <br/>
-
 ## Step 4.2: Removing duplicates
 
 **Tool:** ``Picard's MarkDuplicates``<br/>
@@ -61,17 +60,19 @@ To merge the BAM datasets received from **Step 3**<br/>
 *“The scoring strategy for choosing the non-duplicate among candidates”:* ``SUM_OF_BASE_QUALITIES``<br/>
 *“The maximum offset between two duplicate clusters in order to consider them optical duplicates”:* ``100``<br/>
 *“Select validation stringency”:* ``Lenient``<br/>
-
+<br/>
 ## Step 4.3: Left-aligning indels
 
 ### Required step before executing Step 4.3:<br/>
 Click on the ``Pencil`` icon of the BAM dataset produced in Step 4.3 to edit ``attributes`` <br/>
 Select `hg38` under the `Database/Build` option and save
 
-**Tool:** ``BamLeftAlign``<br/>
-**Purpose:** To perform left alignment on the de-duplicated BAM from **Step 4.2**<br/>
+### Tool:<br/>
+``BamLeftAlign``<br/>
+### Purpose:<br/>
+To perform left alignment on the de-duplicated BAM from **Step 4.2**<br/>
 <br/>
-**Parameters:**<br/>
+###Parameters:<br/>
 *"Choose the source for the reference genome”:* ``Locally cached``<br/>
 *“Select alignment file in BAM format”:* ``The BAM dataset produced by MarkDuplicates tool``<br/>
 *“Using reference genome”:* ``hg38``<br/>
