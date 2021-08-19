@@ -26,10 +26,14 @@ https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq
 
 # 2️⃣ Step 2: Quality Checking  
 
-### 🛠️ Tool:<br/>
+### 🛠️ Tool: <br/>
 ``FastQC``<br/>
-### 💡 Parameters:<br/>
+### ✅ Parameters: <br/>
 *Short read data from your current history:* `all 4 FASTQ datasets selected with Multiple datasets`<br/>
+### 💡 Tips: <br/>
+To select multiple datasets, <br/>
+click on Multiple datasets icon<br/>
+select several files by keeping the ``Ctrl`` (or ``COMMAND``) key pressed and clicking on all 4 FASTQ files
 
 # 3️⃣ Step 3: Map reads to reference  
 This step aligns the reads from **Step 1** to the reference genome **hg38**    
@@ -46,7 +50,7 @@ This step aligns the reads from **Step 1** to the reference genome **hg38**
 
 ### 🛠️ Tool:<br/>
 ``Picard's MergeSAMFiles``<br/>
-### 💡 Parameters:<br/>
+### ✅ Parameters:<br/>
 *“Select SAM/BAM dataset or dataset collection”:* `Both BAM datasets produced by BWA-MEM tool`<br/>
 *“Select validation stringency”:* `Lenient`<br/>  
 
@@ -54,7 +58,7 @@ This step aligns the reads from **Step 1** to the reference genome **hg38**
 
 ### 🛠️ Tool:<br/>
 ``Picard's MarkDuplicates``<br/>
-### 💡 Parameters:<br/>
+### ✅ Parameters:<br/>
 *“Select SAM/BAM dataset or dataset collection”:* ``The merged BAM dataset produced by MergeSAMFiles tool``<br/>
 *“The scoring strategy for choosing the non-duplicate among candidates”:* ``SUM_OF_BASE_QUALITIES``<br/>
 *“The maximum offset between two duplicate clusters in order to consider them optical duplicates”:* ``100``<br/>
@@ -68,7 +72,7 @@ Select `hg38` under the `Database/Build` option and save.
 
 ### 🛠️ Tool:<br/>
 ``BamLeftAlign``<br/>
-### 💡 Parameters:<br/>
+### ✅ Parameters:<br/>
 *"Choose the source for the reference genome”:* ``Locally cached``<br/>
 *“Select alignment file in BAM format”:* ``The BAM dataset produced by MarkDuplicates tool``<br/>
 *“Using reference genome”:* ``hg38``<br/>
@@ -78,7 +82,7 @@ Select `hg38` under the `Database/Build` option and save.
 
 ### 🛠️ Tool:<br/>
 ``BAMTools Filter``<br/>
-### 💡 Parameters:<br/>
+### ✅ Parameters:<br/>
 *“BAM dataset(s) to filter”:* ``Select the BAM dataset produced by BamLeftAlign tool``<br/>
 <br/>
 *Under “Condition” > “1: Condition” > “Filter”:*<br/>
