@@ -62,6 +62,10 @@ This step aligns the reads from **Step 1** to the reference genome **hg38**
 
 ## Step 4.3: Left-aligning indels
 
+**Required step before executing this step:**
+Click on the ``Pencil`` icon of the BAM dataset produced by MarkDuplicates tool to edit ``attributes`` <br/>
+Select `hg38` under the `Database/Build` option and save
+
 **Tool:** ``BamLeftAlign``<br/>
 **Purpose:** To perform left alignment on the de-duplicated BAM from **Step 4.2**<br/>
 <br/>
