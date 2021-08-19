@@ -48,6 +48,19 @@ This step aligns the reads from **Step 1** to the reference genome **hg38**
 *“Select SAM/BAM dataset or dataset collection”:* `Both BAM datasets produced by BWA-MEM tool`<br/>
 *“Select validation stringency”:* `Lenient`<br/>  
 
+
+## Step 4.2: Removing duplicates
+
+**Tool:** ``Picard's MarkDuplicates``<br/>
+**Purpose:** To de-duplicate the merged BAM from **Step 4.1**<br/>
+<br/>
+**Parameters:**<br/>
+*“Select SAM/BAM dataset or dataset collection”:* ``The merged BAM dataset produced by MergeSAMFiles tool``<br/>
+*“The scoring strategy for choosing the non-duplicate among candidates”:* ``SUM_OF_BASE_QUALITIES``<br/>
+*“The maximum offset between two duplicate clusters in order to consider them optical duplicates”:* ``100``<br/>
+*“Select validation stringency”:* ``Lenient``<br/>
+
+
 # Step 5: Calling non-diploid variants  
 **Tool:** ``FreeBayes``  
 
