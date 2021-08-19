@@ -30,7 +30,8 @@ Apply **FastQC** tool on all the datasets to check data quality.
 
 # Step 3: Map reads to reference  
 This step aligns the reads from **Step 1** to the reference genome **hg38**    
-**Tool** ``BWA-mem``
+**Tool:** ``BWA-mem``
+<br/>
 **Parameters:**<br/>
 **Select first set of reads:** *select both -1 datasets selected with Multiple datasets*  
 **Select second set of read:** *select both -2 datasets selected with Multiple datasets*  
@@ -48,7 +49,7 @@ This step aligns the reads from **Step 1** to the reference genome **hg38**
 **“Select validation stringency”:** *Lenient*<br/>  
 
 # Step 5: Calling non-diploid variants  
-**Tool** ``FreeBayes``  
+**Tool:** ``FreeBayes``  
 
 
 
