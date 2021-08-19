@@ -52,10 +52,12 @@ To merge the BAM datasets received from **Step 3**<br/>
 <br/>
 ## ➡️ Step 4.2: Removing duplicates
 
-**Tool:** ``Picard's MarkDuplicates``<br/>
-**Purpose:** To de-duplicate the merged BAM from **Step 4.1**<br/>
+### Tool:<br/>
+``Picard's MarkDuplicates``<br/>
+### Purpose:<br/>
+To de-duplicate the merged BAM from **Step 4.1**<br/>
 <br/>
-**Parameters:**<br/>
+### Parameters:<br/>
 *“Select SAM/BAM dataset or dataset collection”:* ``The merged BAM dataset produced by MergeSAMFiles tool``<br/>
 *“The scoring strategy for choosing the non-duplicate among candidates”:* ``SUM_OF_BASE_QUALITIES``<br/>
 *“The maximum offset between two duplicate clusters in order to consider them optical duplicates”:* ``100``<br/>
@@ -72,7 +74,7 @@ Select `hg38` under the `Database/Build` option and save
 ### Purpose:<br/>
 To perform left alignment on the de-duplicated BAM from **Step 4.2**<br/>
 <br/>
-###Parameters:<br/>
+### Parameters:<br/>
 *"Choose the source for the reference genome”:* ``Locally cached``<br/>
 *“Select alignment file in BAM format”:* ``The BAM dataset produced by MarkDuplicates tool``<br/>
 *“Using reference genome”:* ``hg38``<br/>
