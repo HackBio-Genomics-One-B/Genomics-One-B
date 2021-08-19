@@ -39,7 +39,7 @@ This step aligns the reads from **Step 1** to the reference genome **hg38**
 
 # 4️⃣ Step 4: Postprocessing mapped reads
 
-## 4.1: Merging BAM datasets
+## ➡️ 4.1: Merging BAM datasets
 
 ### Tool:<br/>
 ``Picard's MergeSAMFiles``<br/>
@@ -50,7 +50,7 @@ To merge the BAM datasets received from **Step 3**<br/>
 *“Select SAM/BAM dataset or dataset collection”:* `Both BAM datasets produced by BWA-MEM tool`<br/>
 *“Select validation stringency”:* `Lenient`<br/>  
 <br/>
-## Step 4.2: Removing duplicates
+## ➡️ Step 4.2: Removing duplicates
 
 **Tool:** ``Picard's MarkDuplicates``<br/>
 **Purpose:** To de-duplicate the merged BAM from **Step 4.1**<br/>
@@ -61,7 +61,7 @@ To merge the BAM datasets received from **Step 3**<br/>
 *“The maximum offset between two duplicate clusters in order to consider them optical duplicates”:* ``100``<br/>
 *“Select validation stringency”:* ``Lenient``<br/>
 <br/>
-## Step 4.3: Left-aligning indels
+## ➡️ Step 4.3: Left-aligning indels
 
 ### Required step before executing Step 4.3:<br/>
 Click on the ``Pencil`` icon of the BAM dataset produced in Step 4.3 to edit ``attributes`` <br/>
@@ -79,12 +79,14 @@ To perform left alignment on the de-duplicated BAM from **Step 4.2**<br/>
 *“Maximum number of iterations’:* ``5``<br/>
 
 
-## Step 4.4: Filtering reads
+## ➡️ Step 4.4: Filtering reads
 
-**Tool:** BAMTools Filter<br/>
-**Purpose:** To filter reads from the left-aligned BAM from Step 4.3<br/>
+### Tool:<br/>
+``BAMTools Filter``<br/>
+### Purpose:<br/>
+To filter reads from the left-aligned BAM from **Step 4.3**<br/>
 <br/>
-**Parameters:**<br/>
+### Parameters:<br/>
 *“BAM dataset(s) to filter”:* ``Select the BAM dataset produced by BamLeftAlign tool``<br/>
 <br/>
 *Under “Condition” > “1: Condition” > “Filter”:*<br/>
