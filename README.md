@@ -9,7 +9,18 @@ Step-by-Step
 [HackBio](https://thehackbio.com/) is a virtually regimented research internship that is practice oriented and focused on equipping African scientists with advanced bioinformatics and computational biology skills. By the end of internship, successful interns should have:
 - Honed their skills in a specific bioinformatics method
 - Have at least a peer-reviewed article to show for the internship experience
+# Importing Data
+Import raw reads from [here](https://zenodo.org/record/1251112)
+# Step 1: Quality Checking  
+Perform quality control of the raw reads using [FASTQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)  
 
+# Step 2: Map to reference  
+This step aligns the reads to the reference genome  
+**Tool** [BWA-mem](http://bio-bwa.sourceforge.net/bwa.shtml)  
+Use the in-built genome index of the human hg38 genome. 
+Mark the reads as paired and set read groups in (SAM/BAM) specification.  
+
+# Step 3:   
 
 # Step 4: Postprocessing mapped reads
 
@@ -19,16 +30,5 @@ Step-by-Step
 **Purpose:** To merge the BAM datasets received from **Step 3**<br/>
 <br/>
 **Parameters:**<br/>
-*“Select SAM/BAM dataset or dataset collection”:* **Both BAM datasets produced by BWA-MEM tool**<br/>
-*“Select validation stringency”:* **Lenient**<br/>
-
-## 4.2: Removing duplicates
-
-**Tool:** Picard's MarkDuplicates<br/>
-**Purpose:** To de-duplicate the merged BAM from **Step 4.1**<br/>
-<br/>
-**Parameters:**<br/>
-*“Select SAM/BAM dataset or dataset collection”:* **The merged BAM dataset produced by MergeSAMFiles tool**<br/>
-*“The scoring strategy for choosing the non-duplicate among candidates”:* **SUM_OF_BASE_QUALITIES**<br/>
-*“The maximum offset between two duplicate clusters in order to consider them optical duplicates”:* **100**<br/>
-*“Select validation stringency”:* **Lenient**<br/>
+**“Select SAM/BAM dataset or dataset collection”:** *Both BAM datasets produced by BWA-MEM tool*<br/>
+**“Select validation stringency”:** *Lenient*<br/>
