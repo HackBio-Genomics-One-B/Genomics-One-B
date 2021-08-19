@@ -9,18 +9,30 @@ Step-by-Step
 [HackBio](https://thehackbio.com/) is a virtually regimented research internship that is practice oriented and focused on equipping African scientists with advanced bioinformatics and computational biology skills. By the end of internship, successful interns should have:
 - Honed their skills in a specific bioinformatics method
 - Have at least a peer-reviewed article to show for the internship experience
-# Importing Data
+
+# Instructions  
+This tutorial is implemented in galaxy  
+Always use the serch button to navigate the respective tools  
+
+# Step 1: Importing Data
 Import raw reads from [here](https://zenodo.org/record/1251112)
-# Step 1: Quality Checking  
+
+``https://zenodo.org/record/1251112/files/raw_child-ds-1.fq``  
+``https://zenodo.org/record/1251112/files/raw_child-ds-2.fq``  
+``https://zenodo.org/record/1251112/files/raw_mother-ds-1.fq``  
+``https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq``  
+
+# Step 2: Quality Checking  
 Perform quality control of the raw reads using [FASTQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)  
+Apply **FastQC** tool on all the datasets to check data quality.  
 
-# Step 2: Map to reference  
-This step aligns the reads to the reference genome  
+# Step 3: Map reads to reference  
+This step aligns the reads from **Step 1** to the reference genome **hg38**    
 **Tool** [BWA-mem](http://bio-bwa.sourceforge.net/bwa.shtml)  
-Use the in-built genome index of the human hg38 genome. 
-Mark the reads as paired and set read groups in (SAM/BAM) specification.  
-
-# Step 3:   
+**Parameters:**<br/>
+**Select first set of reads:** *select both -1 datasets selected with Multiple datasets*  
+**Select second set of read:** *select both -2 datasets selected with Multiple datasets*  
+**Set read groups information?:** *Set read groups (SAM/BAM specification)*  
 
 # Step 4: Postprocessing mapped reads
 
@@ -31,4 +43,11 @@ Mark the reads as paired and set read groups in (SAM/BAM) specification.
 <br/>
 **Parameters:**<br/>
 **“Select SAM/BAM dataset or dataset collection”:** *Both BAM datasets produced by BWA-MEM tool*<br/>
-**“Select validation stringency”:** *Lenient*<br/>
+**“Select validation stringency”:** *Lenient*<br/>  
+
+# Step 5: Calling non-diploid variants  
+**Tool** [FreeBayes](https://github.com/freebayes/freebayes#freebayes-a-haplotype-based-variant-detector)  
+
+
+
+
