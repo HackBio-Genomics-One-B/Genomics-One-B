@@ -62,6 +62,9 @@ Human genome, ‘hg38’ was used as the reference genome.Using the Paired end s
 - Second set of reads: both datasets 2 `raw_child-ds-2.fq` & `raw_mother-ds-2.fq`
 
 Set read groups information to “Set read groups `SAM/BAM specification` and Execute
+
+![BWA MEM_2](https://user-images.githubusercontent.com/77963733/130206511-d3d32add-acbb-4c13-91b9-fa5619436b0a.jpg)
+
       
 ## STEP 4: POST-PROCESSING MAPPED READ
 
@@ -165,8 +168,7 @@ We noticed a remarkable frequency change i.e., the major allele in the mother �
 ![IMG-20210820-WA0020](https://user-images.githubusercontent.com/77963733/130201389-a7c1cae4-d4ce-46ae-9547-65a1da69ed08.jpg)
 
 
-To access our result and data <p align="left">
-<a href="https://drive.google.com/drive/folders/1oafSVbpr8Nz0YXFxoqBtIIDefZ8NcWbd" target="blank"><img align="center" src="https://user-images.githubusercontent.com/77963733/130204548-760e6b5a-88e1-4e04-9a17-883d01bcfcb8.png" height="100" width="100" /></a> </p>
+To access our result and data <a href="https://drive.google.com/drive/folders/1oafSVbpr8Nz0YXFxoqBtIIDefZ8NcWbd" target="blank"><img align="center" src="https://user-images.githubusercontent.com/77963733/130204548-760e6b5a-88e1-4e04-9a17-883d01bcfcb8.png" height="50" width="50" /></a> </p>
 
 
 ## **Contributors:**
