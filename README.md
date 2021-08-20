@@ -47,14 +47,14 @@ select several files by keeping the ``Ctrl`` (or ``COMMAND``) key pressed and cl
 
 # 4️⃣ Postprocessing mapped reads
 
-## 4.1 Merging BAM datasets
+## ➡️ 4.1 Merging BAM datasets
 
 ### 🛠️ Tool: ``Picard's MergeSAMFiles``<br/>
 ### 🎯 Parameters:<br/>
 *Select SAM/BAM dataset or dataset collection:* `Both BAM datasets produced by BWA-MEM tool`<br/>
 *Select validation stringency:* `Lenient`<br/>  
 
-## 4.2: Removing duplicates
+## ➡️ 4.2: Removing duplicates
 
 ### 🛠️ Tool: ``Picard's MarkDuplicates``<br/>
 ### 🎯 Parameters:<br/>
@@ -63,7 +63,7 @@ select several files by keeping the ``Ctrl`` (or ``COMMAND``) key pressed and cl
 *The maximum offset between two duplicate clusters in order to consider them optical duplicates:* ``100``<br/>
 *Select validation stringency:* ``Lenient``<br/>
 
-## 4.3: Left-aligning indels
+## ➡️ 4.3: Left-aligning indels
 
 ### ⚠️ Required step before executing Step 4.3:<br/>
 Click on the ``Pencil`` icon of the BAM dataset produced in **Step 4.2** to edit ``attributes`` <br/>
@@ -76,7 +76,7 @@ Select `hg38` under the `Database/Build` option and save.
 *Using reference genome:* ``hg38``<br/>
 *Maximum number of iterations:* ``5``<br/>
 
-## 4.4: Filtering reads
+## ➡️ 4.4: Filtering reads
 
 ### 🛠️ Tool: ``BAMTools Filter``<br/>
 ### 🎯 Parameters:<br/>
@@ -177,14 +177,14 @@ Click on ``Insert more filters``<br/>
 
 # 8️⃣ Comparing frequencies
 
-## 🚩8.1 Convert VCF to tab-delimited data
+## ➡️ 8.1 Convert VCF to tab-delimited data
 
 ### 🛠️ Tool: ``VCFtoTab-delimited``<br/>
 ### 🎯 Parameters:<br/>
 *Select SAM/BAM dataset or dataset collection:* `Both BAM datasets produced by BWA-MEM tool`<br/>
 *Select validation stringency:* `Lenient`<br/>  
 
-## 🚩 8.2: Cut columns from a file
+## ➡️ 8.2: Cut columns from a file
 
 ### 🛠️ Tool: ``Cut columns from a table``<br/>
 ### 🎯 Parameters:<br/>
