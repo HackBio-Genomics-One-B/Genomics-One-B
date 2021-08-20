@@ -6,8 +6,8 @@
   - [🧬 Stage 2 Task](#-stage-2-task-calling-variants-in-non-diploid-systems)
   - [🚀 Project Workflow](#-project-workflow)
   - [📙 Instructions](#-instructions)
-  - [1️⃣ Step 1 - Importing Dataset](#1%EF%B8%8F%E2%83%A3-step-1---IMPORTING-DATASET) 
-  - [2️⃣ Step 2 - Quality Check of Dataset](#2%EF%B8%8F%E2%83%A3-step-2---QUALITY-CHECK-OF-DATASET) 
+  - [1️⃣ Step 1 - IMPORTING DATASET](#1%EF%B8%8F%E2%83%A3-step-1---IMPORTING-DATASET) 
+  - [2️⃣ Step 2 - QUALITY CHECK OF DATASET](#2%EF%B8%8F%E2%83%A3-step-2---QUALITY-CHECK-OF-DATASET) 
   - [3️⃣ Step 3 - STEP 3 - MAPPING THE READS USING BWA MEM](#3%EF%B8%8F%E2%83%A3-step-3---MAPPING-THE-READS-USING-BWA-MEM )
   - [4️⃣ Step 4 - POST-PROCESSING MAPPED READ](#4%EF%B8%8F%E2%83%A3-step-4---POST-PROCESSING-MAPPED-READ)
   - - [➡️ 4.1 Merging BAM Datasets](#%EF%B8%8F-41-merging-bam-datasets)
@@ -95,7 +95,7 @@ Human genome, ‘hg38’ was used as the reference genome.Using the Paired end s
 - *Auto-assign:* ``Yes``<br/>
 - *Platform/technology used to produce the reads (PL):* ``ILLUMINA``<br/>
 - *Auto-assign:* ``Yes``<br/>
-- *Execute<br/>"
+- *Execute<br/>* <br/>
 
 ![img_20210820_131657](https://user-images.githubusercontent.com/77963733/130246896-a965760e-b51a-49b4-bb65-1dab11dbccfb.jpg)
 
