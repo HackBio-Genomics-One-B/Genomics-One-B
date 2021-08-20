@@ -177,8 +177,7 @@ Click on ``Insert more filters``<br/>
 
 ### 🛠️ Tool: ``VCF.IOBIO``<br/>
 ### 🎯 Parameters:<br/>
-*Select SAM/BAM dataset or dataset collection:* `Both BAM datasets produced by BWA-MEM tool`<br/>
-*Select validation stringency:* `Lenient`<br/>  
+![vcfiobioimage](https://raw.githubusercontent.com/HackBio-Genomics-One-B/Genomics-One-B/mike/Visualising%20with%20VCF%20IOBIO.JPG)
 
 ## ➡️ 7.2: Visualising with IGV
 
