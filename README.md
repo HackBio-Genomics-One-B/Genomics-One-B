@@ -172,7 +172,7 @@ You can navigate to the tool (FreeBayes) using the search button in Galaxy. Sele
 ### 🎯 Parameters: As shown in the figure below.
 
 *VCF dataset to filter*: ``select the VCF dataset  obtained from variant call (step 5) produced by FreeBayes tool``<br/>
-
+![61](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/main/6_Filter_variants/WhatsApp%20Image%202021-08-20%20at%2011.27.26%20PM%20(1).jpeg)
 ![62](https://user-images.githubusercontent.com/77963733/130159398-e5ae3a89-0118-4fa6-ac52-5135899eaf76.jpg)
 
 - Then *Execute* <br/>
@@ -221,13 +221,16 @@ Convert VCF dataset into a tab-delimited representation using VCFtoTab-delimited
 - Then *Execute* <br/>
 
 ## ➡️ 8.2: Cut columns from a file
-As we opted for “Report data per sample”(four), this will produce a dataset with many columns (In this tutorial, 62 columns were produced out of which only six are necessary)
-### 🛠️ Tool: ``Cut columns from a table``<br/>
-### 🎯 Parameters: As shown in the figure below.
+As we opted for “Report data per sample”(four), this will produce a dataset with many columns (In this tutorial, 62 columns were produced out of which only six are necessary)<br/>
 
 ![IMG-20210820-WA0018](https://user-images.githubusercontent.com/77963733/130201363-eae11cda-b070-4fb7-8583-315901440411.jpg)
 
-- proceed to cut these columns out (refer to image below)
+- proceed to cut these columns out (refer to image above)
+
+### 🛠️ Tool: ``Cut columns from a table``<br/>
+### 🎯 Parameters: As shown in the figure below.
+
+
 ![IMG-20210820-WA0019](https://user-images.githubusercontent.com/77963733/130201371-2038a041-6198-4657-9493-50a995f4e77e.jpg)
 
 - Then *Execute* <br/>
