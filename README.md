@@ -210,13 +210,18 @@ Click on ``Insert more filters``<br/>
 
 ### 🛠️ Tool: ``VCF.IOBIO``<br/>
 ### 🎯 Result:<br/>
-![vcfiobioimage](https://raw.githubusercontent.com/HackBio-Genomics-One-B/Genomics-One-B/mike/7_Visualize/Visualising%20with%20VCF%20IOBIO.JPG)
+Click on processed VCF datasets, it will expand to show link.
+Click on “display at vcf.iobio” at the bottom
+Use the reference genome, Human hg38 for comparison
+VCF datasets will be index to display them
+![vcfiobioimage](https://user-images.githubusercontent.com/77963733/130161840-b9f7bc0c-9b1f-4b9b-9983-78e467fc78a1.jpg)
 
 ## ➡️ 7.2: Visualising with IGV
 
 ### 🛠️ Tool: ``IGV``<br/>
 ### 🎯 Result:<br/>
-![igvimage](https://raw.githubusercontent.com/HackBio-Genomics-One-B/Genomics-One-B/mike/7_Visualize/Visualization%20using%20IGV.jpeg)
+Repeat process for IGV by clicking on "Display with IGV"
+![igvimage](https://user-images.githubusercontent.com/77963733/130161840-b9f7bc0c-9b1f-4b9b-9983-78e467fc78a1.jpg)
 <br/>
 <br/>
 # 8️⃣ STEP 8 - Comparing Frequencies
