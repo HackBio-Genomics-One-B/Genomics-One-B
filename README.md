@@ -319,9 +319,9 @@ As we opted for “Report data per sample”(four), this will produce a dataset 
 Then proceed to cut these columns out (refer to image below)
 
 ![IMG-20210820-WA0019](https://user-images.githubusercontent.com/77963733/130201371-2038a041-6198-4657-9493-50a995f4e77e.jpg)
-
 <br/>
-## INTERPRETATION OF RESULT:
+
+## RESULT INTERPRETATION:
 
 ![IMG-20210820-WA0020](https://user-images.githubusercontent.com/77963733/130201389-a7c1cae4-d4ce-46ae-9547-65a1da69ed08.jpg)
 
