@@ -7,7 +7,7 @@
 ![image](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/mike/PROJECT%20DESIGN%20(GENOMICS%201B).png)
 
 ## Instructions  
-This tutorial is implemented in galaxy (https://usegalaxy.org/).
+This tutorial is implemented in galaxy (https://usegalaxy.org) <br/>
 Always use the saerch button to navigate the respective tools. 
 
 # 1️⃣ Importing Data
