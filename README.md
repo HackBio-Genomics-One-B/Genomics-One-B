@@ -132,6 +132,10 @@ Click on ``“Insert Filter”``<br/>
 *Exclude alignments from analysis if they have a mapping quality less than:* ``20``<br/>
 *Exclude alleles from analysis if their supporting base quality less than:* ``30``<br/>  
 
+## 6️⃣ Filtering variants
+
+### 🛠️ Tool: ``VCFfilter``<br/>
+### 🎯 Parameters:<br/>
 
 
 
