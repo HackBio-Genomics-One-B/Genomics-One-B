@@ -83,22 +83,22 @@ Select `hg38` under the `Database/Build` option and save.
 *BAM dataset(s) to filter:* ``Select the BAM dataset produced by BamLeftAlign tool``<br/>
 <br/>
 Under ``Condition`` > ``1: Condition`` > ``Filter``:<br/>
-**In “1: Filter”:**<br/>
+**In ``1: Filter``:**<br/>
 *Select BAM property to filter on:* ``mapQuality``<br/>
 *Filter on read mapping quality (phred scale):* ``>=20``<br/>
 Click on ``Insert Filter``<br/>
 <br/>
-**In “2: Filter”:**<br/>
+**In ``2: Filter``:**<br/>
 *Select BAM property to filter on:* ``isPaired``<br/>
 *Selected mapped reads:* ``Yes``<br/>
 Click on ``Insert Filter``<br/>
 <br/>
-**In “3: Filter”:**<br/>
+**In ``3: Filter``:**<br/>
 *Select BAM property to filter on:* ``isProperPair``<br/>
 *Select reads with mapped mate:* ``Yes``<br/>
 Click on ``Insert Filter``<br/>
 <br/>
-**In “4: Filter”:**<br/>
+**In ``4: Filter``:**<br/>
 *Select BAM property to filter on:* ``reference``<br/>
 *Select reads with mapped mate:* ``chrM``<br/>
 
