@@ -19,7 +19,7 @@
   - [7️⃣ Step 7 - VISUALIZATION](#7%EF%B8%8F%E2%83%A3-step-7---VISUALIZATION)
   - - [➡️ 7.1 Visualising with VCF.IOBIO](#%EF%B8%8F-71-visualising-with-vcfiobio)
   - - [➡️ 7.2: Visualising with IGV](#%EF%B8%8F-72-visualising-with-igv)
-  - [8️⃣ Step 8 - Comparing Frequencies](#8%EF%B8%8F%E2%83%A3-step-8---comparing-frequencies)
+  - [8️⃣ Step 8 - COMPARING FREQUENCIES](#8%EF%B8%8F%E2%83%A3-step-8---COMPARING-FREQUENCIES)
   - - [➡️ 8.1 Convert VCF to tab-delimited data](#%EF%B8%8F-81-convert-vcf-to-tab-delimited-data)
   - - [➡️ 8.2: Cut columns from a file](#%EF%B8%8F-82-cut-columns-from-a-file)
   - [🏁 Team Results](#-team-results)
@@ -294,25 +294,36 @@ The data can be visualised via IGV locally and focus on varient at position 3243
 ![igvimage](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/main/7_Visualize/Visualization%20using%20IGV.jpeg)<br/>
 <br/>
 <br/>
-# 8️⃣ STEP 8 - Comparing Frequencies
-
+# 8️⃣ STEP 8 - COMPARING FREQUENCIES
+Though visualizing VCF datasets is a good way to get an overall idea, it does not explain many details. To play a little more with data, 
 ## ➡️ 8.1 Convert VCF to tab-delimited data
-
+Convert VCF dataset into a tab-delimited representation using VCFtoTab-delimited
 ### 🛠️ Tool: ``VCFtoTab-delimited``<br/>
 ### 🎯 Parameters:<br/>
-*Select VCF dataset to convert*: ``select the VCF dataset produced by VCFfilter tool``<br/>
-*Report data per sample*: ``Yes``<br/>
-*Fill empty fields with*: ``Nothing``<br/>
+- *Select VCF dataset to convert*: ``select the VCF dataset produced by VCFfilter tool``<br/>
+- *Report data per sample*: ``Yes``<br/>
+- *Fill empty fields with*: ``Nothing``<br/>
+
+![IMG-20210820-WA0017](https://user-images.githubusercontent.com/77963733/130201353-bd30b6ca-2aac-45f2-bc6c-b4038cf6d326.jpg)
 
 ## ➡️ 8.2: Cut columns from a file
-
+As we opted for “Report data per sample”(four), this will produce a dataset with many columns (In this tutorial, 62 columns were produced out of which only six are necessary)
 ### 🛠️ Tool: ``Cut columns from a table``<br/>
 ### 🎯 Parameters:<br/>
-*Cut columns*: ``c2,c4,c5,c52,c54,c55``<br/>
-*Delimited by*: ``Tab``<br/>
-*From*: ``select the tabular dataset produced by VCFtoTab-delimited``<br/>
+- *Cut columns*: ``c2,c4,c5,c52,c54,c55``<br/>
+- *Delimited by*: ``Tab``<br/>
+- *From*: ``select the tabular dataset produced by VCFtoTab-delimited``<br/>
+
+![IMG-20210820-WA0018](https://user-images.githubusercontent.com/77963733/130201363-eae11cda-b070-4fb7-8583-315901440411.jpg)
+
+Then proceed to cut these columns out (refer to image below)
+
+![IMG-20210820-WA0019](https://user-images.githubusercontent.com/77963733/130201371-2038a041-6198-4657-9493-50a995f4e77e.jpg)
+
 <br/>
-<br/>
+
+
+
 # 🏁 Team Results
 
 Access our data and results on the drive here: <a href="https://drive.google.com/drive/folders/1oafSVbpr8Nz0YXFxoqBtIIDefZ8NcWbd" target="blank"><img align="center" src="https://user-images.githubusercontent.com/77963733/130207235-ab81908f-62cd-45c7-9e0c-408831a6f164.png" height="16" width="16" /></a> </p> https://drive.google.com/drive/folders/1oafSVbpr8Nz0YXFxoqBtIIDefZ8NcWbd
@@ -338,7 +349,7 @@ Access our data and results on the drive here: <a href="https://drive.google.com
 | `Aarathi04` | Filtering of variant call dataset using VCFfilter |  
 | `ZubairAlam` | Visualization using IGV and VCF.IOBIO |  
 | `Shreyashi` |  Visualization using IGV and VCF.IOBIO |  
-| `omimill` | Comparing of frequencies using VCFtoTab-delimited and Github Markdown |  
+| `omimiIII` | Comparing of frequencies using VCFtoTab-delimited and Github Markdown |  
 
 
 
