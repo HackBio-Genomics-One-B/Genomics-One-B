@@ -37,9 +37,13 @@ A handful of life ranging from prokaryotes, down to viruses and a few extension 
 In this tutorial Team Genomics_One_B will be recreating the above project which involves working on four datasets, gotten from human genomic DNA sequencing. The aim of this is to identify heteroplasmies variant within the mitochondria DNA using Galaxy packages.
 
 By: Anton Nekrutenko and Alex Ostrovsky
+
 This tutorial is implemented in [galaxy](https://usegalaxy.org) via https://usegalaxy.org <br/>
+
 Always use the search button to navigate the respective tools. 
+
 [List of contributors](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/mike/List_of_contributors.md)  
+
 [The galaxy tutorial we followed](https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/non-dip/tutorial.html#checking-data-quality)  
 
 # 1️⃣ STEP 1 - IMPORTING DATASET
