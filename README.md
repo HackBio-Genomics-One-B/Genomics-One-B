@@ -6,6 +6,19 @@
 
 ![image](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/mike/PROJECT_DESIGN_(GENOMICS_1B).png)
 
+
+## ⛳️ Table of Contents
+<!-- markdownlint-disable -->
+  - [🧬 Instructions](#-hackbio-2021)
+  - [🎮 The Stage 0 Task](#-#the-stage-0-task)
+  - [🛡 Dependencies](#-dependencies)
+  - [💡 Installation](#-Installation)
+  - [📙 Information Template](#-information-template)
+  - [🚀 Get Started](#-get-started)
+  - [✅ Code Submitted](#-code-submitted)
+  - [💻 Programming Languages](#-programming-languages)
+  - [🔥 Contributors](#-contributors)
+
 ## Instructions  
 This tutorial is implemented in galaxy (https://usegalaxy.org) <br/>
 Always use the search button to navigate the respective tools. 
@@ -13,7 +26,7 @@ Always use the search button to navigate the respective tools.
 [List of contributors](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/mike/List_of_contributors.md)  
 [The galaxy tutorial we followed](https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/non-dip/tutorial.html#checking-data-quality)  
 
-# 1️⃣ Importing Data
+# 1️⃣ STEP 1 - IMPORTING DATA
 Import raw reads from [here](https://zenodo.org/record/1251112)
 
 ```
@@ -23,7 +36,7 @@ https://zenodo.org/record/1251112/files/raw_mother-ds-1.fq
 https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq
 ```
 
-# 2️⃣ Quality Checking  
+# 2️⃣ STEP 2 - QUALITY CHECKING
 
 ### 🛠️ Tool: ``FastQC``<br/>
 ### 🎯 Parameters: <br/>
