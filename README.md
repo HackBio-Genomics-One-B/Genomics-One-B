@@ -9,7 +9,7 @@
   - [1️⃣ Step 1 - Importing Dataset](#1%EF%B8%8F%E2%83%A3-step-1---IMPORTING-DATASET) 
   - [2️⃣ Step 2 - Quality Check of Dataset](#2%EF%B8%8F%E2%83%A3-step-2---QUALITY-CHECK-OF-DATASET) 
   - [3️⃣ Step 3 - STEP 3 - MAPPING THE READS USING BWA MEM](#3%EF%B8%8F%E2%83%A3-step-3---MAPPING-THE-READS-USING-BWA-MEM )
-  - [4️⃣ Step 4 - POST-PROCESSING MAPPED READ](#4%EF%B8%8F%E2%83%A3-step-4---POST--PROCESSING-MAPPED-READ)
+  - [4️⃣ Step 4 - POST-PROCESSING MAPPED READ](#4%EF%B8%8F%E2%83%A3-step-4---POST-PROCESSING-MAPPED-READ)
   - - [➡️ 4.1 Merging BAM Datasets](#%EF%B8%8F-41-merging-bam-datasets)
   - - [➡️ 4.2 Removing Duplicates](#%EF%B8%8F-42-removing-duplicates)
   - - [➡️ 4.3 Left-Aligning Indels](#%EF%B8%8F-43-left-aligning-indels)
@@ -83,20 +83,19 @@ select several files by keeping the ``Ctrl`` (or ``COMMAND``) key pressed and cl
 Human genome, ‘hg38’ was used as the reference genome.Using the Paired end sequencing, the datasets has to be uploaded by selecting multiple datasets as follows:
 
 ### 🎯 Parameters: <br/>
-*Will you select a reference genome from your history or use a built-in index?:* ``Use a built-in genome index``<br/>
-*Using reference genome:* ``Human: hg38``<br/>
-*Single or Paired-end reads:* ``Paired``<br/>
-*Select first set of reads:* ``select both -1 datasets selected with Multiple datasets``<br/>
-`raw_child-ds-1.fq` & `raw_mother-ds-1.fq `
-*Select second set of reads:* ``select both -2 datasets selected with Multiple datasets``<br/>
-`raw_child-ds-2.fq` & `raw_mother-ds-2.fq`
-*Set read groups information?:* ``Set read groups (SAM/BAM specification)``<br/>
-*Auto-assign:* ``Yes``<br/>
-*Auto-assign:* ``Yes``<br/>
-*Platform/technology used to produce the reads (PL):* ``ILLUMINA``<br/>
-*Auto-assign:* ``Yes``<br/>
-<br/>
-*Execute<br/>
+- *select a reference genome from your history or use a built-in index?:* ``Use a built-in genome index``<br/>
+- *Using reference genome:* ``Human: hg38``<br/>
+- *Single or Paired-end reads:* ``Paired``<br/>
+- *Select first set of reads:* ``select both -1 datasets selected with Multiple datasets``<br/>
+- `raw_child-ds-1.fq` & `raw_mother-ds-1.fq `
+- *Select second set of reads:* ``select both -2 datasets selected with Multiple datasets``<br/>
+- `raw_child-ds-2.fq` & `raw_mother-ds-2.fq`
+- *Set read groups information?:* ``Set read groups (SAM/BAM specification)``<br/>
+- *Auto-assign:* ``Yes``<br/>
+- *Auto-assign:* ``Yes``<br/>
+- *Platform/technology used to produce the reads (PL):* ``ILLUMINA``<br/>
+- *Auto-assign:* ``Yes``<br/>
+- *Execute<br/>"
 
 ![img_20210820_131657](https://user-images.githubusercontent.com/77963733/130246896-a965760e-b51a-49b4-bb65-1dab11dbccfb.jpg)
 
