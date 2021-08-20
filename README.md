@@ -61,16 +61,16 @@ select several files by keeping the ``Ctrl`` (or ``COMMAND``) key pressed and cl
 *Platform/technology used to produce the reads (PL):* ``ILLUMINA``<br/>
 *Auto-assign:* ``Yes``<br/>
 
-# 4️⃣ Postprocessing mapped reads
+# 4️⃣ STEP 4 - POSTPROCESSING MAPPED READS
 
-## ➡️ 4.1 Merging BAM datasets
+## ➡️ 4.1 MERGING BAM DATASETS
 
 ### 🛠️ Tool: ``Picard's MergeSAMFiles``<br/>
 ### 🎯 Parameters:<br/>
 *Select SAM/BAM dataset or dataset collection:* `Both BAM datasets produced by BWA-MEM tool`<br/>
 *Select validation stringency:* `Lenient`<br/>  
 
-## ➡️ 4.2: Removing duplicates
+## ➡️ 4.2: REMOVING DUPLICATES
 
 ### 🛠️ Tool: ``Picard's MarkDuplicates``<br/>
 ### 🎯 Parameters:<br/>
@@ -79,7 +79,7 @@ select several files by keeping the ``Ctrl`` (or ``COMMAND``) key pressed and cl
 *The maximum offset between two duplicate clusters in order to consider them optical duplicates:* ``100``<br/>
 *Select validation stringency:* ``Lenient``<br/>
 
-## ➡️ 4.3: Left-aligning indels
+## ➡️ 4.3: LEFT-ALIGNING INDELS
 
 ### ⚠️ Required step before executing Step 4.3:<br/>
 Click on the ``Pencil`` icon of the BAM dataset produced in **Step 4.2** to edit ``attributes`` <br/>
@@ -92,7 +92,7 @@ Select `hg38` under the `Database/Build` option and save.
 *Using reference genome:* ``hg38``<br/>
 *Maximum number of iterations:* ``5``<br/>
 
-## ➡️ 4.4: Filtering reads
+## ➡️ 4.4: FILTERING READS
 
 ### 🛠️ Tool: ``BAMTools Filter``<br/>
 ### 🎯 Parameters:<br/>
@@ -238,7 +238,7 @@ Access our data and results on the drive here: <a href="https://drive.google.com
 | `Priyacomp` |  Variant calling of dataset |  
 | `MANGAIYARKARASI` | Variant calling of dataset |  
 | `Pragna_lakshmi` |  Variant calling of dataset using FreeBayes and Comparing of frequencies using VCFtoTab-delimited |  
-| `Naomi` | Mapping of read using BWA-MEM- |  
+| `Naomi` | Mapping of read using BWA-MEM |  
 | `Galaxy` |  Filtering of variant call dataset using FreeBayes |  
 | `Aarathi04` | Filtering of variant call dataset using VCFfilter |  
 | `ZubairAlam` | Visualization using IGV and VCF.IOBIO |  
