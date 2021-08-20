@@ -5,7 +5,7 @@
   - [🧬 Stage 2 Task](#-stage-2-task-calling-variants-in-non-diploid-systems)
   - [🚀 Project Workflow](#-project-workflow)
   - [📙 Instructions](#-instructions)
-  - [1️⃣ Step 1 - Importing Data](#-Installation)
+  - [1️⃣ Step 1 - Importing Data](#1%EF%B8%8F%E2%83%A3-step-1---importing-data)
   - [2️⃣ Step 2 - Quality Checking](#-information-template)
   - [🚀 Get Started](#-get-started)
   - [✅ Code Submitted](#-code-submitted)
