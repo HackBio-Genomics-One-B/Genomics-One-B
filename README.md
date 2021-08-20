@@ -140,17 +140,30 @@ You can navigate to the tool (FreeBayes) using the search button in Galaxy. Sele
 Though visualizing VCF datasets is a good way to get an overall idea, it does not explain many details. To play a little more with data, 
 - Convert VCF dataset into a tab-delimited representation using VCFtoTab-delimited
 
+![IMG-20210820-WA0017](https://user-images.githubusercontent.com/77963733/130201353-bd30b6ca-2aac-45f2-bc6c-b4038cf6d326.jpg)
+
+
 As we opted for “Report data per sample”(four), this will produce a dataset with many columns (In this tutorial, 62 columns were produced out of which only six are necessary)
+
+![IMG-20210820-WA0018](https://user-images.githubusercontent.com/77963733/130201363-eae11cda-b070-4fb7-8583-315901440411.jpg)
 
 Then proceed to cut these columns out (refer to image below)
 
+![IMG-20210820-WA0019](https://user-images.githubusercontent.com/77963733/130201371-2038a041-6198-4657-9493-50a995f4e77e.jpg)
+
 ## INTERPRETATION OF RESULT:
 At position 3243, the mother sample has 671 G’s (‘G’ – an alternative allele) and depth of coverage is 2057 so, 2057-671 = 1386 A’s. At the same position, the child sample has 694 G’s and 1035-694 = 341 A’s. 
-Allele         A                G
-Mother    1386          671
-Child          341           694
+
+
+| Allele | A | G |
+| :----------- | :---------: | -----------: |
+| Mother         | 1386            | 671   |
+| Child          | 341             | 694   |
 
 We noticed a remarkable frequency change i.e., the major allele in the mother ‘A’ becomes the minor allele in the child.
+
+![IMG-20210820-WA0020](https://user-images.githubusercontent.com/77963733/130201389-a7c1cae4-d4ce-46ae-9547-65a1da69ed08.jpg)
+
 
 ## **Contributors:**
 
