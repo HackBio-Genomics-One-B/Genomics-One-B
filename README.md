@@ -138,9 +138,9 @@ You can navigate to the tool (FreeBayes) using the search button in Galaxy. Sele
 ## STEP 8: COMPARING FREQUENCIES 
 
 Though visualizing VCF datasets is a good way to get an overall idea, it does not explain many details. To play a little more with data, 
- Convert VCF dataset into a tab-delimited representation using VCFtoTab-delimited
+- Convert VCF dataset into a tab-delimited representation using VCFtoTab-delimited
 
-
+As we opted for “Report data per sample”(four), this will produce a dataset with many columns (In this tutorial, 62 columns were produced out of which only six are necessary)
 
 ## **Contributors:**
 
