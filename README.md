@@ -14,9 +14,9 @@
   - - [➡️ 4.3 Left-Aligning Indels]()
   - - [➡️ 4.4 Filtering Reads]()
   - [5️⃣ Step 5 - Calling Non-diploid Variants](#5%EF%B8%8F%E2%83%A3-step-5---calling-non-diploid-variants)
-  - [6️⃣ Step 6 - Filtering Variants]()
-  - [7️⃣ Step 7 - Visualization]()
-  - [8️⃣ Step 8 - Comparing Frequencies]()
+  - [6️⃣ Step 6 - Filtering Variants](#6%EF%B8%8F%E2%83%A3-step-6---filtering-variants)
+  - [7️⃣ Step 7 - Visualization](#7%EF%B8%8F%E2%83%A3-step-7---visualization)
+  - [8️⃣ Step 8 - Comparing Frequencies](#8%EF%B8%8F%E2%83%A3-step-8---comparing-frequencies)
   - [🏁 Results](#-results)
   - [🔥 Contributors](#-contributors)
 
