@@ -9,7 +9,7 @@
   - [2️⃣ Step 2 - Quality Checking](#2%EF%B8%8F%E2%83%A3-step-2---quality-checking)
   - [3️⃣ Step 3 - Mapping Reads to Reference Genome](#3%EF%B8%8F%E2%83%A3-step-3---mapping-reads-to-reference-genome)
   - [4️⃣ Step 4 - Postprocessing Mapped Reads](#4%EF%B8%8F%E2%83%A3-step-4---postprocessing-mapped-reads)
-  - - [➡️ 4.1 Merging BAM Datasets]()
+  - - [➡️ 4.1 Merging BAM Datasets](#%EF%B8%8F-41-merging-bam-datasets)
   - - [➡️ 4.2 Removing Duplicates]()
   - - [➡️ 4.3 Left-Aligning Indels]()
   - - [➡️ 4.4 Filtering Reads]()
