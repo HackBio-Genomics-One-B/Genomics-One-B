@@ -209,7 +209,7 @@ Click on ``Insert more filters``<br/>
 *From*: ``select the tabular dataset produced by VCFtoTab-delimited``<br/>
 
 
-## **Contributors:**
+## ❤️ **Contributors:**
 
 - `Temmykeji` - Graphic design of workflow, Dataset and FastQC
 
