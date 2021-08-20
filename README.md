@@ -14,26 +14,10 @@
 
 ### Task distribution:
 
-|STEP|TASK|COLLABORATORS' SLACK USERNAME |
-|----|--------------|--------------------|
-|1|Importing data (From Galaxy Library) |@Solomon @Temmykeji|
-|2|Checking data quality using FastQC|@Solomon @Temmykeji|
-|3|Mapping reads to a reference using BWA-MEM|@Rajeshcha44 @Nitigya-M|
-|4|**Post-processing mapped reads** _*Merge datasets using SAMFiles_ _*Remove duplicates using MarkDuplicates_  _*Left aligning indels using BAM left align_ _*Filtering reads_|@abdnahid_ @Mike @Karteek|     
-|5|Calling non-diploid variants using FreeBayes|@Priyacomp @MANGAIYARKARASI @pragna_lakshmi|
-|6|Filtering variants using VCFfilte|@Naomi @Galaxy @Aarathi04|
-|7|Visualization using IGV|@Gautami @Shreyashi @ZubairAlam|
-|8|Compare frequencies|@omimiIII @Temmykeji @pragna_lakshmi @Gautami|
 
+# Calling variants in non-diploid systems 
+By: Anton Nekrutenko and Alex Ostrovsky
 
-
-# Calling variants in non-diploid systems
-
-## Requirements
-1. Introduction to Galaxy Analyses
-2. Sequence analysis
-      - Quality Control
-      - Mapping
 
 ## Introduction
 A handful of life ranging from prokaryotes, down to viruses and a few extension operate on non-diploid mechanism.
