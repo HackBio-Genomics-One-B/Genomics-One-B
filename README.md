@@ -188,7 +188,7 @@ Click on ``Insert more filters``<br/>
 
 ### 🛠️ Tool: ``IGV``<br/>
 ### 🎯 Result:<br/>
-![igvimage](https://raw.githubusercontent.com/HackBio-Genomics-One-B/Genomics-One-B/mike/Visualization%20using%20IGV.jpeg)
+![igvimage](https://raw.githubusercontent.com/HackBio-Genomics-One-B/Genomics-One-B/mike/7_Visualize/Visualization%20using%20IGV.jpeg)
 
 # 8️⃣ Comparing frequencies
 
