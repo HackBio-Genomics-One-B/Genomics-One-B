@@ -60,6 +60,8 @@ Human genome, ‘hg38’ was used as the reference genome.Using the Paired end s
 
 - First set of reads: both dataset 1 `raw_child-ds-1.fq` & `raw_mother-ds-1.fq `
 - Second set of reads: both datasets 2 `raw_child-ds-2.fq` & `raw_mother-ds-2.fq`
+- ![IMG_20210820_131657](https://user-images.githubusercontent.com/88301709/130201692-cd9068d3-9030-4540-aae5-7ff193f70e6b.jpg)
+![IMG_20210820_131439](https://user-images.githubusercontent.com/88301709/130202177-3aacb599-8593-45a0-95af-699048557998.jpg)
 
 Set read groups information to “Set read groups `SAM/BAM specification` and Execute
 
