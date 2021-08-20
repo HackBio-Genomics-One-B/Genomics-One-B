@@ -46,7 +46,7 @@ To select multiple datasets, <br/>
 click on the Multiple datasets icon<br/>
 select several files by keeping the ``Ctrl`` (or ``COMMAND``) key pressed and clicking on all 4 FASTQ files
 
-# 3️⃣ Mapping reads to reference  
+# 3️⃣ STEP 3 - MAPPING READS TO REFERENCE GENOME 
 
 ### Tool: ``BWA-mem``
 ### 🎯 Parameters: <br/>
