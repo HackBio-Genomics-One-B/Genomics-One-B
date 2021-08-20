@@ -211,38 +211,26 @@ Click on ``Insert more filters``<br/>
 Access our data and results on the drive here: <a href="https://drive.google.com/drive/folders/1oafSVbpr8Nz0YXFxoqBtIIDefZ8NcWbd" target="blank"><img align="center" src="https://user-images.githubusercontent.com/77963733/130207235-ab81908f-62cd-45c7-9e0c-408831a6f164.png" height="50" width="50" /></a> </p>
 
 # ❤️ **Contributors:**
-
-- `Temmykeji` - Graphic design of workflow, Dataset and FastQC
-
-- `Solomon` - Dataset, FastQC and Github Markdown
-
-- `Rajeshcha44` - Mapping of read using BWA-MEM
-
-- `Nitigya-M` - Mapping of read using BWA-MEM
-
-- `abdnahid_` - Merging BAM datasets with MergeSAMFiles, Removing duplicates with MarkDuplicates, Left-aligning indels with BamLeftAlign, Filtering reads with BAMTools filter and GitHub Markdown
- 
-- `Mike` - Merging BAM datasets with MergeSAMFiles, Removing duplicates with MarkDuplicates, Left-aligning indels with BamLeftAlign, Filtering reads with BAMTools filter and GitHub Markdown
-  
-- `Karteek` - Merging BAM datasets with MergeSAMFiles, Removing duplicates with MarkDuplicates, Left-aligning indels with BamLeftAlign, Filtering reads with BAMTools filter
-
-- `Priyacomp` - Variant calling of dataset
-     
-- `MANGAIYARKARASI` - Variant calling of dataset
-
-- `Pragna_lakshmi` - Variant calling of dataset using FreeBayes and Comparing of frequencies using VCFtoTab-delimited
-    
-- `Naomi` - Mapping of read using BWA-MEM
-  
-- `Galaxy` - Filtering of variant call dataset using FreeBayes
-
-- `Aarathi04` - Filtering of variant call dataset using VCFfilter   
-           
-- `Gautami`**(Team Leader)** - Visualization using IGV and VCF.IOBIO; and Comparing of frequencies using VCFtoTab-delimited
- 
-- `ZubairAlam` - Visualization using IGV and VCF.IOBIO
-
-- `Shreyashi` - Visualization using IGV and VCF.IOBIO
-
-- `omimill` - Comparing of frequencies using VCFtoTab-delimited and Github Markdown
         
+| Name | Activity | 
+| --- | ------------ |
+| `Gautami` | **Team Leader** Visualization using IGV and VCF.IOBIO; and Comparing of frequencies using VCFtoTab-delimited |  
+| `Temmykeji` |  Graphic design of workflow, Dataset and FastQC |  
+| `Solomon` |  Dataset, FastQC and Github Markdown |  
+| `Rajeshcha44` |  Mapping of read using BWA-MEM |  
+| `Nitigya-M` | Mapping of read using BWA-MEM  |  
+| `abdnahid_` | Merging BAM datasets with MergeSAMFiles, Removing duplicates with MarkDuplicates, Left-aligning indels with BamLeftAlign, Filtering reads with BAMTools filter and GitHub Markdown |  
+| `mike` | -Merging BAM datasets with MergeSAMFiles, Removing duplicates with MarkDuplicates, Left-aligning indels with BamLeftAlign, Filtering reads with BAMTools filter and GitHub Markdown |
+| `Karteek` | Merging BAM datasets with MergeSAMFiles, Removing duplicates with MarkDuplicates, Left-aligning indels with BamLeftAlign, Filtering reads with BAMTools filter |  
+| `Priyacomp` |  Variant calling of dataset |  
+| `MANGAIYARKARASI` | Variant calling of dataset |  
+| `Pragna_lakshmi` |  Variant calling of dataset using FreeBayes and Comparing of frequencies using VCFtoTab-delimited |  
+| `Naomi` | Mapping of read using BWA-MEM- |  
+| `Galaxy` |  Filtering of variant call dataset using FreeBayes |  
+| `Aarathi04` | Filtering of variant call dataset using VCFfilter |  
+| `ZubairAlam` | Visualization using IGV and VCF.IOBIO |  
+| `Shreyashi` |  Visualization using IGV and VCF.IOBIO |  
+| `omimill` | Comparing of frequencies using VCFtoTab-delimited and Github Markdown |  
+
+
+
