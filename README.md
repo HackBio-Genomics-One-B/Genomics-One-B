@@ -56,9 +56,14 @@ It is important to check the quality of the data to be used before proceeding wi
 
 Human genome, ‘hg38’ was used as the reference genome.Using the Paired end sequencing, the datasets has to be uploaded by selecting multiple datasets as follows:
 
-   First set of reads: both dataset 1 (raw_child-ds-1.fq & raw_mother-ds-1.fq )
-   Second set of reads: both datasets 2 (raw_child-ds-2.fq & raw_mother-ds-2.fq )
-   Set read groups information to “Set read groups (SAM/BAM specification) and Execute
+     First set of reads: 
+     both dataset 1 (raw_child-ds-1.fq & raw_mother-ds-1.fq )
+     
+     Second set of reads: 
+     both datasets 2 (raw_child-ds-2.fq & raw_mother-ds-2.fq )
+     
+     Set read groups information to “Set read groups 
+     (SAM/BAM specification) and Execute
       
 ## STEP 4: POST-PROCESSING MAPPED READ
 
