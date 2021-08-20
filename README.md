@@ -177,6 +177,15 @@ Click on ``Insert more filters``<br/>
 
 ## 8️⃣ Comparing frequencies
 
-### 🛠️ Tool: ``VCFtoTab-delimited`` and ``Cut columns from a table``<br/>
+## 8.1 Merging BAM datasets
 
+### 🛠️ Tool: ``VCFtoTab-delimited``<br/>
+### 🎯 Parameters:<br/>
+*Select SAM/BAM dataset or dataset collection:* `Both BAM datasets produced by BWA-MEM tool`<br/>
+*Select validation stringency:* `Lenient`<br/>  
+
+## 8.2: Removing duplicates
+
+### 🛠️ Tool: ``Cut columns from a table``<br/>
+### 🎯 Parameters:<br/>
 
