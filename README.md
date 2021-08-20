@@ -156,8 +156,8 @@ Select `hg38` under the `Database/Build` option and save.
 ### 🛠️ Tool: ``BAMTools Filter``<br/>
 ### 🎯 Parameters:<br/>
 - *BAM dataset(s) to filter:* ``Select the BAM dataset produced by BamLeftAlign tool``<br/>
-<br/>
-  - Under ``Condition`` > ``1: Condition`` > ``Filter``:<br/>
+
+ - Under ``Condition`` > ``1: Condition`` > ``Filter``:<br/>
   - **In ``1: Filter``:**<br/>
     - *Select BAM property to filter on:* ``mapQuality``<br/>
     - *Filter on read mapping quality (phred scale):* ``>=20``<br/>
