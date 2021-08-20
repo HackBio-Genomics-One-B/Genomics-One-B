@@ -3,7 +3,7 @@
 ## ⛳️ Table of Contents
 <!-- markdownlint-disable -->
   - [🧬 Instructions](#-hackbio-2021)
-  - [🎮 The Stage 0 Task](#-#the-stage-0-task)
+  - [🎮 The Stage 2 Task](#-#the-stage-0-task)
   - [🛡 Dependencies](#-dependencies)
   - [💡 Installation](#-Installation)
   - [📙 Information Template](#-information-template)
@@ -12,7 +12,7 @@
   - [🏁 Results](#-results)
   - [🔥 Contributors](#-contributors)
 
-# Calling Variants in Non-diploid Systems
+# Stage 2 Task: Calling Variants in Non-diploid Systems
 
 # PROJECT WORKFLOW
 
