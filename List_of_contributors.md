@@ -16,7 +16,7 @@
 | `Aarathi04` | Filtering of variant call dataset using VCFfilter |  
 | `ZubairAlam` | - Visualization using IGV and VCF.IOBIO |  
 | `Shreyashi` |  - Visualization using IGV and VCF.IOBIO |  
-| `omimill` | - Comparing of frequencies using VCFtoTab-delimited and Github Markdown |  
+| `omimiIII` | - Comparing of frequencies using VCFtoTab-delimited and Github Markdown |  
 
 
 
