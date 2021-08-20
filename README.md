@@ -1,12 +1,5 @@
 # [HackBio Internship 2021](https://thehackbio.com/): Genomics-One-B Project
 
-# Calling Variants in Non-diploid Systems
-
-# PROJECT WORKFLOW
-
-![image](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/mike/PROJECT_DESIGN_(GENOMICS_1B).png)
-
-
 ## ⛳️ Table of Contents
 <!-- markdownlint-disable -->
   - [🧬 Instructions](#-hackbio-2021)
@@ -18,6 +11,12 @@
   - [✅ Code Submitted](#-code-submitted)
   - [🏁 Results](#-results)
   - [🔥 Contributors](#-contributors)
+
+# Calling Variants in Non-diploid Systems
+
+# PROJECT WORKFLOW
+
+![image](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/mike/PROJECT_DESIGN_(GENOMICS_1B).png)
 
 ## Instructions  
 This tutorial is implemented in galaxy (https://usegalaxy.org) <br/>
