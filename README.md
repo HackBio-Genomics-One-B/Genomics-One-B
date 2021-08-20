@@ -21,6 +21,7 @@ A handful of life ranging from prokaryotes, down to viruses and a few extension 
 In this tutorial Team Genomics_One_B will be recreating the above project which involves working on four datasets, gotten from human genomic DNA sequencing. The aim of this is to identify heteroplasmies variant within the mitochondria DNA using Galaxy packages.
 
 
+
 The raw reads were downloaded from [here](https://zenodo.org/record/1251112)
 
 https://zenodo.org/record/1251112/files/raw_child-ds-1.fq
@@ -29,6 +30,7 @@ https://zenodo.org/record/1251112/files/raw_mother-ds-1.fq
 https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq
 
 In this tutorial, we will cover:
+
 
 ## STEP 1: IMPORTING DATASET
 
@@ -220,9 +222,8 @@ FilterNavigate to tool (VCFfilter) using the search button option on Galaxy webU
 - `Shreyashi` - Visualization using IGV and VCF.IOBIO
 
 
-
 - `omimill` - Comparing of frequencies using VCFtoTab-delimited and Github Markdown
         
         
         
-        
+       
