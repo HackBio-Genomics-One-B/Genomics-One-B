@@ -177,9 +177,11 @@ Select `hg38` under the `Database/Build` option and save.
   - **In ``4: Filter``:**<br/>
     - *Select BAM property to filter on:* ``reference``<br/>
     - *Select reads with mapped mate:* ``chrM``<br/>
+ 
+- *Would you like to set rules:* ``NO``<br/>
 <br/>
 
-- Execute  (**NB**: the parameter, 'would you like to set rules' should be set to NO)
+- Execute
 
 ![44](https://user-images.githubusercontent.com/77963733/130158864-3000b582-0429-48cb-9655-f5b4b1ec683a.png)
 
@@ -197,6 +199,7 @@ You can navigate to the tool (FreeBayes) using the search button in Galaxy. Sele
 - *Region Chromosome:* ``chrM``<br/>
 - *Region Start:* ``1``<br/>
 - *Region End:* ``16000``<br/>
+- 
 ![51](https://user-images.githubusercontent.com/77963733/130159354-9c941c1e-52a2-4345-8245-6fbb3c776318.jpg)
 
 - *Choose parameter selection level:* ``5: Full list of options``<br/>
@@ -205,6 +208,7 @@ You can navigate to the tool (FreeBayes) using the search button in Galaxy. Sele
 - *Set ploidy for the analysis:* ``1``<br/>
 - *Assume that samples result from pooled sequencing:* ``Yes``<br/>
 - *Output all alleles which pass input filters, regardless of genotyping outcome or model:* ``Yes``<br/>
+
 ![52](https://user-images.githubusercontent.com/77963733/130159365-17e62592-2693-4b66-9c2f-f79d406e9ec3.jpg)
 
 - *Allelic scope options:* ``Set allelic scope options``<br/>
@@ -212,12 +216,14 @@ You can navigate to the tool (FreeBayes) using the search button in Galaxy. Sele
 - *Ignore indels alleles:* ``No``<br/>
 - *Ignore multi-nucleotide polymorphisms, MNPs:* ``Yes``<br/>
 - *Ignore complex events (composites of other classes):* ``Yes``<br/>
+
 ![53](https://user-images.githubusercontent.com/77963733/130159377-fa30dab0-0547-4e3d-8047-40ababc86442.jpg)
 
 - *Input filters:* ``Set input filters``<br/>
 - *Exclude alignments from analysis if they have a mapping quality less than:* ``20``<br/>
 - *Exclude alleles from analysis if their supporting base quality less than:* ``30``<br/>  
 - Execute <br/>
+
 ![54](https://user-images.githubusercontent.com/77963733/130159384-10e83cd7-b90d-4c36-82e3-205fe3999671.jpg)
 <br/>
 <br/>
