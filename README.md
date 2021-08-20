@@ -63,7 +63,11 @@ Human genome, ‘hg38’ was used as the reference genome.Using the Paired end s
 
 Set read groups information to “Set read groups `SAM/BAM specification` and Execute
 
-![BWA MEM_2](https://user-images.githubusercontent.com/77963733/130206511-d3d32add-acbb-4c13-91b9-fa5619436b0a.jpg)
+![img_20210820_131657](https://user-images.githubusercontent.com/77963733/130246896-a965760e-b51a-49b4-bb65-1dab11dbccfb.jpg)
+
+
+![img_20210820_131439](https://user-images.githubusercontent.com/77963733/130246959-8e69f0ab-3385-4daa-8d69-2b0f60913e41.jpg)
+
 
       
 ## STEP 4: POST-PROCESSING MAPPED READ
