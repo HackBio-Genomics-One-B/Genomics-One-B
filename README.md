@@ -9,6 +9,7 @@
   - [2️⃣ Step 2 - Quality Checking](#2%EF%B8%8F%E2%83%A3-step-2---quality-checking)
   - [3️⃣ Step 3 - Mapping Reads to Reference Genome](#3%EF%B8%8F%E2%83%A3-step-3---mapping-reads-to-reference-genome)
   - [4️⃣ Step 4 - Postprocessing Mapped Reads](#4%EF%B8%8F%E2%83%A3-step-4---postprocessing-mapped-reads)
+  - [5️⃣ Step 5 - Calling Non-diploid Variants](#5%EF%B8%8F%E2%83%A3-step-5---calling-non-diploid-variants)
   - [🏁 Results](#-results)
   - [🔥 Contributors](#-contributors)
 
