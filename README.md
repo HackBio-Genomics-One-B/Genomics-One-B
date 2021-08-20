@@ -35,9 +35,7 @@
 # 📙 Instructions  
 ## Calling variants in non-diploid systems 
 A handful of life ranging from prokaryotes, down to viruses and a few extension operate on non-diploid mechanism.
-In this tutorial ``Team Genomics_One_B`` will be recreating the above project which involves working on four datasets, gotten from human genomic DNA sequencing. The aim of this is to identify heteroplasmies variant within the mitochondria DNA using Galaxy packages.
-
-By: Anton Nekrutenko and Alex Ostrovsky
+In this tutorial ``Team Genomics_One_B`` will be recreating the above project which involves working on four datasets, gotten from human genomic DNA sequencing. The aim of this is to identify heteroplasmies variant within the mitochondria DNA using Galaxy packages. This is a tutorial by ``Anton Nekrutenko`` and ``Alex Ostrovsky``.
 
 This tutorial is implemented in [galaxy](https://usegalaxy.org) via https://usegalaxy.org <br/>
 
