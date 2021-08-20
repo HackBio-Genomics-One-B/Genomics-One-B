@@ -32,13 +32,34 @@
 ![image](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/mike/PROJECT_DESIGN_(GENOMICS_1B).png)
 
 # 📙 Instructions  
-This tutorial is implemented in galaxy (https://usegalaxy.org) <br/>
+## Calling variants in non-diploid systems 
+A handful of life ranging from prokaryotes, down to viruses and a few extension operate on non-diploid mechanism.
+In this tutorial Team Genomics_One_B will be recreating the above project which involves working on four datasets, gotten from human genomic DNA sequencing. The aim of this is to identify heteroplasmies variant within the mitochondria DNA using Galaxy packages.
+
+By: Anton Nekrutenko and Alex Ostrovsky
+
+
+
+
+This tutorial is implemented in [galaxy](https://usegalaxy.org) <br/>
 Always use the search button to navigate the respective tools. 
 
 [List of contributors](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/mike/List_of_contributors.md)  
 [The galaxy tutorial we followed](https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/non-dip/tutorial.html#checking-data-quality)  
 
-# 1️⃣ STEP 1 - Importing Data
+
+In this tutorial, we will cover:
+# 1️⃣ STEP 1 - IMPORTING DATASET
+
+- Download datasets from resource page
+- Click upload data on Galaxy web page
+- Galaxy will prompt to ask if it is from the local files or web (it depends on where you saved the dataset)
+- After uploading, click start. Once import is completed, the dataset highlight turns green as seen on the picture below.
+
+![gd](https://user-images.githubusercontent.com/77963733/130158462-53243352-6693-4370-b0aa-2223834cb571.jpg)
+
+
+
 Import raw reads from [here](https://zenodo.org/record/1251112)
 
 ```
@@ -47,19 +68,27 @@ https://zenodo.org/record/1251112/files/raw_child-ds-2.fq
 https://zenodo.org/record/1251112/files/raw_mother-ds-1.fq
 https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq
 ```
+
 <br/>
 
-# 2️⃣ STEP 2 - Quality Checking
+# 2️⃣ STEP 2 : QUALITY CHECK OF DATASET
 
 ### 🛠️ Tool: ``FastQC``<br/>
 ### 🎯 Parameters: <br/>
 *Short read data from your current history:* `all 4 FASTQ datasets selected with Multiple datasets`<br/>
+
+It is important to check the quality of the data to be used before proceeding with the analysis. This is done to determine if there is a problem with the dataset. Click on  FASTA/Fastq on the left hand side, select 'FastQC Read Quality Check' and execute. It will run a check on the data.
 ### 💡 Tips: <br/>
 To select multiple datasets, <br/>
 click on the Multiple datasets icon<br/>
 select several files by keeping the ``Ctrl`` (or ``COMMAND``) key pressed and clicking on all 4 FASTQ files
 <br/>
+![gc](https://user-images.githubusercontent.com/77963733/130158592-ceedd90b-8761-4289-8284-504bf35ae368.jpg)
 <br/>
+![gd](https://user-images.githubusercontent.com/77963733/130158596-09ad1ed9-390e-44a3-a3c5-64cb2e0d0100.png)
+
+<br/>
+
 # 3️⃣ STEP 3 - Mapping Reads to Reference Genome 
 
 ### Tool: ``BWA-mem``
