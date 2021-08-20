@@ -1,8 +1,8 @@
 # [HackBio Internship 2021](https://thehackbio.com/): Genomics-One-B Project
 
-# Calling Variants in Non-diploid system  
+# Calling Variants in Non-diploid Systems
 
-## Introduction
+# PROJECT WORKFLOW
 
 ![image](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/mike/PROJECT_DESIGN_(GENOMICS_1B).png)
 
