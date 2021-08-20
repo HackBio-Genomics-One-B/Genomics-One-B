@@ -265,7 +265,7 @@ Click on ``Insert more filters``<br/>
 <br/>
 
 ![62](https://user-images.githubusercontent.com/77963733/130159398-e5ae3a89-0118-4fa6-ac52-5135899eaf76.jpg)
-# 7️⃣ STEP 7 - VISUAKIZATION
+# 7️⃣ STEP 7 - VISUALIZATION
 Processed data in VCF format imported onto the galaxy platform and change the reference genome to Human hg38 for comparison
 ![igvimage](https://user-images.githubusercontent.com/77963733/130161840-b9f7bc0c-9b1f-4b9b-9983-78e467fc78a1.jpg)<br/>
 ## ➡️ 7.1 Visualising with VCF.IOBIO
@@ -278,7 +278,7 @@ VCF.IOBIO link is also generated when the VCF dataset is uploaded that will give
 - Use the reference genome, Human hg38 for comparison<br/>
 - VCF datasets will be index to display them<br/>
 <br/>
-![vcfiobioimage](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/main/7_Visualize/Visualising_with_VCF_IOBIO.jpg)<br/>
+![vcfiobioimage](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/main/7_Visualize/Visualising%20with%20VCF%20IOBIO.JPG)<br/>
 
 ## ➡️ 7.2: Visualising with IGV
 The data can be visualised via IGV locally and focus on varient at position 3243 and the Genotypic information can also be obtained.
