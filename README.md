@@ -44,7 +44,7 @@ In this tutorial, we will cover:
       
 ## STEP 2: QUALITY CHECK OF DATASET
 
-It is important to check the quality of the data to be used before proceeding with the analysis. This is done to determine if there is a problem with the data setOn Galaxy, by the left hand side, click FASTA/FastqThen click FastQC Read Quality Check and execute. It will run a check on the data.
+It is important to check the quality of the data to be used before proceeding with the analysis. This is done to determine if there is a problem with the dataset. Click on  FASTA/Fastq on the left hand side, select 'FastQC Read Quality Check' and execute. It will run a check on the data.
 
 ![gc](https://user-images.githubusercontent.com/77963733/130158592-ceedd90b-8761-4289-8284-504bf35ae368.jpg)
 
@@ -58,7 +58,7 @@ Human genome, ‘hg38’ was used as the reference genome.Using the Paired end s
 
 - First set of reads: both dataset 1 `raw_child-ds-1.fq` & `raw_mother-ds-1.fq `
 - Second set of reads: both datasets 2 `raw_child-ds-2.fq` & `raw_mother-ds-2.fq`
-- Set read groups information to “Set read groups `SAM/BAM specification` and Execute
+Set read groups information to “Set read groups `SAM/BAM specification` and Execute
       
 ## STEP 4: POST-PROCESSING MAPPED READ
 
