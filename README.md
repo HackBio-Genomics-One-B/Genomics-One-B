@@ -136,7 +136,7 @@ Navigate to tool (VCFfilter) using the search button option on Galaxy Using the 
 
 
 
-**Contributors:**
+## **Contributors:**
 
 
 
