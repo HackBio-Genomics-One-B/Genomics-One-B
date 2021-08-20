@@ -15,7 +15,7 @@
   - - [➡️ 4.3 Left-Aligning Indels](#%EF%B8%8F-43-left-aligning-indels)
   - - [➡️ 4.4 Filtering Reads](#%EF%B8%8F-44-filtering-reads)
   - [5️⃣ Step 5 - CALLING NON-DIPLOID VARIANTS USING FREEBAYES](#5%EF%B8%8F%E2%83%A3-step-5---CALLING-NON-DIPLOID-VARIANTS-USING-FREEBAYES)
-  - [6️⃣ Step 6 - Filtering Variants](#6%EF%B8%8F%E2%83%A3-step-6---filtering-variants)
+  - [6️⃣ Step 6 - FILTERING VARIANTS USING VCF](#6%EF%B8%8F%E2%83%A3-step-6---FILTERING-VARIANTS-USING-VCF)
   - [7️⃣ Step 7 - Visualization](#7%EF%B8%8F%E2%83%A3-step-7---visualization)
   - - [➡️ 7.1 Visualising with VCF.IOBIO](#%EF%B8%8F-71-visualising-with-vcfiobio)
   - - [➡️ 7.2: Visualising with IGV](#%EF%B8%8F-72-visualising-with-igv)
@@ -219,30 +219,31 @@ You can navigate to the tool (FreeBayes) using the search button in Galaxy. Sele
 - *Input filters:* ``Set input filters``<br/>
 - *Exclude alignments from analysis if they have a mapping quality less than:* ``20``<br/>
 - *Exclude alleles from analysis if their supporting base quality less than:* ``30``<br/>  
-- Execute
+- Execute <br/>
 ![54](https://user-images.githubusercontent.com/77963733/130159384-10e83cd7-b90d-4c36-82e3-205fe3999671.jpg)
 <br/>
 
 
-# 6️⃣ STEP 6 - Filtering Variants
+# 6️⃣ STEP 6 - FILTERING VARIANTS USING VCF
 
 ### 🛠️ Tool: ``VCFfilter``<br/>
+
 ### 🎯 Parameters:<br/>
 
-*VCF dataset to filter*: ``select the VCF dataset produced by FreeBayes tool``<br/>
+*VCF dataset to filter*: ``select the VCF dataset  obtained from variant call (step 5) produced by FreeBayes tool``<br/>
 
-In ``more filters``:<br/>
-**In ``1: more filters``:**<br/>
-*Select the filter type*:* ``Info filter (-f)``<br/>
-*Specify filtering value*: ``SRP > 20``<br/>
+- In ``more filters``:<br/>
+  - **In ``1: more filters``:**<br/>
+   - *Select the filter type*:* ``Info filter (-f)``<br/>
+   - *Specify filtering value*: ``SRP > 20``<br/>
 
-Click on ``Insert more filters``<br/>
+   - Click on ``Insert more filters``<br/>
 
-**In ``2: more filters``:**<br/>
-*Select the filter type*: ``Info filter (-f)``<br/>
-*Specify filtering value*: ``SAP > 20``<br/>
+  - **In ``2: more filters``:**<br/>
+   - *Select the filter type*: ``Info filter (-f)``<br/>
+   - *Specify filtering value*: ``SAP > 20``<br/>
 
-Click on ``Insert more filters``<br/>
+   - Click on ``Insert more filters``<br/>
 
 **In ``3: more filters``:**<br/>
 *Select the filter type*: ``Info filter (-f)``<br/>
@@ -259,8 +260,13 @@ Click on ``Insert more filters``<br/>
 **In ``5: more filters``:**<br/>
 *Select the filter type*: ``Info filter (-f)``<br/>
 *Specify filtering value*: ``DP > 20``<br/>
+- Execute<br/>
 <br/>
-<br/>
+
+![61](https://user-images.githubusercontent.com/77963733/130159393-bf828636-a389-4580-a54e-3f8e20702da6.jpg)
+
+
+![62](https://user-images.githubusercontent.com/77963733/130159398-e5ae3a89-0118-4fa6-ac52-5135899eaf76.jpg)
 # 7️⃣ STEP 7 - Visualization
 
 ## ➡️ 7.1 Visualising with VCF.IOBIO
