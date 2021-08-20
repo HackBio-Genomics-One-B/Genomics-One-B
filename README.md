@@ -163,19 +163,18 @@ Navigate to tool (VCFfilter) using the search button option on Galaxy Using the 
 
 
 
-- `Abdnahid_` - Post Processing mapped read (This contains four steps)
-
+- `abdnahid_` - Merging BAM datasets with MergeSAMFiles, Removing duplicates with MarkDuplicates, Left-aligning indels with BamLeftAlign, Filtering reads with BAMTools filter
       
       
   
 
-- `Mike` - Post Processing mapped read (This contains four steps)
+- `Mike` - Merging BAM datasets with MergeSAMFiles, Removing duplicates with MarkDuplicates, Left-aligning indels with BamLeftAlign, Filtering reads with BAMTools filter
 
 
 
   
 
-- `Karteek` - Post Processing mapped read (This contains four steps)
+- `Karteek` - Merging BAM datasets with MergeSAMFiles, Removing duplicates with MarkDuplicates, Left-aligning indels with BamLeftAlign, Filtering reads with BAMTools filter
       
 
 
