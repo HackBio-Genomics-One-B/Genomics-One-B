@@ -177,7 +177,7 @@ Navigate to tool (VCFfilter) using the search button option on Galaxy Using the 
 
 
 
-- `Abdnahid_` - Post Processing mapped read (This contains four steps) and Github Markdown
+- `abdnahid_` - Post Processing mapped read (This contains four steps) and Github Markdown
 
       
       
