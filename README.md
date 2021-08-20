@@ -87,10 +87,11 @@ Step 4.3: Left-aligning indels using BamLeftAlign Tool
       
 ![43](https://user-images.githubusercontent.com/77963733/130158853-bc589b3e-3841-44cc-b5fa-4951f483459e.png)
       
-Step 4.4: 
-- Filtering reads Select filter under BamToolsUsing MarkDuplicates dataset. 
-- Input parameters as seen in picture below.
-- Then execute (NB: Would you like to set rules should be NO)
+Step 4.4: Filtering reads 
+- Select filter under BamTools
+- Using MarkDuplicates dataset, input parameters as seen in picture below.
+- Execute 
+(NB: the parameter, 'would you like to set rules' should be set to NO)
       
 ![44](https://user-images.githubusercontent.com/77963733/130158864-3000b582-0429-48cb-9655-f5b4b1ec683a.png)
       
@@ -114,7 +115,9 @@ You can navigate to the tool (FreeBayes) using the search button in Galaxy. Sele
 
 ## STEP 6: FILTERING VARIANTS USING VCF
 
-Navigate to tool (VCFfilter) using the search button option on Galaxy Using the dataset obtained from step 5, Input parameters as seen in the image below and execute
+- Navigate to tool (VCFfilter) using the search button.
+- Using the dataset obtained from variant call (step 5), Input parameters as seen below.
+- Execute
 
 ![61](https://user-images.githubusercontent.com/77963733/130159393-bf828636-a389-4580-a54e-3f8e20702da6.jpg)
 
