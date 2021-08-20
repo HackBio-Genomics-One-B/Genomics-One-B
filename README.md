@@ -14,7 +14,7 @@
 
 # Stage 2 Task: Calling Variants in Non-diploid Systems
 
-# PROJECT WORKFLOW
+# Project Workflow
 
 ![image](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/mike/PROJECT_DESIGN_(GENOMICS_1B).png)
 
