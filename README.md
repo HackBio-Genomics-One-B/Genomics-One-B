@@ -265,6 +265,8 @@ Click on ``Insert more filters``<br/>
 <br/>
 
 ![62](https://user-images.githubusercontent.com/77963733/130159398-e5ae3a89-0118-4fa6-ac52-5135899eaf76.jpg)
+<br/>
+<br/>
 # 7️⃣ STEP 7 - VISUALIZATION
 Processed data in VCF format imported onto the galaxy platform and change the reference genome to Human hg38 for comparison<br/>
 ![igvimage](https://user-images.githubusercontent.com/77963733/130161840-b9f7bc0c-9b1f-4b9b-9983-78e467fc78a1.jpg)<br/>
@@ -319,6 +321,7 @@ As we opted for “Report data per sample”(four), this will produce a dataset 
 Then proceed to cut these columns out (refer to image below)
 
 ![IMG-20210820-WA0019](https://user-images.githubusercontent.com/77963733/130201371-2038a041-6198-4657-9493-50a995f4e77e.jpg)
+<br/>
 <br/>
 
 # Interpretation of Result:
