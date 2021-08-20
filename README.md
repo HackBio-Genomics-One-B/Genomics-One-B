@@ -132,9 +132,23 @@ Navigate to tool (VCFfilter) using the search button option on Galaxy Using the 
 
 ![2 _visualization_options_2](https://user-images.githubusercontent.com/77963733/130161840-b9f7bc0c-9b1f-4b9b-9983-78e467fc78a1.jpg)
 
-## STEP 8: COMPARING FREQUENCIES
+## 8️⃣ STEP 8: COMPARING FREQUENCIES
 
+### ➡️ 8.1 Convert VCF to tab-delimited data
 
+### 🛠️ Tool: ``VCFtoTab-delimited``<br/>
+### 🎯 Parameters:<br/>
+*Select VCF dataset to convert*: ``select the VCF dataset produced by VCFfilter tool``<br/>
+*Report data per sample*: ``Yes``<br/>
+*Fill empty fields with*: ``Nothing``<br/>
+
+### ➡️ 8.2: Cut columns from a file
+
+### 🛠️ Tool: ``Cut columns from a table``<br/>
+### 🎯 Parameters:<br/>
+*Cut columns*: ``c2,c4,c5,c52,c54,c55``<br/>
+*Delimited by*: ``Tab``<br/>
+*From*: ``select the tabular dataset produced by VCFtoTab-delimited``<br/>
 
 **Contributors:**
 
