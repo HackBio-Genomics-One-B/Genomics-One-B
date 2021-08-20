@@ -6,9 +6,9 @@
   - [🧬 Stage 2 Task](#-stage-2-task-calling-variants-in-non-diploid-systems)
   - [🚀 Project Workflow](#-project-workflow)
   - [📙 Instructions](#-instructions)
-  - [1️⃣ Step 1 - Importing Data](#1%EF%B8%8F%E2%83%A3-step-1---importing-data)
-  - [2️⃣ Step 2 - Quality Checking](#2%EF%B8%8F%E2%83%A3-step-2---quality-checking)
-  - [3️⃣ Step 3 - Mapping Reads to Reference Genome](#3%EF%B8%8F%E2%83%A3-step-3---mapping-reads-to-reference-genome)
+  - [1️⃣ Step 1 - Importing Data](#1%EF%B8%8F%E2%83%A3-step-1---IMPORTING-DATASET) 
+  - [2️⃣ Step 2 - Quality Checking](#2%EF%B8%8F%E2%83%A3-step-2---QUALITY-CHECK-OF-DATASET) 
+  - [3️⃣ Step 3 - Mapping Reads to Reference Genome](#3%EF%B8%8F%E2%83%A3-step-3---mapping-reads-to-reference-genome) # 3️⃣ STEP 3 - Mapping Reads to Reference Genome 
   - [4️⃣ Step 4 - Postprocessing Mapped Reads](#4%EF%B8%8F%E2%83%A3-step-4---postprocessing-mapped-reads)
   - - [➡️ 4.1 Merging BAM Datasets](#%EF%B8%8F-41-merging-bam-datasets)
   - - [➡️ 4.2 Removing Duplicates](#%EF%B8%8F-42-removing-duplicates)
@@ -37,18 +37,11 @@ A handful of life ranging from prokaryotes, down to viruses and a few extension 
 In this tutorial Team Genomics_One_B will be recreating the above project which involves working on four datasets, gotten from human genomic DNA sequencing. The aim of this is to identify heteroplasmies variant within the mitochondria DNA using Galaxy packages.
 
 By: Anton Nekrutenko and Alex Ostrovsky
-
-
-
-
-This tutorial is implemented in [galaxy](https://usegalaxy.org) <br/>
+This tutorial is implemented in [galaxy](https://usegalaxy.org) via https://usegalaxy.org <br/>
 Always use the search button to navigate the respective tools. 
-
 [List of contributors](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/mike/List_of_contributors.md)  
 [The galaxy tutorial we followed](https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/non-dip/tutorial.html#checking-data-quality)  
 
-
-In this tutorial, we will cover:
 # 1️⃣ STEP 1 - IMPORTING DATASET
 
 - Download datasets from resource page
@@ -71,7 +64,7 @@ https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq
 
 <br/>
 
-# 2️⃣ STEP 2 : QUALITY CHECK OF DATASET
+# 2️⃣ STEP 2 - QUALITY CHECK OF DATASET
 
 ### 🛠️ Tool: ``FastQC``<br/>
 ### 🎯 Parameters: <br/>
