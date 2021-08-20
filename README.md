@@ -278,6 +278,7 @@ VCF.IOBIO link is also generated when the VCF dataset is uploaded that will give
 - Use the reference genome, Human hg38 for comparison<br/>
 - VCF datasets will be index to display them<br/>
 <br/>
+
 ![vcfiobioimage](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/main/7_Visualize/Visualising_with_VCF_IOBIO.jpg)<br/>
 
 ## ➡️ 7.2: Visualising with IGV
@@ -289,6 +290,7 @@ The data can be visualised via IGV locally and focus on varient at position 3243
 - Use the reference genome, Human hg38 for comparison<br/>
 - VCF datasets will be index to display them<br/>
 <br/>
+
 ![igvimage](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/main/7_Visualize/Visualization%20using%20IGV.jpeg)<br/>
 <br/>
 <br/>
