@@ -209,19 +209,19 @@ Click on ``Insert more filters``<br/>
 ## ➡️ 7.1 Visualising with VCF.IOBIO
 
 ### 🛠️ Tool: ``VCF.IOBIO``<br/>
-### 🎯 Result:<br/>
-Click on processed VCF datasets, it will expand to show link.
-Click on “display at vcf.iobio” at the bottom
-Use the reference genome, Human hg38 for comparison
-VCF datasets will be index to display them
-![vcfiobioimage](https://user-images.githubusercontent.com/77963733/130161840-b9f7bc0c-9b1f-4b9b-9983-78e467fc78a1.jpg)
+### 🎯 Process:<br/>
+Click on processed VCF datasets, it will expand to show link.<br/>
+Click on “display at vcf.iobio” at the bottom<br/>
+Use the reference genome, Human hg38 for comparison<br/>
+VCF datasets will be index to display them<br/>
+![vcfiobioimage](https://user-images.githubusercontent.com/77963733/130161840-b9f7bc0c-9b1f-4b9b-9983-78e467fc78a1.jpg)<br/>
 
 ## ➡️ 7.2: Visualising with IGV
 
 ### 🛠️ Tool: ``IGV``<br/>
-### 🎯 Result:<br/>
-Repeat process for IGV by clicking on "Display with IGV"
-![igvimage](https://user-images.githubusercontent.com/77963733/130161840-b9f7bc0c-9b1f-4b9b-9983-78e467fc78a1.jpg)
+### 🎯 Process:<br/>
+Repeat process for IGV by clicking on "Display with IGV"<br/>
+![igvimage](https://user-images.githubusercontent.com/77963733/130161840-b9f7bc0c-9b1f-4b9b-9983-78e467fc78a1.jpg)<br/>
 <br/>
 <br/>
 # 8️⃣ STEP 8 - Comparing Frequencies
