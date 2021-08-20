@@ -44,7 +44,7 @@ In this tutorial, we will cover:
 ![gd](https://user-images.githubusercontent.com/77963733/130158462-53243352-6693-4370-b0aa-2223834cb571.jpg)
     
       
-## STEP 2: QUALITY CHECK OF DATASET
+## 2️⃣ STEP 2: QUALITY CHECK OF DATASET
 
 It is important to check the quality of the data to be used before proceeding with the analysis. This is done to determine if there is a problem with the dataset. Click on  FASTA/Fastq on the left hand side, select 'FastQC Read Quality Check' and execute. It will run a check on the data.
 
@@ -54,7 +54,7 @@ It is important to check the quality of the data to be used before proceeding wi
 ![gd](https://user-images.githubusercontent.com/77963733/130158596-09ad1ed9-390e-44a3-a3c5-64cb2e0d0100.png)
 
 
-## STEP 3: MAPPING THE READS USING BWA MEM 
+## 3️⃣ STEP 3: MAPPING THE READS USING BWA MEM 
 
 Human genome, ‘hg38’ was used as the reference genome.Using the Paired end sequencing, the datasets has to be uploaded by selecting multiple datasets as follows:
 
