@@ -10,9 +10,6 @@
 # PROJECT WORKFLOW & DESIGN
 ![hackbio ads](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/main/PROJECT%20DESIGN%20(GENOMICS%201B).png?raw=true)
 
-## Step-by-Step 
-
-### Task distribution:
 
 
 # Calling variants in non-diploid systems 
@@ -23,6 +20,13 @@ By: Anton Nekrutenko and Alex Ostrovsky
 A handful of life ranging from prokaryotes, down to viruses and a few extension operate on non-diploid mechanism.
 In this tutorial Team Genomics_One_B will be recreating the above project which involves working on four datasets, gotten from human genomic DNA sequencing. The aim of this is to identify heteroplasmies variant within the mitochondria DNA using Galaxy packages.
 
+
+The raw reads were downloaded from [here](https://zenodo.org/record/1251112)
+
+https://zenodo.org/record/1251112/files/raw_child-ds-1.fq
+https://zenodo.org/record/1251112/files/raw_child-ds-2.fq
+https://zenodo.org/record/1251112/files/raw_mother-ds-1.fq
+https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq
 In this tutorial, we will cover:
 
 ## STEP 1: IMPORTING DATASET
@@ -121,14 +125,11 @@ VCF datasets will be index to display them
 Repeat process for IGV by clicking on "Display with IGV"
 ````
 
-![2 _visualization_options-1](https://user-images.githubusercontent.com/77963733/130158091-b579883b-5903-4b12-9cc6-8dfaa8b67383.jpg)
+![2 _visualization_options_2](https://user-images.githubusercontent.com/77963733/130161840-b9f7bc0c-9b1f-4b9b-9983-78e467fc78a1.jpg)
 
 ## STEP 8: COMPARING FREQUENCIES
 
 
-## 📌Team 🚀 Contribution
-
-Individual committment to a group effort- that is what makes a team work, a company work, a society work, a civilization work - **Vince Lombardi**. Any contributions you make are **greatly appreciated** 👏👍
 
 **Contributors:**
 
