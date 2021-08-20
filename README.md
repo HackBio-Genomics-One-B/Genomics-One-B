@@ -135,7 +135,10 @@ You can navigate to the tool (FreeBayes) using the search button in Galaxy. Sele
 
 ![2 _visualization_options_2](https://user-images.githubusercontent.com/77963733/130161840-b9f7bc0c-9b1f-4b9b-9983-78e467fc78a1.jpg)
 
-## STEP 8: COMPARING FREQUENCIES
+## STEP 8: COMPARING FREQUENCIES 
+
+Though visualizing VCF datasets is a good way to get an overall idea, it does not explain many details. To play a little more with data, 
+ Convert VCF dataset into a tab-delimited representation using VCFtoTab-delimited
 
 
 
