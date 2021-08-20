@@ -16,7 +16,7 @@
   - - [➡️ 4.4 Filtering Reads](#%EF%B8%8F-44-filtering-reads)
   - [5️⃣ Step 5 - CALLING NON-DIPLOID VARIANTS USING FREEBAYES](#5%EF%B8%8F%E2%83%A3-step-5---CALLING-NON-DIPLOID-VARIANTS-USING-FREEBAYES)
   - [6️⃣ Step 6 - FILTERING VARIANTS USING VCF](#6%EF%B8%8F%E2%83%A3-step-6---FILTERING-VARIANTS-USING-VCF)
-  - [7️⃣ Step 7 - Visualization](#7%EF%B8%8F%E2%83%A3-step-7---visualization)
+  - [7️⃣ Step 7 - VISUALIZATION](#7%EF%B8%8F%E2%83%A3-step-7---VISUALIZATION)
   - - [➡️ 7.1 Visualising with VCF.IOBIO](#%EF%B8%8F-71-visualising-with-vcfiobio)
   - - [➡️ 7.2: Visualising with IGV](#%EF%B8%8F-72-visualising-with-igv)
   - [8️⃣ Step 8 - Comparing Frequencies](#8%EF%B8%8F%E2%83%A3-step-8---comparing-frequencies)
@@ -232,7 +232,7 @@ You can navigate to the tool (FreeBayes) using the search button in Galaxy. Sele
 
 *VCF dataset to filter*: ``select the VCF dataset  obtained from variant call (step 5) produced by FreeBayes tool``<br/>
 
-- In ``more filters``:<br/>
+In ``more filters``:<br/>
  - **In ``1: more filters``:**<br/>
    - *Select the filter type*:* ``Info filter (-f)``<br/>
    - *Specify filtering value*: ``SRP > 20``<br/>
@@ -265,21 +265,23 @@ Click on ``Insert more filters``<br/>
 <br/>
 
 ![62](https://user-images.githubusercontent.com/77963733/130159398-e5ae3a89-0118-4fa6-ac52-5135899eaf76.jpg)
-# 7️⃣ STEP 7 - Visualization
-
+# 7️⃣ STEP 7 - VISUAKIZATION
+Processed data in VCF format imported onto the galaxy platform and change the reference genome to Human hg38 for comparison
+![igvimage](https://user-images.githubusercontent.com/77963733/130161840-b9f7bc0c-9b1f-4b9b-9983-78e467fc78a1.jpg)<br/>
 ## ➡️ 7.1 Visualising with VCF.IOBIO
+VCF.IOBIO link is also generated when the VCF dataset is uploaded that will give us the data on Varient types, Allele Frequency Spectrum and Base Changes.
 
 ### 🛠️ Tool: ``VCF.IOBIO``<br/>
 ### 🎯 Process:<br/>
-Click on processed VCF datasets, it will expand to show link.<br/>
-Click on “display at vcf.iobio” at the bottom<br/>
-Use the reference genome, Human hg38 for comparison<br/>
-VCF datasets will be index to display them<br/>
+- Click on processed VCF datasets, it will expand to show link.<br/>
+- Click on “display at vcf.iobio” at the bottom<br/>
+- Use the reference genome, Human hg38 for comparison<br/>
+- VCF datasets will be index to display them<br/>
 <br/>
-![vcfiobioimage](https://user-images.githubusercontent.com/77963733/130161840-b9f7bc0c-9b1f-4b9b-9983-78e467fc78a1.jpg)<br/>
+![vcfiobioimage](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/main/7_Visualize/Visualising_with_VCF_IOBIO.jpg)<br/>
 
 ## ➡️ 7.2: Visualising with IGV
-
+The data can be visualised via IGV locally and focus on varient at position 3243 and the Genotypic information can also be obtained.
 ### 🛠️ Tool: ``IGV``<br/>
 ### 🎯 Process:<br/>
 Click on processed VCF datasets, it will expand to show link.<br/>
@@ -287,7 +289,7 @@ Click on “display with IGV” at the bottom<br/>
 Use the reference genome, Human hg38 for comparison<br/>
 VCF datasets will be index to display them<br/>
 <br/>
-![igvimage](https://user-images.githubusercontent.com/77963733/130161840-b9f7bc0c-9b1f-4b9b-9983-78e467fc78a1.jpg)<br/>
+![igvimage](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/main/7_Visualize/Visualization%20using%20IGV.jpeg)<br/>
 <br/>
 <br/>
 # 8️⃣ STEP 8 - Comparing Frequencies
