@@ -82,7 +82,8 @@ select several files by keeping the ``Ctrl`` (or ``COMMAND``) key pressed and cl
 <br/>
 # 3️⃣ STEP 3 - MAPPING THE READS USING BWA MEM 
 ### Tool: ``BWA-mem``
-Human genome, ‘hg38’ was used as the reference genome.Using the Paired end sequencing, the datasets has to be uploaded by selecting multiple datasets as follows:
+Human genome, ‘hg38’ was used as the reference genome.<br/>
+Using the Paired end sequencing, the datasets has to be uploaded by selecting multiple datasets as follows:
 
 ### 🎯 Parameters: As shown in the figure below.
 
