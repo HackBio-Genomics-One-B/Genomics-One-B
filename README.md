@@ -84,50 +84,34 @@ select several files by keeping the ``Ctrl`` (or ``COMMAND``) key pressed and cl
 ### Tool: ``BWA-mem``
 Human genome, ‘hg38’ was used as the reference genome.Using the Paired end sequencing, the datasets has to be uploaded by selecting multiple datasets as follows:
 
-### 🎯 Parameters: <br/>
-- *select a reference genome from your history or use a built-in index?:* ``Use a built-in genome index``<br/>
-- *Using reference genome:* ``Human: hg38``<br/>
-- *Single or Paired-end reads:* ``Paired``<br/>
-- *Select first set of reads:* ``select both -1 datasets selected with Multiple datasets``<br/>
-- `raw_child-ds-1.fq` & `raw_mother-ds-1.fq `
-- *Select second set of reads:* ``select both -2 datasets selected with Multiple datasets``<br/>
-- `raw_child-ds-2.fq` & `raw_mother-ds-2.fq`
-- *Set read groups information?:* ``Set read groups (SAM/BAM specification)``<br/>
-- *Auto-assign:* ``Yes``<br/>
-- *Auto-assign:* ``Yes``<br/>
-- *Platform/technology used to produce the reads (PL):* ``ILLUMINA``<br/>
-- *Auto-assign:* ``Yes``<br/>
-- *Execute* <br/>
+### 🎯 Parameters: As shown in the figure below.
 
 ![img_20210820_131657](https://user-images.githubusercontent.com/77963733/130246896-a965760e-b51a-49b4-bb65-1dab11dbccfb.jpg)
 
 ![img_20210820_131439](https://user-images.githubusercontent.com/77963733/130246959-8e69f0ab-3385-4daa-8d69-2b0f60913e41.jpg)
+
+- Then *Execute* <br/>
 <br/>
 <br/>
 # 4️⃣ STEP 4 - POST-PROCESSING MAPPED READ
 
 ## ➡️ 4.1 Merging `BAM` Datasets
 
-### 🛠️ Tool: ``Picard's MergeSAMFiles``<br/>
-### 🎯 Parameters:<br/>
-- *Select SAM/BAM dataset or dataset collection obtained from Step 3 into the dataset collection:* `Both BAM datasets produced by BWA-MEM tool`<br/>
-- *Select validation stringency:* `Lenient`<br/>  
-- Execute.
+### 🛠️ Tool: ``Picard's MergeSAMFiles`` <br/>
+### 🎯 Parameters: As shown in the figure below.
 
 ![41](https://user-images.githubusercontent.com/77963733/130158840-9923d314-6841-44cd-a4cb-33d738e1a208.png)
+
+- Then *Execute* <br/>
 
 ## ➡️ 4.2: Removing duplicates using MarkDuplicates
 
 ### 🛠️ Tool: ``Picard's MarkDuplicates``<br/>
-### 🎯 Parameters:<br/>
--   or dataset collection box. 
-- *Click on `MarkDuplicates` in the `SAM/BAM` dataset  or dataset collection:* ``The merged BAM dataset produced by MergeSAMFiles tool from step 4.1``<br/>
-- *The scoring strategy for choosing the non-duplicate among candidates:* ``SUM_OF_BASE_QUALITIES``<br/>
-- *The maximum offset between two duplicate clusters in order to consider them optical duplicates:* ``100``<br/>
-- *Select validation stringency:* ``Lenient``<br/>
-- Execute
+### 🎯 Parameters: As shown in the figure below.
 
 ![42](https://user-images.githubusercontent.com/77963733/130158847-44d2da3e-d50e-46f8-a2ae-c8f7a2d676cc.png)
+
+- Then *Execute* <br/>
 
 ## ➡️ 4.3: Left-Aligning Indels using BamLeftAlign Tool
 
@@ -139,133 +123,58 @@ Left aligning of indels is important for obtaining accurate variant calls (The B
 Click on the ``Pencil`` icon of the BAM dataset produced in **Step 4.2** to edit ``attributes`` <br/>
 Select `hg38` under the `Database/Build` option and save.
 
-### 🎯 Parameters:<br/>
-- *Choose the source for the reference genome:* ``Locally cached``<br/>
-- *Select alignment file in BAM format:* ``The BAM dataset produced by MarkDuplicates tool``<br/>
-- *Using reference genome:* ``hg38``<br/>
-- *Maximum number of iterations:* ``5``<br/>
-- Execute
+### 🎯 Parameters: As shown in the figure below.
 
 ![43](https://user-images.githubusercontent.com/77963733/130158853-bc589b3e-3841-44cc-b5fa-4951f483459e.png)
 
+- Then *Execute* <br/>
 
 ## ➡️ 4.4: Filtering Reads
 
 ### 🛠️ Tool: ``BAMTools Filter``<br/>
-### 🎯 Parameters:<br/>
+
+### 🎯 Parameters: As shown in the figure below.
+
 - *BAM dataset(s) to filter:* ``Select the BAM dataset produced by BamLeftAlign tool``<br/>
-
- - Under ``Condition`` > ``1: Condition`` > ``Filter``:<br/>
-  - **In ``1: Filter``:**<br/>
-    - *Select BAM property to filter on:* ``mapQuality``<br/>
-    - *Filter on read mapping quality (phred scale):* ``>=20``<br/>
-
-    - Click on ``Insert Filter``<br/>
-
-  - **In ``2: Filter``:**<br/>
-    - *Select BAM property to filter on:* ``isPaired``<br/>
-    - *Selected mapped reads:* ``Yes``<br/>
-
-    - Click on ``Insert Filter``<br/>
-
-  - **In ``3: Filter``:**<br/>
-    - *Select BAM property to filter on:* ``isProperPair``<br/>
-    - *Select reads with mapped mate:* ``Yes``<br/>
-
-    - Click on ``Insert Filter``<br/>
-
-  - **In ``4: Filter``:**<br/>
+ - **In ``4: Filter``:**<br/>
     - *Select BAM property to filter on:* ``reference``<br/>
     - *Select reads with mapped mate:* ``chrM``<br/>
+ ![44](https://user-images.githubusercontent.com/77963733/130158864-3000b582-0429-48cb-9655-f5b4b1ec683a.png)
  
 - *Would you like to set rules:* ``NO``<br/>
-- Execute<br/>
+- Then *Execute* <br/>
 
-![44](https://user-images.githubusercontent.com/77963733/130158864-3000b582-0429-48cb-9655-f5b4b1ec683a.png)
+
 
 # 5️⃣ STEP 5 - CALLING NON-DIPLOID VARIANTS USING FREEBAYES
 
 ### 🛠️ Tool: ``FreeBayes``<br/>
 You can navigate to the tool (FreeBayes) using the search button in Galaxy. Select the reference genome, mode of run and the BAM file input. Set the parameters for the following options (population mode, allelic scope, input filter) as seen in the images below.
 
-### 🎯 Parameters:<br/>
-- *Choose the source for the reference genome:* ``Locally cached``<br/>
-- *Run in batch mode?:* ``Run individually``<br/>
-- *BAM dataset:* ``select the BAM dataset produced by last Filter tool step``<br/>
-- *Using reference genome:* ``hg38``<br/>
-- *Limit variant calling to a set of regions?:* ``Limit to region``<br/>
-- *Region Chromosome:* ``chrM``<br/>
-- *Region Start:* ``1``<br/>
-- *Region End:* ``16000``<br/>
+### 🎯 Parameters: As shown in the figure below.
 
 ![51](https://user-images.githubusercontent.com/77963733/130159354-9c941c1e-52a2-4345-8245-6fbb3c776318.jpg)
 
-- *Choose parameter selection level:* ``5: Full list of options``<br/>
-- *Population model options:* ``Set population model options``<br/>
-- *The expected mutation rate or pairwise nucleotide diversity among the population under analysis:* ``0.001``<br/>
-- *Set ploidy for the analysis:* ``1``<br/>
-- *Assume that samples result from pooled sequencing:* ``Yes``<br/>
-- *Output all alleles which pass input filters, regardless of genotyping outcome or model:* ``Yes``<br/>
-
 ![52](https://user-images.githubusercontent.com/77963733/130159365-17e62592-2693-4b66-9c2f-f79d406e9ec3.jpg)
-
-- *Allelic scope options:* ``Set allelic scope options``<br/>
-- *Ignore SNP alleles:* ``No``<br/>
-- *Ignore indels alleles:* ``No``<br/>
-- *Ignore multi-nucleotide polymorphisms, MNPs:* ``Yes``<br/>
-- *Ignore complex events (composites of other classes):* ``Yes``<br/>
 
 ![53](https://user-images.githubusercontent.com/77963733/130159377-fa30dab0-0547-4e3d-8047-40ababc86442.jpg)
 
-- *Input filters:* ``Set input filters``<br/>
-- *Exclude alignments from analysis if they have a mapping quality less than:* ``20``<br/>
-- *Exclude alleles from analysis if their supporting base quality less than:* ``30``<br/>  
-- Execute <br/>
-
 ![54](https://user-images.githubusercontent.com/77963733/130159384-10e83cd7-b90d-4c36-82e3-205fe3999671.jpg)
+
+- Then *Execute* <br/>
 <br/>
 <br/>
 # 6️⃣ STEP 6 - FILTERING VARIANTS USING VCF
 
 ### 🛠️ Tool: ``VCFfilter``<br/>
 
-### 🎯 Parameters:<br/>
+### 🎯 Parameters: As shown in the figure below.
 
 *VCF dataset to filter*: ``select the VCF dataset  obtained from variant call (step 5) produced by FreeBayes tool``<br/>
 
-In ``more filters``:<br/>
- - **In ``1: more filters``:**<br/>
-   - *Select the filter type*:* ``Info filter (-f)``<br/>
-   - *Specify filtering value*: ``SRP > 20``<br/>
-  
-   - Click on ``Insert more filters``<br/>
-
- - **In ``2: more filters``:**<br/>
-   - *Select the filter type*: ``Info filter (-f)``<br/>
-   - *Specify filtering value*: ``SAP > 20``<br/>
-
-   - Click on ``Insert more filters``<br/>
-
- - **In ``3: more filters``:**<br/>
-   - *Select the filter type*: ``Info filter (-f)``<br/>
-   - *Specify filtering value*: ``EPP > 20``<br/>
-
-   - Click on ``Insert more filters``<br/>
-
- - **In ``4: more filters``:**<br/>
-   - *Select the filter type*: ``Info filter (-f)``<br/>
-   - *Specify filtering value*: ``QUAL > 20``<br/>
-![61](https://user-images.githubusercontent.com/77963733/130159393-bf828636-a389-4580-a54e-3f8e20702da6.jpg)
-
-Click on ``Insert more filters``<br/>
-
- - **In ``5: more filters``:**<br/>
-   - *Select the filter type*: ``Info filter (-f)``<br/>
-   - *Specify filtering value*: ``DP > 20``<br/>
-- Execute<br/>
-<br/>
-
 ![62](https://user-images.githubusercontent.com/77963733/130159398-e5ae3a89-0118-4fa6-ac52-5135899eaf76.jpg)
+
+- Then *Execute* <br/>
 <br/>
 <br/>
 # 7️⃣ STEP 7 - VISUALIZATION
@@ -304,26 +213,23 @@ Though visualizing VCF datasets is a good way to get an overall idea, it does no
 ## ➡️ 8.1 Convert VCF to tab-delimited data
 Convert VCF dataset into a tab-delimited representation using VCFtoTab-delimited
 ### 🛠️ Tool: ``VCFtoTab-delimited``<br/>
-### 🎯 Parameters:<br/>
-- *Select VCF dataset to convert*: ``select the VCF dataset produced by VCFfilter tool``<br/>
-- *Report data per sample*: ``Yes``<br/>
-- *Fill empty fields with*: ``Nothing``<br/>
+### 🎯 Parameters: As shown in the figure below.
 
 ![IMG-20210820-WA0017](https://user-images.githubusercontent.com/77963733/130201353-bd30b6ca-2aac-45f2-bc6c-b4038cf6d326.jpg)
+
+- Then *Execute* <br/>
 
 ## ➡️ 8.2: Cut columns from a file
 As we opted for “Report data per sample”(four), this will produce a dataset with many columns (In this tutorial, 62 columns were produced out of which only six are necessary)
 ### 🛠️ Tool: ``Cut columns from a table``<br/>
-### 🎯 Parameters:<br/>
-- *Cut columns*: ``c2,c4,c5,c52,c54,c55``<br/>
-- *Delimited by*: ``Tab``<br/>
-- *From*: ``select the tabular dataset produced by VCFtoTab-delimited``<br/>
+### 🎯 Parameters: As shown in the figure below.
 
 ![IMG-20210820-WA0018](https://user-images.githubusercontent.com/77963733/130201363-eae11cda-b070-4fb7-8583-315901440411.jpg)
 
-Then proceed to cut these columns out (refer to image below)
-
+- proceed to cut these columns out (refer to image below)
 ![IMG-20210820-WA0019](https://user-images.githubusercontent.com/77963733/130201371-2038a041-6198-4657-9493-50a995f4e77e.jpg)
+
+- Then *Execute* <br/>
 <br/>
 <br/>
 
