@@ -325,7 +325,7 @@ Then proceed to cut these columns out (refer to image below)
 <br/>
 <br/>
 
-# 🔮 Interpretation of Results:
+# 🔮 Interpretation of Results
 
 ![IMG-20210820-WA0020](https://user-images.githubusercontent.com/77963733/130201389-a7c1cae4-d4ce-46ae-9547-65a1da69ed08.jpg)
 
