@@ -24,10 +24,12 @@ In this tutorial Team Genomics_One_B will be recreating the above project which 
 
 The raw reads were downloaded from [here](https://zenodo.org/record/1251112)
 
+```
 https://zenodo.org/record/1251112/files/raw_child-ds-1.fq
 https://zenodo.org/record/1251112/files/raw_child-ds-2.fq
 https://zenodo.org/record/1251112/files/raw_mother-ds-1.fq
 https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq
+```
 
 In this tutorial, we will cover:
 
