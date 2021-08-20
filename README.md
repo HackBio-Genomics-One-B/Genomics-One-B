@@ -2,7 +2,7 @@
 
 ## ⛳️ Table of Contents
 <!-- markdownlint-disable -->
-  - [🧬 Instructions](#-hackbio-2021)
+  - [🧬 Stage 2 Task](#-hackbio-2021)
   - [🎮 The Stage 2 Task](#-#the-stage-0-task)
   - [🛡 Dependencies](#-dependencies)
   - [💡 Installation](#-Installation)
@@ -12,13 +12,13 @@
   - [🏁 Results](#-results)
   - [🔥 Contributors](#-contributors)
 
-# Stage 2 Task: Calling Variants in Non-diploid Systems
+# 🧬 Stage 2 Task: Calling Variants in Non-diploid Systems
 
-# Project Workflow
+# 🚀 Project Workflow
 
 ![image](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/mike/PROJECT_DESIGN_(GENOMICS_1B).png)
 
-## Instructions  
+## 📙 Instructions  
 This tutorial is implemented in galaxy (https://usegalaxy.org) <br/>
 Always use the search button to navigate the respective tools. 
 
