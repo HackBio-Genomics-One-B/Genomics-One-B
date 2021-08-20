@@ -150,7 +150,7 @@ Navigate to tool (VCFfilter) using the search button option on Galaxy Using the 
 *Delimited by*: ``Tab``<br/>
 *From*: ``select the tabular dataset produced by VCFtoTab-delimited``<br/>
 
-**Contributors:**
+## **Contributors:**
 
 
 
