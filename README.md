@@ -176,13 +176,13 @@ Click on ``Insert more filters``<br/>
 ## ➡️ 7.1 Visualising with VCF.IOBIO
 
 ### 🛠️ Tool: ``VCF.IOBIO``<br/>
-### 🎯 Parameters:<br/>
+### 🎯 Result:<br/>
 ![vcfiobioimage](https://raw.githubusercontent.com/HackBio-Genomics-One-B/Genomics-One-B/mike/Visualising%20with%20VCF%20IOBIO.JPG)
 
 ## ➡️ 7.2: Visualising with IGV
 
 ### 🛠️ Tool: ``IGV``<br/>
-### 🎯 Parameters:<br/>
+### 🎯 Result:<br/>
 ![igvimage](https://raw.githubusercontent.com/HackBio-Genomics-One-B/Genomics-One-B/mike/Visualization%20using%20IGV.jpeg)
 
 # 8️⃣ Comparing frequencies
