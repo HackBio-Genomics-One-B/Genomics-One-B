@@ -10,7 +10,7 @@
 This tutorial is implemented in galaxy  
 Always use the serch button to navigate the respective tools  
 
-## 1️⃣ Importing Data
+# 1️⃣ Importing Data
 Import raw reads from [here](https://zenodo.org/record/1251112)
 
 ```
@@ -20,7 +20,7 @@ https://zenodo.org/record/1251112/files/raw_mother-ds-1.fq
 https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq
 ```
 
-## 2️⃣ Quality Checking  
+# 2️⃣ Quality Checking  
 
 ### 🛠️ Tool: ``FastQC``<br/>
 ### 🎯 Parameters: <br/>
@@ -30,7 +30,7 @@ To select multiple datasets, <br/>
 click on the Multiple datasets icon<br/>
 select several files by keeping the ``Ctrl`` (or ``COMMAND``) key pressed and clicking on all 4 FASTQ files
 
-## 3️⃣ Mapping reads to reference  
+# 3️⃣ Mapping reads to reference  
 
 ### Tool: ``BWA-mem``
 ### 🎯 Parameters: <br/>
@@ -45,7 +45,7 @@ select several files by keeping the ``Ctrl`` (or ``COMMAND``) key pressed and cl
 *Platform/technology used to produce the reads (PL):* ``ILLUMINA``<br/>
 *Auto-assign:* ``Yes``<br/>
 
-## 4️⃣ Postprocessing mapped reads
+# 4️⃣ Postprocessing mapped reads
 
 ## 4.1 Merging BAM datasets
 
@@ -135,7 +135,7 @@ Click on ``Insert Filter``<br/>
 *Exclude alignments from analysis if they have a mapping quality less than:* ``20``<br/>
 *Exclude alleles from analysis if their supporting base quality less than:* ``30``<br/>  
 
-## 6️⃣ Filtering variants
+# 6️⃣ Filtering variants
 
 ### 🛠️ Tool: ``VCFfilter``<br/>
 ### 🎯 Parameters:<br/>
@@ -171,11 +171,11 @@ Click on ``Insert more filters``<br/>
 *Select the filter type*: ``Info filter (-f)``<br/>
 *Specify filtering value*: ``DP > 20``<br/>
 
-## 7️⃣ Visualization
+# 7️⃣ Visualization
 
 ### 🛠️ Tool: ``VCF.IOBIO`` and ``IGV``<br/>
 
-## 8️⃣ Comparing frequencies
+# 8️⃣ Comparing frequencies
 
 ## 🚩8.1 Convert VCF to tab-delimited data
 
