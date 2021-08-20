@@ -199,4 +199,6 @@ Click on ``Insert more filters``<br/>
 
 ### 🛠️ Tool: ``Cut columns from a table``<br/>
 ### 🎯 Parameters:<br/>
-
+*Cut columns*: ``c2,c4,c5,c52,c54,c55``<br/>
+“Delimited by*: ``Tab``<br/>
+*From*: ``select the tabular dataset produced by VCFtoTab-delimited``<br/>
