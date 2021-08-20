@@ -108,12 +108,20 @@ Human genome, ‘hg38’ was used as the reference genome.Using the Paired end s
 
 # 4️⃣ STEP 4 - POST-PROCESSING MAPPED READ
 
-## ➡️ 4.1 Merging BAM Datasets
+  ## ➡️ 4.1 Merging BAM Datasets
 
 ### 🛠️ Tool: ``Picard's MergeSAMFiles``<br/>
 ### 🎯 Parameters:<br/>
 *Select SAM/BAM dataset or dataset collection:* `Both BAM datasets produced by BWA-MEM tool`<br/>
 *Select validation stringency:* `Lenient`<br/>  
+
+Step 4.1: Merging `BAM` datasets
+- Select Picard tool
+- Click Merge `SAM` Files tool, then import dataset obtained from Step 3 into the dataset collection.
+- Input parameters as seen in the image below. Then execute.
+
+
+   ![41](https://user-images.githubusercontent.com/77963733/130158840-9923d314-6841-44cd-a4cb-33d738e1a208.png)
 
 ## ➡️ 4.2: Removing Duplicates
 
