@@ -34,7 +34,8 @@ https://zenodo.org/record/1251112/files/raw_child-ds-2.fq
 https://zenodo.org/record/1251112/files/raw_mother-ds-1.fq
 https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq
 ```
-
+<br/>
+<br/>
 # 2️⃣ STEP 2 - QUALITY CHECKING
 
 ### 🛠️ Tool: ``FastQC``<br/>
@@ -44,7 +45,8 @@ https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq
 To select multiple datasets, <br/>
 click on the Multiple datasets icon<br/>
 select several files by keeping the ``Ctrl`` (or ``COMMAND``) key pressed and clicking on all 4 FASTQ files
-
+<br/>
+<br/>
 # 3️⃣ STEP 3 - MAPPING READS TO REFERENCE GENOME 
 
 ### Tool: ``BWA-mem``
@@ -59,7 +61,8 @@ select several files by keeping the ``Ctrl`` (or ``COMMAND``) key pressed and cl
 *Auto-assign:* ``Yes``<br/>
 *Platform/technology used to produce the reads (PL):* ``ILLUMINA``<br/>
 *Auto-assign:* ``Yes``<br/>
-
+<br/>
+<br/>
 # 4️⃣ STEP 4 - POSTPROCESSING MAPPED READS
 
 ## ➡️ 4.1 MERGING BAM DATASETS
@@ -119,7 +122,8 @@ Click on ``Insert Filter``<br/>
 **In ``4: Filter``:**<br/>
 *Select BAM property to filter on:* ``reference``<br/>
 *Select reads with mapped mate:* ``chrM``<br/>
-
+<br/>
+<br/>
 # 5️⃣ STEP 5 - CALLING NON-DIPLOID VARIANTS
 
 ### 🛠️ Tool: ``FreeBayes``<br/>
@@ -149,7 +153,8 @@ Click on ``Insert Filter``<br/>
 *Input filters:* ``Set input filters``<br/>
 *Exclude alignments from analysis if they have a mapping quality less than:* ``20``<br/>
 *Exclude alleles from analysis if their supporting base quality less than:* ``30``<br/>  
-
+<br/>
+<br/>
 # 6️⃣ STEP 6 - FILTERING VARIANTS
 
 ### 🛠️ Tool: ``VCFfilter``<br/>
@@ -185,7 +190,8 @@ Click on ``Insert more filters``<br/>
 **In ``5: more filters``:**<br/>
 *Select the filter type*: ``Info filter (-f)``<br/>
 *Specify filtering value*: ``DP > 20``<br/>
-
+<br/>
+<br/>
 # 7️⃣ STEP 7 - VISUALIZATION
 
 ## ➡️ 7.1 Visualising with VCF.IOBIO
@@ -199,7 +205,8 @@ Click on ``Insert more filters``<br/>
 ### 🛠️ Tool: ``IGV``<br/>
 ### 🎯 Result:<br/>
 ![igvimage](https://raw.githubusercontent.com/HackBio-Genomics-One-B/Genomics-One-B/mike/7_Visualize/Visualization%20using%20IGV.jpeg)
-
+<br/>
+<br/>
 # 8️⃣ STEP 8 - COMPARING FREQUENCIES
 
 ## ➡️ 8.1 Convert VCF to tab-delimited data
