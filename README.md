@@ -164,6 +164,12 @@ Insert more filters:<br/>
 *Select the filter type*: ``Info filter (-f)``<br/>
 *Specify filtering value*: ``DP > 20``<br/>
 
+## 7️⃣ Visualization
 
+### 🛠️ Tool: ``VCF.IOBIO`` and ``IGV``<br/>
+
+## 8️⃣ Comparing frequencies
+
+### 🛠️ Tool: ``VCFtoTab-delimited`` and ``Cut columns from a table``<br/>
 
 
