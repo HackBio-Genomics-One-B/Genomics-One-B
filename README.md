@@ -121,7 +121,7 @@ Click on ``Insert Filter``<br/>
 *Select BAM property to filter on:* ``reference``<br/>
 *Select reads with mapped mate:* ``chrM``<br/>
 
-## 5️⃣ Calling non-diploid variants
+## 5️⃣ STEP 5 - CALLING NON-DIPLOID VARIANTS
 
 ### 🛠️ Tool: ``FreeBayes``<br/>
 ### 🎯 Parameters:<br/>
