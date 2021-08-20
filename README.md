@@ -79,9 +79,8 @@ select several files by keeping the ``Ctrl`` (or ``COMMAND``) key pressed and cl
 ![gc](https://user-images.githubusercontent.com/77963733/130158592-ceedd90b-8761-4289-8284-504bf35ae368.jpg)
 <br/>
 ![gd](https://user-images.githubusercontent.com/77963733/130158596-09ad1ed9-390e-44a3-a3c5-64cb2e0d0100.png)
-
 <br/>
-
+<br/>
 # 3️⃣ STEP 3 - MAPPING THE READS USING BWA MEM 
 ### Tool: ``BWA-mem``
 Human genome, ‘hg38’ was used as the reference genome.Using the Paired end sequencing, the datasets has to be uploaded by selecting multiple datasets as follows:
@@ -104,8 +103,8 @@ Human genome, ‘hg38’ was used as the reference genome.Using the Paired end s
 ![img_20210820_131657](https://user-images.githubusercontent.com/77963733/130246896-a965760e-b51a-49b4-bb65-1dab11dbccfb.jpg)
 
 ![img_20210820_131439](https://user-images.githubusercontent.com/77963733/130246959-8e69f0ab-3385-4daa-8d69-2b0f60913e41.jpg)
-
-
+<br/>
+<br/>
 # 4️⃣ STEP 4 - POST-PROCESSING MAPPED READ
 
 ## ➡️ 4.1 Merging `BAM` Datasets
@@ -222,8 +221,7 @@ You can navigate to the tool (FreeBayes) using the search button in Galaxy. Sele
 - Execute <br/>
 ![54](https://user-images.githubusercontent.com/77963733/130159384-10e83cd7-b90d-4c36-82e3-205fe3999671.jpg)
 <br/>
-
-
+<br/>
 # 6️⃣ STEP 6 - FILTERING VARIANTS USING VCF
 
 ### 🛠️ Tool: ``VCFfilter``<br/>
@@ -269,7 +267,9 @@ Click on ``Insert more filters``<br/>
 <br/>
 # 7️⃣ STEP 7 - VISUALIZATION
 Processed data in VCF format imported onto the galaxy platform and change the reference genome to Human hg38 for comparison<br/>
+
 ![igvimage](https://user-images.githubusercontent.com/77963733/130161840-b9f7bc0c-9b1f-4b9b-9983-78e467fc78a1.jpg)<br/>
+
 ## ➡️ 7.1 Visualising with VCF.IOBIO
 VCF.IOBIO link is also generated when the VCF dataset is uploaded that will give us the data on Varient types, Allele Frequency Spectrum and Base Changes.
 
