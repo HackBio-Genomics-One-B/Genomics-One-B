@@ -276,7 +276,7 @@ VCF.IOBIO link is also generated when the VCF dataset is uploaded that will give
 ### 🛠️ Tool: ``VCF.IOBIO``<br/>
 ### 🎯 Process:<br/>
 - Click on processed VCF datasets, it will expand to show link.<br/>
-- Click on “display at vcf.iobio” at the bottom<br/>
+- Click on ``display at vcf.iobio`` at the bottom<br/>
 - Use the reference genome, Human hg38 for comparison<br/>
 - VCF datasets will be index to display them<br/>
 <br/>
@@ -288,7 +288,7 @@ The data can be visualised via IGV locally and focus on varient at position 3243
 ### 🛠️ Tool: ``IGV``<br/>
 ### 🎯 Process:<br/>
 - Click on processed VCF datasets, it will expand to show link.<br/>
-- Click on “display with IGV” at the bottom<br/>
+- Click on ``display with IGV local`` at the bottom<br/>
 - Use the reference genome, Human hg38 for comparison<br/>
 - VCF datasets will be index to display them<br/>
 <br/>
