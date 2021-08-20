@@ -34,7 +34,7 @@ https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq
 In this tutorial, we will cover:
 
 
-## STEP 1: IMPORTING DATASET
+## 1️⃣ STEP 1: IMPORTING DATASET
 
 - Download datasets from resource page
 - Click upload data on Galaxy web page
