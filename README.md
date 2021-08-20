@@ -143,22 +143,26 @@ In ``more filters``:<br/>
 **In ``1: more filters``:**<br/>
 *Select the filter type*:* ``Info filter (-f)``<br/>
 *Specify filtering value*: ``SRP > 20``<br/>
-Insert more filters:<br/>
+
+``Insert more filters``:<br/>
 
 **In ``2: more filters``:**<br/>
 *Select the filter type*: ``Info filter (-f)``<br/>
 *Specify filtering value*: ``SAP > 20``<br/>
-Insert more filters:<br/>
+
+``Insert more filters``:<br/>
 
 **In ``3: more filters``:**<br/>
 *Select the filter type*: ``Info filter (-f)``<br/>
 *Specify filtering value*: ``EPP > 20``<br/>
-Insert more filters:<br/>
+
+``Insert more filters``:<br/>
 
 **In ``4: more filters``:**<br/>
 *Select the filter type*: ``Info filter (-f)``<br/>
 *Specify filtering value*: ``QUAL > 20``<br/>
-Insert more filters:<br/>
+
+``Insert more filters``:<br/>
 
 **In ``5: more filters``:**<br/>
 *Select the filter type*: ``Info filter (-f)``<br/>
