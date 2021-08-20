@@ -168,7 +168,7 @@ We noticed a remarkable frequency change i.e., the major allele in the mother â€
 ![IMG-20210820-WA0020](https://user-images.githubusercontent.com/77963733/130201389-a7c1cae4-d4ce-46ae-9547-65a1da69ed08.jpg)
 
 
-To access our result and data <a href="https://drive.google.com/drive/folders/1oafSVbpr8Nz0YXFxoqBtIIDefZ8NcWbd" target="blank"><img align="center" src="https://user-images.githubusercontent.com/77963733/130204548-760e6b5a-88e1-4e04-9a17-883d01bcfcb8.png" height="50" width="50" /></a> </p>
+To access our result and data <a href="https://drive.google.com/drive/folders/1oafSVbpr8Nz0YXFxoqBtIIDefZ8NcWbd" target="blank"><img align="center" src="https://user-images.githubusercontent.com/77963733/130207235-ab81908f-62cd-45c7-9e0c-408831a6f164.png" height="50" width="50" /></a> </p>
 
 
 ## **Contributors:**
