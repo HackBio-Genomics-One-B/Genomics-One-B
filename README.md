@@ -11,7 +11,7 @@ This tutorial is implemented in galaxy (https://usegalaxy.org) <br/>
 Always use the search button to navigate the respective tools. 
 
 [List of contributors](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/mike/List_of_contributors.md)  
-[Initial galaxy tutorial](https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/non-dip/tutorial.html#checking-data-quality)  
+[The galaxy tutorial we followed](https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/non-dip/tutorial.html#checking-data-quality)  
 
 # 1️⃣ Importing Data
 Import raw reads from [here](https://zenodo.org/record/1251112)
