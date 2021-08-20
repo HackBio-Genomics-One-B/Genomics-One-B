@@ -191,8 +191,9 @@ Click on ``Insert more filters``<br/>
 
 ### 🛠️ Tool: ``VCFtoTab-delimited``<br/>
 ### 🎯 Parameters:<br/>
-*Select SAM/BAM dataset or dataset collection:* `Both BAM datasets produced by BWA-MEM tool`<br/>
-*Select validation stringency:* `Lenient`<br/>  
+*Select VCF dataset to convert*: ``select the VCF dataset produced by VCFfilter tool``<br/>
+*Report data per sample*: ``Yes``<br/>
+*Fill empty fields with*: ``Nothing``<br/>
 
 ## ➡️ 8.2: Cut columns from a file
 
