@@ -14,7 +14,7 @@
   - - [➡️ 4.2 Removing Duplicates](#%EF%B8%8F-42-removing-duplicates)
   - - [➡️ 4.3 Left-Aligning Indels](#%EF%B8%8F-43-left-aligning-indels)
   - - [➡️ 4.4 Filtering Reads](#%EF%B8%8F-44-filtering-reads)
-  - [5️⃣ Step 5 - Calling Non-diploid Variants](#5%EF%B8%8F%E2%83%A3-step-5---calling-non-diploid-variants)
+  - [5️⃣ Step 5 - CALLING NON-DIPLOID VARIANTS USING FREEBAYES](#5%EF%B8%8F%E2%83%A3-step-5---CALLING-NON-DIPLOID-VARIANTS-USING-FREEBAYES)
   - [6️⃣ Step 6 - Filtering Variants](#6%EF%B8%8F%E2%83%A3-step-6---filtering-variants)
   - [7️⃣ Step 7 - Visualization](#7%EF%B8%8F%E2%83%A3-step-7---visualization)
   - - [➡️ 7.1 Visualising with VCF.IOBIO](#%EF%B8%8F-71-visualising-with-vcfiobio)
@@ -185,18 +185,20 @@ Select `hg38` under the `Database/Build` option and save.
 
 ![44](https://user-images.githubusercontent.com/77963733/130158864-3000b582-0429-48cb-9655-f5b4b1ec683a.png)
 
-# 5️⃣ STEP 5 - Calling Non-diploid Variants
+# 5️⃣ STEP 5 - CALLING NON-DIPLOID VARIANTS USING FREEBAYES
 
 ### 🛠️ Tool: ``FreeBayes``<br/>
+You can navigate to the tool (FreeBayes) using the search button in Galaxy. Select the reference genome, mode of run and the BAM file input. Set the parameters for the following options (population mode, allelic scope, input filter) as seen in the images below.
+
 ### 🎯 Parameters:<br/>
-*Choose the source for the reference genome:* ``Locally cached``<br/>
-*Run in batch mode?:* ``Run individually``<br/>
-*BAM dataset:* ``select the BAM dataset produced by last Filter tool step``<br/>
-*Using reference genome:* ``hg38``<br/>
-*Limit variant calling to a set of regions?:* ``Limit to region``<br/>
-*Region Chromosome:* ``chrM``<br/>
-*Region Start:* ``1``<br/>
-*Region End:* ``16000``<br/>
+- *Choose the source for the reference genome:* ``Locally cached``<br/>
+- *Run in batch mode?:* ``Run individually``<br/>
+- *BAM dataset:* ``select the BAM dataset produced by last Filter tool step``<br/>
+- *Using reference genome:* ``hg38``<br/>
+- *Limit variant calling to a set of regions?:* ``Limit to region``<br/>
+- *Region Chromosome:* ``chrM``<br/>
+- *Region Start:* ``1``<br/>
+- *Region End:* ``16000``<br/>
 
 *Choose parameter selection level:* ``5: Full list of options``<br/>
 *Population model options:* ``Set population model options``<br/>
@@ -215,7 +217,19 @@ Select `hg38` under the `Database/Build` option and save.
 *Exclude alignments from analysis if they have a mapping quality less than:* ``20``<br/>
 *Exclude alleles from analysis if their supporting base quality less than:* ``30``<br/>  
 <br/>
-<br/>
+
+![51](https://user-images.githubusercontent.com/77963733/130159354-9c941c1e-52a2-4345-8245-6fbb3c776318.jpg)
+
+
+![52](https://user-images.githubusercontent.com/77963733/130159365-17e62592-2693-4b66-9c2f-f79d406e9ec3.jpg)
+
+
+![53](https://user-images.githubusercontent.com/77963733/130159377-fa30dab0-0547-4e3d-8047-40ababc86442.jpg)
+
+
+![54](https://user-images.githubusercontent.com/77963733/130159384-10e83cd7-b90d-4c36-82e3-205fe3999671.jpg)
+
+
 # 6️⃣ STEP 6 - Filtering Variants
 
 ### 🛠️ Tool: ``VCFfilter``<br/>
