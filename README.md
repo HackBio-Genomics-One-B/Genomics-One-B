@@ -163,7 +163,7 @@ Navigate to tool (VCFfilter) using the search button option on Galaxy Using the 
 
 
 
-- `abdnahid_` - Merging BAM datasets with MergeSAMFiles, Removing duplicates with MarkDuplicates, Left-aligning indels with BamLeftAlign, Filtering reads with BAMTools filter
+- `abdnahid_` - Merging BAM datasets with MergeSAMFiles, Removing duplicates with MarkDuplicates, Left-aligning indels with BamLeftAlign, Filtering reads with BAMTools filter and GitHub Markdown
       
       
   
