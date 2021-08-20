@@ -25,7 +25,7 @@ Always use the search button to navigate the respective tools.
 [List of contributors](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/mike/List_of_contributors.md)  
 [The galaxy tutorial we followed](https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/non-dip/tutorial.html#checking-data-quality)  
 
-# 1️⃣ STEP 1 - IMPORTING DATA
+# 1️⃣ STEP 1 - Importing Data
 Import raw reads from [here](https://zenodo.org/record/1251112)
 
 ```
@@ -36,7 +36,7 @@ https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq
 ```
 <br/>
 
-# 2️⃣ STEP 2 - QUALITY CHECKING
+# 2️⃣ STEP 2 - Quality Checking
 
 ### 🛠️ Tool: ``FastQC``<br/>
 ### 🎯 Parameters: <br/>
@@ -47,7 +47,7 @@ click on the Multiple datasets icon<br/>
 select several files by keeping the ``Ctrl`` (or ``COMMAND``) key pressed and clicking on all 4 FASTQ files
 <br/>
 <br/>
-# 3️⃣ STEP 3 - MAPPING READS TO REFERENCE GENOME 
+# 3️⃣ STEP 3 - Mapping Reads to Reference Genome 
 
 ### Tool: ``BWA-mem``
 ### 🎯 Parameters: <br/>
@@ -63,16 +63,16 @@ select several files by keeping the ``Ctrl`` (or ``COMMAND``) key pressed and cl
 *Auto-assign:* ``Yes``<br/>
 <br/>
 <br/>
-# 4️⃣ STEP 4 - POSTPROCESSING MAPPED READS
+# 4️⃣ STEP 4 - Postprocessing Mapped Reads
 
-## ➡️ 4.1 MERGING BAM DATASETS
+## ➡️ 4.1 Merging BAM Datasets
 
 ### 🛠️ Tool: ``Picard's MergeSAMFiles``<br/>
 ### 🎯 Parameters:<br/>
 *Select SAM/BAM dataset or dataset collection:* `Both BAM datasets produced by BWA-MEM tool`<br/>
 *Select validation stringency:* `Lenient`<br/>  
 
-## ➡️ 4.2: REMOVING DUPLICATES
+## ➡️ 4.2: Removing Duplicates
 
 ### 🛠️ Tool: ``Picard's MarkDuplicates``<br/>
 ### 🎯 Parameters:<br/>
@@ -81,7 +81,7 @@ select several files by keeping the ``Ctrl`` (or ``COMMAND``) key pressed and cl
 *The maximum offset between two duplicate clusters in order to consider them optical duplicates:* ``100``<br/>
 *Select validation stringency:* ``Lenient``<br/>
 
-## ➡️ 4.3: LEFT-ALIGNING INDELS
+## ➡️ 4.3: Left-Aligning Indels
 
 ### ⚠️ Required step before executing Step 4.3:<br/>
 Click on the ``Pencil`` icon of the BAM dataset produced in **Step 4.2** to edit ``attributes`` <br/>
@@ -94,7 +94,7 @@ Select `hg38` under the `Database/Build` option and save.
 *Using reference genome:* ``hg38``<br/>
 *Maximum number of iterations:* ``5``<br/>
 
-## ➡️ 4.4: FILTERING READS
+## ➡️ 4.4: Filtering Reads
 
 ### 🛠️ Tool: ``BAMTools Filter``<br/>
 ### 🎯 Parameters:<br/>
@@ -124,7 +124,7 @@ Click on ``Insert Filter``<br/>
 *Select reads with mapped mate:* ``chrM``<br/>
 <br/>
 <br/>
-# 5️⃣ STEP 5 - CALLING NON-DIPLOID VARIANTS
+# 5️⃣ STEP 5 - Calling Non-diploid Variants
 
 ### 🛠️ Tool: ``FreeBayes``<br/>
 ### 🎯 Parameters:<br/>
@@ -155,7 +155,7 @@ Click on ``Insert Filter``<br/>
 *Exclude alleles from analysis if their supporting base quality less than:* ``30``<br/>  
 <br/>
 <br/>
-# 6️⃣ STEP 6 - FILTERING VARIANTS
+# 6️⃣ STEP 6 - Filtering Variants
 
 ### 🛠️ Tool: ``VCFfilter``<br/>
 ### 🎯 Parameters:<br/>
@@ -192,7 +192,7 @@ Click on ``Insert more filters``<br/>
 *Specify filtering value*: ``DP > 20``<br/>
 <br/>
 <br/>
-# 7️⃣ STEP 7 - VISUALIZATION
+# 7️⃣ STEP 7 - Visualization
 
 ## ➡️ 7.1 Visualising with VCF.IOBIO
 
@@ -207,7 +207,7 @@ Click on ``Insert more filters``<br/>
 ![igvimage](https://raw.githubusercontent.com/HackBio-Genomics-One-B/Genomics-One-B/mike/7_Visualize/Visualization%20using%20IGV.jpeg)
 <br/>
 <br/>
-# 8️⃣ STEP 8 - COMPARING FREQUENCIES
+# 8️⃣ STEP 8 - Comparing Frequencies
 
 ## ➡️ 8.1 Convert VCF to tab-delimited data
 
@@ -226,12 +226,12 @@ Click on ``Insert more filters``<br/>
 *From*: ``select the tabular dataset produced by VCFtoTab-delimited``<br/>
 <br/>
 <br/>
-# 🏁 RESULTS
+# 🏁 Team Results
 
 Access our data and results on the drive here: <a href="https://drive.google.com/drive/folders/1oafSVbpr8Nz0YXFxoqBtIIDefZ8NcWbd" target="blank"><img align="center" src="https://user-images.githubusercontent.com/77963733/130207235-ab81908f-62cd-45c7-9e0c-408831a6f164.png" height="16" width="16" /></a> </p> https://drive.google.com/drive/folders/1oafSVbpr8Nz0YXFxoqBtIIDefZ8NcWbd
 <br/>
 <br/>
-# 🔥 CONTRIBUTORS
+# 🔥 Contributors
         
 | Name | Activity | 
 | --- | ------------ |
