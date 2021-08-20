@@ -42,7 +42,7 @@ This tutorial is implemented in [galaxy](https://usegalaxy.org) via https://useg
 
 Always use the search button to navigate the respective tools. 
 
-[List of contributors](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/mike/List_of_contributors.md)  
+[List of contributors](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/main/List_of_contributors.md)  
 
 [The galaxy tutorial we followed](https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/non-dip/tutorial.html#checking-data-quality)  
 
