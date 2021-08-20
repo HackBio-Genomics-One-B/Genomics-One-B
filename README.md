@@ -36,6 +36,7 @@ https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq
 ```
 <br/>
 <br/>
+
 # 2️⃣ STEP 2 - QUALITY CHECKING
 
 ### 🛠️ Tool: ``FastQC``<br/>
