@@ -28,13 +28,6 @@
 
 
 # Calling variants in non-diploid systems
-#### _By: AvatarAnton Nekrutenko AvatarAlex Ostrovsky_
-
-## Questions
-How does frequency of mitochondrial polymorphisms change from mother to child?
-
-## Objectives
-Using Galaxy’s main site we will see how to call variants in bacteria, viruses, and organelles.
 
 ## Requirements
 1. Introduction to Galaxy Analyses
@@ -157,110 +150,93 @@ Individual committment to a group effort- that is what makes a team work, a comp
 
 
 
-- `Temmykeji` 
-- Graphic design of workflow, Dataset and FastQC
+- `Temmykeji` - Graphic design of workflow, Dataset and FastQC
 
       
 
 
-- `Solomon` 
-- Dataset, FastQC and Github Markdown
+- `Solomon` - Dataset, FastQC and Github Markdown
 
 
  
 
-- `Rajeshcha44` 
-- Mapping of read using BWA-MEM
+- `Rajeshcha44` - Mapping of read using BWA-MEM
       
       
  
 
 
-- `Nitigya-M` 
-- Mapping of read using BWA-MEM
+- `Nitigya-M` - Mapping of read using BWA-MEM
 
 
 
 
 
 
-- `Abdnahid_` 
-- Post Processing mapped read (This contains four steps)
+- `Abdnahid_` - Post Processing mapped read (This contains four steps)
 
       
       
   
 
-- `Mike` 
-- Post Processing mapped read (This contains four steps)
+- `Mike` - Post Processing mapped read (This contains four steps)
 
 
 
   
 
-- `Karteek` 
-- Post Processing mapped read (This contains four steps)
+- `Karteek` - Post Processing mapped read (This contains four steps)
       
 
 
       
  
 
-- `Priyacomp` 
-- Variant calling of dataset
+- `Priyacomp` - Variant calling of dataset
       
       
   
         
-- `MANGAIYARKARASI` 
-- Variant calling of dataset
+- `MANGAIYARKARASI` - Variant calling of dataset
 
       
   
 
-- `Pragna_lakshmi` 
-- Variant calling of dataset using FreeBayes and Comparing of frequencies using VCFtoTab-delimited
+- `Pragna_lakshmi` - Variant calling of dataset using FreeBayes and Comparing of frequencies using VCFtoTab-delimited
         
         
  
-- `Naomi` 
-- Mapping of read using BWA-MEM
+- `Naomi` - Mapping of read using BWA-MEM
 
 
   
 
-- `Galaxy` 
-- Filtering of variant call dataset using FreeBayes
+- `Galaxy` - Filtering of variant call dataset using FreeBayes
 
 
   
 
-- `Aarathi04` 
-- Filtering of variant call dataset using VCFfilter
+- `Aarathi04` - Filtering of variant call dataset using VCFfilter
 
        
      
       
            
-- `Gautami`**(Team Leader)**
-- Visualization using IGV and VCF.IOBIO; and Comparing of frequencies using VCFtoTab-delimited
+- `Gautami`**(Team Leader)** - Visualization using IGV and VCF.IOBIO; and Comparing of frequencies using VCFtoTab-delimited
 
 
 
  
-- `ZubairAlam` 
-- Visualization using IGV and VCF.IOBIO
+- `ZubairAlam` - Visualization using IGV and VCF.IOBIO
 
 
   
 
-- `Shreyashi` 
-- Visualization using IGV and VCF.IOBIO
+- `Shreyashi` - Visualization using IGV and VCF.IOBIO
 
 
 
-- `omimill` 
-- Comparing of frequencies using VCFtoTab-delimited and Github Markdown
+- `omimill` - Comparing of frequencies using VCFtoTab-delimited and Github Markdown
         
         
         
