@@ -158,7 +158,7 @@ Then proceed to cut these columns out (refer to image below)
 At position 3243, the mother sample has 671 G’s (‘G’ – an alternative allele) and depth of coverage is 2057 so, 2057-671 = 1386 A’s. At the same position, the child sample has 694 G’s and 1035-694 = 341 A’s. 
 
 
-| Allele | A | G |
+| Allele | A | G   |
 | :----------- | :---------: | -----------: |
 | Mother         | 1386            | 671   |
 | Child          | 341             | 694   |
