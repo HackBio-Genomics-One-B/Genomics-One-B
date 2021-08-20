@@ -34,8 +34,10 @@ In this tutorial, we will cover:
 
       •Download datasets from resource page
       •Click upload data on Galaxy web page
-      •Galaxy will prompt to ask if it is from the local files or web (it depends on where you saved the dataset)
-      •After uploading, click start. Once import is completed, the dataset highlight turns green as seen on the picture below.
+      •Galaxy will prompt to ask if it is from the local files or web 
+      (it depends on where you saved the dataset)
+      •After uploading, click start. Once import is completed, 
+      the dataset highlight turns green as seen on the picture below.
       
 ![gd](https://user-images.githubusercontent.com/77963733/130158462-53243352-6693-4370-b0aa-2223834cb571.jpg)
     
@@ -61,7 +63,8 @@ Human genome, ‘hg38’ was used as the reference genome.Using the Paired end s
 ## STEP 4: POST-PROCESSING MAPPED READ
 
       Step 4.1: Merging BAM datasetsSelect Picard from the left side of the Galaxy page.
-      Click Merge SAM Files tool, Then import dataset obtained from Step 3 into the dataset collection.
+      Click Merge SAM Files tool
+      Then, import dataset obtained from Step 3 into the dataset collection.
       Input parameters as seen in the image below. Then executeStep 3
      
      
@@ -84,7 +87,8 @@ Human genome, ‘hg38’ was used as the reference genome.Using the Paired end s
       
 ![43](https://user-images.githubusercontent.com/77963733/130158853-bc589b3e-3841-44cc-b5fa-4951f483459e.png)
       
-      Step 4.4: Filtering reads Select filter under BamToolsUsing MarkDuplicates dataset. 
+      Step 4.4: 
+      Filtering reads Select filter under BamToolsUsing MarkDuplicates dataset. 
       Input parameters as seen in picture below.
       Then execute (NB: Would you like to set rules should be NO)
       
@@ -92,7 +96,7 @@ Human genome, ‘hg38’ was used as the reference genome.Using the Paired end s
       
 ## STEP 5: CALLING NON-DIPLOID VARIANTS USING FREEBAYES
 
-You can navigate to the tool (FreeBayes) using the search button in GalaxySelect the reference genome mode of run and the BAM file input as followsSet the parameters for the following options using uploaded pictures as reference:Population model optionsAllelic scope optionsInput filter options
+You can navigate to the tool (FreeBayes) using the search button in Galaxy. Select the reference genome, mode of run and the BAM file input. Set the parameters for the following options (population mode, allelic scope, input filter)
 
 ![51](https://user-images.githubusercontent.com/77963733/130159354-9c941c1e-52a2-4345-8245-6fbb3c776318.jpg)
 
