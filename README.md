@@ -321,12 +321,26 @@ Then proceed to cut these columns out (refer to image below)
 ![IMG-20210820-WA0019](https://user-images.githubusercontent.com/77963733/130201371-2038a041-6198-4657-9493-50a995f4e77e.jpg)
 
 <br/>
+## INTERPRETATION OF RESULT:
+
+![IMG-20210820-WA0020](https://user-images.githubusercontent.com/77963733/130201389-a7c1cae4-d4ce-46ae-9547-65a1da69ed08.jpg)
+
+At position 3243, the mother sample has 671 G’s (‘G’ – an alternative allele) and depth of coverage is 2057 so, 2057-671 = 1386 A’s. At the same position, the child sample has 694 G’s and 1035-694 = 341 A’s. 
+
+
+| Allele | A | G   |
+| :----------- | :---------: | -----------: |
+| Mother         | 1386            | 671   |
+| Child          | 341             | 694   |
+
+We noticed a remarkable frequency change i.e., the major allele in the mother ‘A’ becomes the minor allele in the child.
 
 
 
 # 🏁 Team Results
 
-Access our data and results on the drive here: <a href="https://drive.google.com/drive/folders/1oafSVbpr8Nz0YXFxoqBtIIDefZ8NcWbd" target="blank"><img align="center" src="https://user-images.githubusercontent.com/77963733/130207235-ab81908f-62cd-45c7-9e0c-408831a6f164.png" height="16" width="16" /></a> </p> https://drive.google.com/drive/folders/1oafSVbpr8Nz0YXFxoqBtIIDefZ8NcWbd
+To access our data and results on the drive click   <a href="https://drive.google.com/drive/folders/1oafSVbpr8Nz0YXFxoqBtIIDefZ8NcWbd" target="blank"><img align="center" src="https://user-images.githubusercontent.com/77963733/130207235-ab81908f-62cd-45c7-9e0c-408831a6f164.png" height="20" width="20" /></a> </p>
+
 <br/>
 <br/>
 # 🔥 Contributors
