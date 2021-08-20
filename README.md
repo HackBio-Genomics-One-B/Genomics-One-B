@@ -4,7 +4,7 @@
 
 ## Introduction
 
-![image](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/main/PROJECT%20DESIGN%20(GENOMICS%201B).png)
+![image](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/mike/PROJECT%20DESIGN%20(GENOMICS%201B).png)
 
 ## Instructions  
 This tutorial is implemented in galaxy  
