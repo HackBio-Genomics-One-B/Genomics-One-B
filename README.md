@@ -16,8 +16,12 @@
   - [5️⃣ Step 5 - Calling Non-diploid Variants](#5%EF%B8%8F%E2%83%A3-step-5---calling-non-diploid-variants)
   - [6️⃣ Step 6 - Filtering Variants](#6%EF%B8%8F%E2%83%A3-step-6---filtering-variants)
   - [7️⃣ Step 7 - Visualization](#7%EF%B8%8F%E2%83%A3-step-7---visualization)
+  - - [➡️ 7.1 Visualising with VCF.IOBIO]()
+  - - [➡️ 7.2: Visualising with IGV]()
   - [8️⃣ Step 8 - Comparing Frequencies](#8%EF%B8%8F%E2%83%A3-step-8---comparing-frequencies)
-  - [🏁 Results](#-results)
+  - - [➡️ 8.1 Convert VCF to tab-delimited data]()
+  - - [➡️ 8.2: Cut columns from a file]()
+  - [🏁 Team Results](#-team-results)
   - [🔥 Contributors](#-contributors)
 
 # 🧬 Stage 2 Task: Calling Variants in Non-diploid Systems
