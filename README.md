@@ -22,6 +22,7 @@
   - [8️⃣ Step 8 - COMPARING FREQUENCIES](#8%EF%B8%8F%E2%83%A3-step-8---COMPARING-FREQUENCIES)
   - - [➡️ 8.1 Convert VCF to tab-delimited data](#%EF%B8%8F-81-convert-vcf-to-tab-delimited-data)
   - - [➡️ 8.2: Cut columns from a file](#%EF%B8%8F-82-cut-columns-from-a-file)
+  - [🔮 Interpretation of Results]()
   - [🏁 Team Results](#-team-results)
   - [🔥 Contributors](#-contributors)
 
@@ -324,7 +325,7 @@ Then proceed to cut these columns out (refer to image below)
 <br/>
 <br/>
 
-# Interpretation of Result:
+# 🔮 Interpretation of Results:
 
 ![IMG-20210820-WA0020](https://user-images.githubusercontent.com/77963733/130201389-a7c1cae4-d4ce-46ae-9547-65a1da69ed08.jpg)
 
