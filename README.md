@@ -10,6 +10,8 @@
 This tutorial is implemented in galaxy (https://usegalaxy.org) <br/>
 Always use the search button to navigate the respective tools. 
 
+[List of contributors](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/mike/List_of_contributors.md
+
 # 1️⃣ Importing Data
 Import raw reads from [here](https://zenodo.org/record/1251112)
 
