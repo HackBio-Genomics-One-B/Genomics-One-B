@@ -233,38 +233,36 @@ You can navigate to the tool (FreeBayes) using the search button in Galaxy. Sele
 *VCF dataset to filter*: ``select the VCF dataset  obtained from variant call (step 5) produced by FreeBayes tool``<br/>
 
 - In ``more filters``:<br/>
-  - **In ``1: more filters``:**<br/>
-   - *Select the filter type*:* ``Info filter (-f)``<br/>
-   - *Specify filtering value*: ``SRP > 20``<br/>
+ - **In ``1: more filters``:**<br/>
+  - *Select the filter type*:* ``Info filter (-f)``<br/>
+  - *Specify filtering value*: ``SRP > 20``<br/>
+  
+  - Click on ``Insert more filters``<br/>
 
-   - Click on ``Insert more filters``<br/>
+ - **In ``2: more filters``:**<br/>
+  - *Select the filter type*: ``Info filter (-f)``<br/>
+  - *Specify filtering value*: ``SAP > 20``<br/>
 
-  - **In ``2: more filters``:**<br/>
-   - *Select the filter type*: ``Info filter (-f)``<br/>
-   - *Specify filtering value*: ``SAP > 20``<br/>
+  - Click on ``Insert more filters``<br/>
 
-   - Click on ``Insert more filters``<br/>
+ - **In ``3: more filters``:**<br/>
+  - *Select the filter type*: ``Info filter (-f)``<br/>
+  - *Specify filtering value*: ``EPP > 20``<br/>
 
-**In ``3: more filters``:**<br/>
-*Select the filter type*: ``Info filter (-f)``<br/>
-*Specify filtering value*: ``EPP > 20``<br/>
+  - Click on ``Insert more filters``<br/>
 
-Click on ``Insert more filters``<br/>
-
-**In ``4: more filters``:**<br/>
-*Select the filter type*: ``Info filter (-f)``<br/>
-*Specify filtering value*: ``QUAL > 20``<br/>
-
-Click on ``Insert more filters``<br/>
-
-**In ``5: more filters``:**<br/>
-*Select the filter type*: ``Info filter (-f)``<br/>
-*Specify filtering value*: ``DP > 20``<br/>
-- Execute<br/>
-<br/>
-
+ - **In ``4: more filters``:**<br/>
+  - *Select the filter type*: ``Info filter (-f)``<br/>
+  - *Specify filtering value*: ``QUAL > 20``<br/>
 ![61](https://user-images.githubusercontent.com/77963733/130159393-bf828636-a389-4580-a54e-3f8e20702da6.jpg)
 
+Click on ``Insert more filters``<br/>
+
+ - **In ``5: more filters``:**<br/>
+  - *Select the filter type*: ``Info filter (-f)``<br/>
+  - *Specify filtering value*: ``DP > 20``<br/>
+- Execute<br/>
+<br/>
 
 ![62](https://user-images.githubusercontent.com/77963733/130159398-e5ae3a89-0118-4fa6-ac52-5135899eaf76.jpg)
 # 7️⃣ STEP 7 - Visualization
