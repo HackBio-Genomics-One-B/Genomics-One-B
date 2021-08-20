@@ -16,7 +16,7 @@
   - [📙 Information Template](#-information-template)
   - [🚀 Get Started](#-get-started)
   - [✅ Code Submitted](#-code-submitted)
-  - [💻 Programming Languages](#-programming-languages)
+  - [🏁 Results](#-results)
   - [🔥 Contributors](#-contributors)
 
 ## Instructions  
@@ -223,8 +223,9 @@ Click on ``Insert more filters``<br/>
 # 🏁 RESULTS
 
 Access our data and results on the drive here: <a href="https://drive.google.com/drive/folders/1oafSVbpr8Nz0YXFxoqBtIIDefZ8NcWbd" target="blank"><img align="center" src="https://user-images.githubusercontent.com/77963733/130207235-ab81908f-62cd-45c7-9e0c-408831a6f164.png" height="50" width="50" /></a> </p>
-
-# ❤️ CONTRIBUTORS
+<br/>
+<br/>
+# 🔥 CONTRIBUTORS
         
 | Name | Activity | 
 | --- | ------------ |
