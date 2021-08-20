@@ -22,7 +22,7 @@
   - [8️⃣ Step 8 - COMPARING FREQUENCIES](#8%EF%B8%8F%E2%83%A3-step-8---COMPARING-FREQUENCIES)
   - - [➡️ 8.1 Convert VCF to tab-delimited data](#%EF%B8%8F-81-convert-vcf-to-tab-delimited-data)
   - - [➡️ 8.2: Cut columns from a file](#%EF%B8%8F-82-cut-columns-from-a-file)
-  - [🔮 Interpretation of Results]()
+  - [🔮 Interpretation of Results](#-interpretation-of-results)
   - [🏁 Team Results](#-team-results)
   - [🔥 Contributors](#-contributors)
 
