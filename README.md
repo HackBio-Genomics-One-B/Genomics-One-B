@@ -121,7 +121,7 @@ Click on ``Insert Filter``<br/>
 *Select BAM property to filter on:* ``reference``<br/>
 *Select reads with mapped mate:* ``chrM``<br/>
 
-## 5️⃣ STEP 5 - CALLING NON-DIPLOID VARIANTS
+# 5️⃣ STEP 5 - CALLING NON-DIPLOID VARIANTS
 
 ### 🛠️ Tool: ``FreeBayes``<br/>
 ### 🎯 Parameters:<br/>
@@ -151,7 +151,7 @@ Click on ``Insert Filter``<br/>
 *Exclude alignments from analysis if they have a mapping quality less than:* ``20``<br/>
 *Exclude alleles from analysis if their supporting base quality less than:* ``30``<br/>  
 
-# 6️⃣ Filtering variants
+# 6️⃣ STEP 6 - FILTERING VARIANTS
 
 ### 🛠️ Tool: ``VCFfilter``<br/>
 ### 🎯 Parameters:<br/>
@@ -187,7 +187,7 @@ Click on ``Insert more filters``<br/>
 *Select the filter type*: ``Info filter (-f)``<br/>
 *Specify filtering value*: ``DP > 20``<br/>
 
-# 7️⃣ Visualization
+# 7️⃣ STEP 7 - VISUALIZATION
 
 ## ➡️ 7.1 Visualising with VCF.IOBIO
 
@@ -201,7 +201,7 @@ Click on ``Insert more filters``<br/>
 ### 🎯 Result:<br/>
 ![igvimage](https://raw.githubusercontent.com/HackBio-Genomics-One-B/Genomics-One-B/mike/7_Visualize/Visualization%20using%20IGV.jpeg)
 
-# 8️⃣ Comparing frequencies
+# 8️⃣ STEP 8 - COMPARING FREQUENCIES
 
 ## ➡️ 8.1 Convert VCF to tab-delimited data
 
@@ -219,11 +219,11 @@ Click on ``Insert more filters``<br/>
 *Delimited by*: ``Tab``<br/>
 *From*: ``select the tabular dataset produced by VCFtoTab-delimited``<br/>
 <br/>
-# 🏁 Our Results:
+# 🏁 RESULTS:
 
 Access our data and results on the drive here: <a href="https://drive.google.com/drive/folders/1oafSVbpr8Nz0YXFxoqBtIIDefZ8NcWbd" target="blank"><img align="center" src="https://user-images.githubusercontent.com/77963733/130207235-ab81908f-62cd-45c7-9e0c-408831a6f164.png" height="50" width="50" /></a> </p>
 
-# ❤️ **Contributors:**
+# ❤️ CONTRIBUTORS:
         
 | Name | Activity | 
 | --- | ------------ |
