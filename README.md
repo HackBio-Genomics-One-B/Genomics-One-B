@@ -173,7 +173,17 @@ Click on ``Insert more filters``<br/>
 
 # 7️⃣ Visualization
 
-### 🛠️ Tool: ``VCF.IOBIO`` and ``IGV``<br/>
+## ➡️ 7.1 Visualising with VCF.IOBIO
+
+### 🛠️ Tool: ``VCF.IOBIO``<br/>
+### 🎯 Parameters:<br/>
+*Select SAM/BAM dataset or dataset collection:* `Both BAM datasets produced by BWA-MEM tool`<br/>
+*Select validation stringency:* `Lenient`<br/>  
+
+## ➡️ 7.2: Visualising with IGV
+
+### 🛠️ Tool: ``IGV``<br/>
+### 🎯 Parameters:<br/>
 
 # 8️⃣ Comparing frequencies
 
