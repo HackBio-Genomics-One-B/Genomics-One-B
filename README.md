@@ -182,7 +182,7 @@ Click on ``Insert more filters``<br/>
 
 ### 🛠️ Tool: ``VCF.IOBIO``<br/>
 ### 🎯 Result:<br/>
-![vcfiobioimage](https://raw.githubusercontent.com/HackBio-Genomics-One-B/Genomics-One-B/mike/Visualising%20with%20VCF%20IOBIO.JPG)
+![vcfiobioimage](https://raw.githubusercontent.com/HackBio-Genomics-One-B/Genomics-One-B/mike/7_Visualize/Visualising%20with%20VCF%20IOBIO.JPG)
 
 ## ➡️ 7.2: Visualising with IGV
 
