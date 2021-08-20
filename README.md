@@ -8,7 +8,7 @@
   - [📙 Instructions](#-instructions)
   - [1️⃣ Step 1 - IMPORTING DATASET](#1%EF%B8%8F%E2%83%A3-step-1---IMPORTING-DATASET) 
   - [2️⃣ Step 2 - QUALITY CHECK OF DATASET](#2%EF%B8%8F%E2%83%A3-step-2---QUALITY-CHECK-OF-DATASET) 
-  - [3️⃣ Step 3 - STEP 3 - MAPPING THE READS USING BWA MEM](#3%EF%B8%8F%E2%83%A3-step-3---MAPPING-THE-READS-USING-BWA-MEM )
+  - [3️⃣ Step 3 - MAPPING THE READS USING BWA MEM](#3%EF%B8%8F%E2%83%A3-step-3---MAPPING-THE-READS-USING-BWA-MEM )
   - [4️⃣ Step 4 - POST-PROCESSING MAPPED READ](#4%EF%B8%8F%E2%83%A3-step-4---POST-PROCESSING-MAPPED-READ) 
   - - [➡️ 4.1 Merging BAM Datasets](#%EF%B8%8F-41-merging-bam-datasets)
   - - [➡️ 4.2 Removing Duplicates](#%EF%B8%8F-42-removing-duplicates)
@@ -266,7 +266,7 @@ Click on ``Insert more filters``<br/>
 
 ![62](https://user-images.githubusercontent.com/77963733/130159398-e5ae3a89-0118-4fa6-ac52-5135899eaf76.jpg)
 # 7️⃣ STEP 7 - VISUALIZATION
-Processed data in VCF format imported onto the galaxy platform and change the reference genome to Human hg38 for comparison
+Processed data in VCF format imported onto the galaxy platform and change the reference genome to Human hg38 for comparison<br/>
 ![igvimage](https://user-images.githubusercontent.com/77963733/130161840-b9f7bc0c-9b1f-4b9b-9983-78e467fc78a1.jpg)<br/>
 ## ➡️ 7.1 Visualising with VCF.IOBIO
 VCF.IOBIO link is also generated when the VCF dataset is uploaded that will give us the data on Varient types, Allele Frequency Spectrum and Base Changes.
