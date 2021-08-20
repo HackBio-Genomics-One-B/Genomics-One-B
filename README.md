@@ -6,10 +6,10 @@
   - [🧬 Stage 2 Task](#-stage-2-task-calling-variants-in-non-diploid-systems)
   - [🚀 Project Workflow](#-project-workflow)
   - [📙 Instructions](#-instructions)
-  - [1️⃣ Step 1 - Importing Data](#1%EF%B8%8F%E2%83%A3-step-1---IMPORTING-DATASET) 
-  - [2️⃣ Step 2 - Quality Checking](#2%EF%B8%8F%E2%83%A3-step-2---QUALITY-CHECK-OF-DATASET) 
-  - [3️⃣ Step 3 - Mapping Reads to Reference Genome](#3%EF%B8%8F%E2%83%A3-step-3---mapping-reads-to-reference-genome) 
-  - [4️⃣ Step 4 - Postprocessing Mapped Reads](#4%EF%B8%8F%E2%83%A3-step-4---postprocessing-mapped-reads)
+  - [1️⃣ Step 1 - Importing Dataset](#1%EF%B8%8F%E2%83%A3-step-1---IMPORTING-DATASET) 
+  - [2️⃣ Step 2 - Quality Check of Dataset](#2%EF%B8%8F%E2%83%A3-step-2---QUALITY-CHECK-OF-DATASET) 
+  - [3️⃣ Step 3 - STEP 3 - MAPPING THE READS USING BWA MEM](#3%EF%B8%8F%E2%83%A3-step-3---MAPPING-THE-READS-USING-BWA-MEM )
+  - [4️⃣ Step 4 - POST-PROCESSING MAPPED READ](#4%EF%B8%8F%E2%83%A3-step-4---POST--PROCESSING-MAPPED-READ)
   - - [➡️ 4.1 Merging BAM Datasets](#%EF%B8%8F-41-merging-bam-datasets)
   - - [➡️ 4.2 Removing Duplicates](#%EF%B8%8F-42-removing-duplicates)
   - - [➡️ 4.3 Left-Aligning Indels](#%EF%B8%8F-43-left-aligning-indels)
@@ -51,8 +51,6 @@ Always use the search button to navigate the respective tools.
 
 ![gd](https://user-images.githubusercontent.com/77963733/130158462-53243352-6693-4370-b0aa-2223834cb571.jpg)
 
-
-
 Import raw reads from [here](https://zenodo.org/record/1251112)
 
 ```
@@ -61,16 +59,14 @@ https://zenodo.org/record/1251112/files/raw_child-ds-2.fq
 https://zenodo.org/record/1251112/files/raw_mother-ds-1.fq
 https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq
 ```
-
 <br/>
 
 # 2️⃣ STEP 2 - QUALITY CHECK OF DATASET
-
 ### 🛠️ Tool: ``FastQC``<br/>
+It is important to check the quality of the data to be used before proceeding with the analysis. This is done to determine if there is a problem with the dataset. Click on  FASTA/Fastq on the left hand side, select 'FastQC Read Quality Check' and execute. It will run a check on the data.
 ### 🎯 Parameters: <br/>
 *Short read data from your current history:* `all 4 FASTQ datasets selected with Multiple datasets`<br/>
 
-It is important to check the quality of the data to be used before proceeding with the analysis. This is done to determine if there is a problem with the dataset. Click on  FASTA/Fastq on the left hand side, select 'FastQC Read Quality Check' and execute. It will run a check on the data.
 ### 💡 Tips: <br/>
 To select multiple datasets, <br/>
 click on the Multiple datasets icon<br/>
@@ -82,23 +78,32 @@ select several files by keeping the ``Ctrl`` (or ``COMMAND``) key pressed and cl
 
 <br/>
 
-# 3️⃣ STEP 3 - Mapping Reads to Reference Genome 
-
+# 3️⃣ STEP 3 - MAPPING THE READS USING BWA MEM 
 ### Tool: ``BWA-mem``
+Human genome, ‘hg38’ was used as the reference genome.Using the Paired end sequencing, the datasets has to be uploaded by selecting multiple datasets as follows:
+
 ### 🎯 Parameters: <br/>
 *Will you select a reference genome from your history or use a built-in index?:* ``Use a built-in genome index``<br/>
 *Using reference genome:* ``Human: hg38``<br/>
 *Single or Paired-end reads:* ``Paired``<br/>
 *Select first set of reads:* ``select both -1 datasets selected with Multiple datasets``<br/>
+`raw_child-ds-1.fq` & `raw_mother-ds-1.fq `
 *Select second set of reads:* ``select both -2 datasets selected with Multiple datasets``<br/>
+`raw_child-ds-2.fq` & `raw_mother-ds-2.fq`
 *Set read groups information?:* ``Set read groups (SAM/BAM specification)``<br/>
 *Auto-assign:* ``Yes``<br/>
 *Auto-assign:* ``Yes``<br/>
 *Platform/technology used to produce the reads (PL):* ``ILLUMINA``<br/>
 *Auto-assign:* ``Yes``<br/>
 <br/>
-<br/>
-# 4️⃣ STEP 4 - Postprocessing Mapped Reads
+*Execute<br/>
+
+![img_20210820_131657](https://user-images.githubusercontent.com/77963733/130246896-a965760e-b51a-49b4-bb65-1dab11dbccfb.jpg)
+
+![img_20210820_131439](https://user-images.githubusercontent.com/77963733/130246959-8e69f0ab-3385-4daa-8d69-2b0f60913e41.jpg)
+
+
+# 4️⃣ STEP 4 - POST-PROCESSING MAPPED READ
 
 ## ➡️ 4.1 Merging BAM Datasets
 
