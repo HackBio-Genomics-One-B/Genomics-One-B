@@ -206,7 +206,7 @@ Click on ``Insert more filters``<br/>
 *Delimited by*: ``Tab``<br/>
 *From*: ``select the tabular dataset produced by VCFtoTab-delimited``<br/>
 
-
+<br/>
 # Our Results:
 
 Access our data and results on the drive here: <a href="https://drive.google.com/drive/folders/1oafSVbpr8Nz0YXFxoqBtIIDefZ8NcWbd" target="blank"><img align="center" src="https://user-images.githubusercontent.com/77963733/130207235-ab81908f-62cd-45c7-9e0c-408831a6f164.png" height="50" width="50" /></a> </p>
