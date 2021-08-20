@@ -97,7 +97,7 @@ Human genome, ‘hg38’ was used as the reference genome.Using the Paired end s
 - *Auto-assign:* ``Yes``<br/>
 - *Platform/technology used to produce the reads (PL):* ``ILLUMINA``<br/>
 - *Auto-assign:* ``Yes``<br/>
-- *Execute<br/>* <br/>
+- *Execute* <br/>
 
 ![img_20210820_131657](https://user-images.githubusercontent.com/77963733/130246896-a965760e-b51a-49b4-bb65-1dab11dbccfb.jpg)
 
@@ -179,9 +179,7 @@ Select `hg38` under the `Database/Build` option and save.
     - *Select reads with mapped mate:* ``chrM``<br/>
  
 - *Would you like to set rules:* ``NO``<br/>
-<br/>
-
-- Execute
+- Execute<br/>
 
 ![44](https://user-images.githubusercontent.com/77963733/130158864-3000b582-0429-48cb-9655-f5b4b1ec683a.png)
 
@@ -199,7 +197,7 @@ You can navigate to the tool (FreeBayes) using the search button in Galaxy. Sele
 - *Region Chromosome:* ``chrM``<br/>
 - *Region Start:* ``1``<br/>
 - *Region End:* ``16000``<br/>
-- 
+
 ![51](https://user-images.githubusercontent.com/77963733/130159354-9c941c1e-52a2-4345-8245-6fbb3c776318.jpg)
 
 - *Choose parameter selection level:* ``5: Full list of options``<br/>
