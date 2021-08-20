@@ -337,13 +337,11 @@ At position 3243, the mother sample has 671 G’s (‘G’ – an alternative al
 | Child          | 341             | 694   |
 
 We noticed a remarkable frequency change i.e., the major allele in the mother ‘A’ becomes the minor allele in the child.
-
-
-
+<br/>
+<br/>
 # 🏁 Team Results
 
 To access our data and results on the drive click   <a href="https://drive.google.com/drive/folders/1oafSVbpr8Nz0YXFxoqBtIIDefZ8NcWbd" target="blank"><img align="center" src="https://user-images.githubusercontent.com/77963733/130207235-ab81908f-62cd-45c7-9e0c-408831a6f164.png" height="20" width="20" /></a> </p>
-
 <br/>
 <br/>
 # 🔥 Contributors
