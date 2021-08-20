@@ -111,7 +111,7 @@ You can navigate to the tool (FreeBayes) using the search button in Galaxy. Sele
 
 ## STEP 6: FILTERING VARIANTS USING VCF
 
-FilterNavigate to tool (VCFfilter) using the search button option on Galaxy webUsing the dataset obtained from step 5 Input parameters as seen in the image below and execute
+Navigate to tool (VCFfilter) using the search button option on Galaxy Using the dataset obtained from step 5, Input parameters as seen in the image below and execute
 
 ![61](https://user-images.githubusercontent.com/77963733/130159393-bf828636-a389-4580-a54e-3f8e20702da6.jpg)
 
