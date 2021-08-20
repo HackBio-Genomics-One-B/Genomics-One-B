@@ -86,18 +86,21 @@ Under ``Condition`` > ``1: Condition`` > ``Filter``:<br/>
 **In ``1: Filter``:**<br/>
 *Select BAM property to filter on:* ``mapQuality``<br/>
 *Filter on read mapping quality (phred scale):* ``>=20``<br/>
+
 Click on ``Insert Filter``<br/>
-<br/>
+
 **In ``2: Filter``:**<br/>
 *Select BAM property to filter on:* ``isPaired``<br/>
 *Selected mapped reads:* ``Yes``<br/>
+
 Click on ``Insert Filter``<br/>
-<br/>
+
 **In ``3: Filter``:**<br/>
 *Select BAM property to filter on:* ``isProperPair``<br/>
 *Select reads with mapped mate:* ``Yes``<br/>
+
 Click on ``Insert Filter``<br/>
-<br/>
+
 **In ``4: Filter``:**<br/>
 *Select BAM property to filter on:* ``reference``<br/>
 *Select reads with mapped mate:* ``chrM``<br/>
@@ -144,25 +147,25 @@ In ``more filters``:<br/>
 *Select the filter type*:* ``Info filter (-f)``<br/>
 *Specify filtering value*: ``SRP > 20``<br/>
 
-``Insert more filters``:<br/>
+Click on ``Insert more filters``<br/>
 
 **In ``2: more filters``:**<br/>
 *Select the filter type*: ``Info filter (-f)``<br/>
 *Specify filtering value*: ``SAP > 20``<br/>
 
-``Insert more filters``:<br/>
+Click on ``Insert more filters``<br/>
 
 **In ``3: more filters``:**<br/>
 *Select the filter type*: ``Info filter (-f)``<br/>
 *Specify filtering value*: ``EPP > 20``<br/>
 
-``Insert more filters``:<br/>
+Click on ``Insert more filters``<br/>
 
 **In ``4: more filters``:**<br/>
 *Select the filter type*: ``Info filter (-f)``<br/>
 *Specify filtering value*: ``QUAL > 20``<br/>
 
-``Insert more filters``:<br/>
+Click on ``Insert more filters``<br/>
 
 **In ``5: more filters``:**<br/>
 *Select the filter type*: ``Info filter (-f)``<br/>
