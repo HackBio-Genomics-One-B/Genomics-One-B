@@ -2,11 +2,11 @@
 
 ## ⛳️ Table of Contents
 <!-- markdownlint-disable -->
-  - [🧬 Stage 2 Task](#-hackbio-2021)
-  - [🎮 The Stage 2 Task](#-#the-stage-0-task)
-  - [🛡 Dependencies](#-dependencies)
-  - [💡 Installation](#-Installation)
-  - [📙 Information Template](#-information-template)
+  - [🧬 Stage 2 Task](#-stage-2-task-calling-variants-in-non-diploid-systems)
+  - [🚀 Project Workflow](#-project-workflow)
+  - [📙 Instructions](#-instructions)
+  - [1️⃣ Step 1 - Importing Data](#-Installation)
+  - [2️⃣ Step 2 - Quality Checking](#-information-template)
   - [🚀 Get Started](#-get-started)
   - [✅ Code Submitted](#-code-submitted)
   - [🏁 Results](#-results)
@@ -18,7 +18,7 @@
 
 ![image](https://github.com/HackBio-Genomics-One-B/Genomics-One-B/blob/mike/PROJECT_DESIGN_(GENOMICS_1B).png)
 
-## 📙 Instructions  
+# 📙 Instructions  
 This tutorial is implemented in galaxy (https://usegalaxy.org) <br/>
 Always use the search button to navigate the respective tools. 
 
