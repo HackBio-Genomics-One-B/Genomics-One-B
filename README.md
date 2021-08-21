@@ -177,7 +177,7 @@ You can navigate to the tool (FreeBayes) using the search button in Galaxy. Sele
 
 - Then *Execute* <br/>
 <br/>
-<br/>
+
 # 7️⃣ STEP 7 - VISUALIZATION
 Processed data in VCF format imported onto the galaxy platform and change the reference genome to Human hg38 for comparison<br/>
 
