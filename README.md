@@ -1,4 +1,3 @@
-
 # [HackBio Internship 2021](https://thehackbio.com/): Genomics-One-B Project
 
 ## ⛳️ Table of Contents
@@ -164,7 +163,7 @@ You can navigate to the tool (FreeBayes) using the search button in Galaxy. Sele
 
 - Then *Execute* <br/>
 <br/>
-<br/>
+
 # 6️⃣ STEP 6 - FILTERING VARIANTS USING VCF
 
 ### 🛠️ Tool: ``VCFfilter``<br/>
