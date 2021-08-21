@@ -92,7 +92,7 @@ Using the Paired end sequencing, the datasets has to be uploaded by selecting mu
 
 - Then *Execute* <br/>
 <br/>
-<br/>
+
 # 4️⃣ STEP 4 - POST-PROCESSING MAPPED READ
 
 ## ➡️ 4.1 Merging `BAM` Datasets
